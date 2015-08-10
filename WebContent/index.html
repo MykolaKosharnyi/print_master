@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<title>Print Master</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
+	<script type="text/javascript" src="js/animation.js"></script>
+	</head>
+<body>
+<header>
+<div id="first_row">
+    <ul id="first_row_left">
+        <li><a href="">О нас</a></li>
+        <li><a href="">Контакты</a></li>
+    </ul>
+    <ul id="first_row_right">
+        <li>
+            <select>
+                <option>Русский</option>
+                <option>English</option>
+            </select>
+        </li>
+        <li>
+            <select>
+                <option onclick="UA">UA</option>
+                <option onclick="USD">USD</option>
+                <option onclick="EUR">EUR</option>
+            </select>
+        </li>
+        <li>
+            <select name="Аккаунт">
+                <option>Логин</option>
+                <option>Лист пожеланий</option>
+                <option>Корзина</option>
+                <option>Выход</option>
+            </select>
+        </li>
+    </ul>
+</div>
+<div id="second_row">
+    <a href=""><img id="second_row_image" src="picture/logo.jpg" alt=""></a>
+
+    <div id="second_row_search">
+        <input id="second_row_search_field" class="search" placeholder="Введите слово или фразу..." size="50" type="search">
+        <input id="second_row_search_button" class="search" size="20" type="submit" value="Поиск">
+    </div>
+
+    <div id="second_row_cart">
+    <a href="">Корзина</a>
+    </div>
+</div>
+
+    <ul id="menu_row">
+        <li></li>
+        <li><a id="button_menu_row">Menu</a></li>
+        <li><a href="#" data-clone="Сервис1">Сервис</a></li>
+        <li><a href="#" data-clone="Цветокорекция">Цветокорекция</a></li>
+        <li><a href="#" data-clone="Комплектующие">Комплектующие</a></li>
+        <li><a href="#" data-clone="Тренинги">Тренинги</a></li>
+        <li><a href="#" data-clone="Техподдержка">Техподдержка</a></li>
+        <li><a href="#" data-clone="Оборудование">Оборудование</a></li>
+        <li><a href="#" data-clone="Чернила">Чернила</a></li>
+        <li></li>
+        </ul>
+    
+ </header>   
+<div id="wrapper">  
+    <div class="left_field">
+    <ul class="menu">
+        <li class="menu_list"><a href="#">Сервис</a>
+        <ul class="menu_drop">
+            <li class="menu_list_list"><a href="#">Обслуживаемое оборудование</a>
+            <ul class="menu_drop_drop">
+                <li><a href="#">Оборудование Anhui LIYU</a></li>
+                <li><a href="#">Оборудование Infinity Digital Printers</a></li>
+                <li><a href="#">Оборудование Fei Yeung Union</a></li>
+                <li><a href="#">Оборудование Zhongye Technology</a></li>
+                <li><a href="#">Оборудование Flora Digital Printing</a></li>
+                <li><a href="#">Оборудование Teckwin</a></li>
+                <li><a href="#">Оборудование Hewllet-Pacard/Scitex Vision</a></li>
+                <li><a href="#">Оборудование VUTEk</a></li>
+                <li><a href="#">Оборудование Mimaki</a></li>
+                <li><a href="#">Оборудование Roland</a></li>
+                <li><a href="#">Оборудование Mutoh</a></li>
+                <li><a href="#">Оборудование OCE</a></li>
+                <li><a href="#">Оборудование SKY JET</a></li>
+                <li><a href="#">Оборудование Kodak-Encad</a></li>
+                <li><a href="#">Оборудование JHF</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Инсталляция оборудования</a></li>
+            <li><a href="#">Плановое сервисное обслуживание</a></li>
+            <li><a href="#">Ремонт печатного оборудования</a></li>
+            <li><a href="#">УЗВ очистка печатающих головок</a></li>
+        </ul>
+        </li>
+        <li class="menu_list"><a href="#">Цветокорекция</a>
+        <ul class="menu_drop">
+            <li class="menu_list_list"><a href="#">Установка RIP-систем</a>
+                <ul class="menu_drop_drop">
+                <li><a href="#">Wasatch SoftRIP</a></li>
+                <li><a href="#">Roland VersaWorks</a></li>
+                <li><a href="#">RIP Ergosoft</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Построение ICC-профилей</a></li>
+        </ul>
+        </li>
+        <li class="menu_list"><a href="#">Комплектующие</a>
+        <ul class="menu_drop">
+            <li><a href="#">Адаптеры</a></li>
+            <li><a href="#">Вайперы</a></li>
+            <li><a href="#">Датчики</a></li>
+            <li><a href="#">Двигатели</a></li>
+            <li><a href="#">Демпферы</a></li>
+            <li><a href="#">Кабели, шлейфы</a></li>
+            <li><a href="#">Картриджи</a></li>
+            <li><a href="#">Механические узлы</a></li>
+            <li><a href="#">Парковочные станции</a></li>
+            <li><a href="#">Печатающие головки</a></li>
+            <li><a href="#">Помпы</a></li>
+            <li><a href="#">Соленоиды</a></li>
+            <li><a href="#">Соединители</a></li>
+            <li><a href="#">СНПЧ</a></li>
+            <li><a href="#">Субтанки</a></li>
+            <li><a href="#">Фильтры</a></li>
+            <li><a href="#">Чернильные магистрали</a></li>
+            <li><a href="#">Чистящие средства</a></li>
+            <li><a href="#">Электрические компоненты</a></li>
+            <li><a href="#">Разное</a></li>
+        </ul>
+        </li>
+        <li class="menu_list"><a href="#">Тренинги</a>
+        <ul class="menu_drop">
+            <li><a href="#">Базовый курс печатника</a></li>
+            <li><a href="#">Основы теории управления цветом</a></li>
+            <li><a href="#">Статьи и обзоры</a></li>
+            <li><a href="#">Советы печатнику</a></li>
+        </ul>
+        </li>
+        <li class="menu_list"><a href="#">Техподдержка</a>
+        <ul class="menu_drop">
+            <li><a href="#">Консультация специалиста</a></li>
+            <li><a href="#">Заявка не сервисное обслуживание</a></li>
+            <li><a href="#">Стоимость услуг</a></li>
+            <li><a href="#">Техническая документация</a></li>
+            <li><a href="#">Програмное обеспечение</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+        </ul>
+        </li>
+        <li class="menu_list"><a href="#">Оборудование</a>
+        <ul class="menu_drop">
+            <li><a href="#">Модернизация оборудования</a></li>
+            <li><a href="#">Сольвентное оборудование</a></li>
+            <li><a href="#">Экосольвентное оборудование</a></li>
+            <li><a href="#">Плоскопечатное оборудование</a></li>
+            <li><a href="#">Текстильные принтеры</a></li>
+            <li><a href="#">Б/У Сольветнтное оборудование</a></li>
+            <li><a href="#">Б/У Экосольвентное оборудование</a></li>
+        </ul>
+        </li>
+        <li class="menu_list"><a href="#">Чернила</a>
+    <ul class="menu_drop">
+        <li><a href="#">Экосольвентные чернила Jet Best</a></li>
+        <li><a href="#">Экосольвентные чернила EpsonSC-S30610</a></li>
+        <li><a href="#">Сольвентные чернила Jet Best</a></li>
+    </ul>
+   </li>
+    </ul>
+    <div id="reklam"></div>
+</div>
+    <div id="main">
+
+    <div id="head_of_body">    
+        
+        <div class="reklam_animation">
+            <img src="picture/1.png" alt="" />
+	        <img src="picture/2.png" alt="" />
+            <img src="picture/3.png" alt="" />
+        </div>
+        
+        <div id="rigt_of_reklam_animation">
+            <div class="rigt_of_reklam_animation_position"><a href=""> <img src="picture/1.png" alt="" /></a></div>
+            <div class="rigt_of_reklam_animation_position"><a href=""><img src="picture/2.png" alt="" /></a></div>
+            <div class="rigt_of_reklam_animation_position"><a href=""><img src="picture/3.png" alt="" /></a></div>
+        </div>
+        
+    </div>
+        
+        <div class="categories_of_goods">
+            <fieldset>
+                <legend>Third categoria of goods.</legend>
+            </fieldset>
+        </div>
+        <div class="categories_of_goods">
+            <fieldset>
+                <legend>Second categoria of goods.</legend>
+            </fieldset>
+        </div>
+        <div class="categories_of_goods">
+            <fieldset>
+                <legend>Third categoria of goods.</legend>
+            </fieldset>
+        </div>
+        <div class="categories_of_goods">
+            <fieldset>
+                <legend>Forth categoria of goods.</legend>
+            </fieldset>        
+        </div>
+    </div>
+    <div class="right_field"></div>
+</div>
+</body>
+</html>
