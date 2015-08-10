@@ -7,9 +7,10 @@
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
 	<script type="text/javascript" src="js/animation.js"></script>
+    <script src="js/slider.js"></script>
 	</head>
 <body>
-<header>
+    <header>
 <div id="first_row">
     <ul id="first_row_left">
         <li><a href="">О нас</a></li>
@@ -66,8 +67,8 @@
         </ul>
     
  </header>   
-<div id="wrapper">  
-    <div class="left_field">
+    <div id="wrapper">  
+        <div class="left_field">
     <ul class="menu">
         <li class="menu_list"><a href="#">Сервис</a>
         <ul class="menu_drop">
@@ -171,10 +172,8 @@
     </ul>
     <div id="reklam"></div>
 </div>
-    <div id="main">
-
-    <div id="head_of_body">    
-        
+    
+        <div id="head_of_body">    
         <div class="reklam_animation">
             <img src="picture/1.png" alt="" />
 	        <img src="picture/2.png" alt="" />
@@ -186,31 +185,39 @@
             <div class="rigt_of_reklam_animation_position"><a href=""><img src="picture/2.png" alt="" /></a></div>
             <div class="rigt_of_reklam_animation_position"><a href=""><img src="picture/3.png" alt="" /></a></div>
         </div>
-        
     </div>
-        
+       <hr>
+        <div id="main">   
         <div class="categories_of_goods">
-            <fieldset>
-                <legend>Third categoria of goods.</legend>
-            </fieldset>
+            	<div class="slider">
+		            <div class="slide-list">
+			            <div class="slide-wrap">
+					        <div class="slide-item">
+					            <img width="280" height="187" src="img/1.png" alt="" />
+					            <span class="slide-title">Первый слайд</span>
+				            </div>
+				            <div class="slide-item">
+					            <img width="280" height="187" src="img/2.png" alt="" />
+					            <span class="slide-title">Второй слайд</span>
+				            </div>
+				            <div class="slide-item">
+					            <img width="280" height="187" src="img/3.png" alt="" />
+					            <span class="slide-title">Третий слайд</span>
+				            </div>
+			            </div>
+			            <div class="clear"></div>
+		            </div>
+		            <div class="navy prev-slide"></div>
+		            <div class="navy next-slide"></div>
+		            <div class="auto play"></div>
+	        </div>
         </div>
-        <div class="categories_of_goods">
-            <fieldset>
-                <legend>Second categoria of goods.</legend>
-            </fieldset>
-        </div>
-        <div class="categories_of_goods">
-            <fieldset>
-                <legend>Third categoria of goods.</legend>
-            </fieldset>
-        </div>
-        <div class="categories_of_goods">
-            <fieldset>
-                <legend>Forth categoria of goods.</legend>
-            </fieldset>        
-        </div>
+        <div class="categories_of_goods"></div>
+        <div class="categories_of_goods"></div>
+        <div class="categories_of_goods"></div>
     </div>
-    <div class="right_field"></div>
-</div>
+    
+        <div class="right_field"></div>
+    </div>
 </body>
 </html>

@@ -1,111 +1,39 @@
-body {
-    margin: 0;
-    padding: 0;
-    font: 1em/1.4em sans-serif;
-}
+body { margin: 0; padding: 0; font: 1em/1.4em sans-serif;}
 
-a{
-    text-decoration: none;
-}
+a{ text-decoration: none;}
 
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+ul{ margin: 0; padding: 0; list-style: none;}
+
 /* Заголовок */
-#first_row{
-    position: relative;
-    width: 100%; 
-    margin: 0px 0px 5px 0px;
-    border: 2px #e8e8e8 solid;
-    height: 30px;
-    z-index: 100;   
-}
-#first_row_left{
-    position: absolute;
-    left: 50px;
-    height: inherit;
-}
+#first_row{ position: relative; width: 100%; margin: 0px 0px 5px 0px; border: 2px #e8e8e8 solid; height: 30px; z-index: 100; }
+   
+    #first_row_left{ position: absolute; left: 50px; height: inherit;}
 
-#first_row_right{
-    position: absolute;
-    right: 50px;
-    height: inherit;
-}
+        #first_row_left li{ display: table-cell; text-align: center; vertical-align: middle; height: inherit; border-right: 2px #e8e8e8 solid;}
 
-#first_row_left li{
-    display: table-cell;
-    text-align: center; 
-    vertical-align: middle;
-    height: inherit;
-    border-right: 2px #e8e8e8 solid;
-}
+            #first_row_left li a{ display: block; color: black; padding: 0 10px;}
+    
+    #first_row_right{ position: absolute; right: 50px; height: inherit;}
 
-#first_row_right li{
-    display: table-cell;
-    text-align: center; 
-    vertical-align: middle;
-    height: inherit;
-    border-left: 2px #e8e8e8 solid;
-}
+        #first_row_right li{ display: table-cell; text-align: center; vertical-align: middle; height: inherit; border-left: 2px #e8e8e8 solid;}
 
-#first_row_left li a{
-    display: block;
-    color: black;
-    padding: 0 10px;
-}
+            #first_row_right li a{ display: block; color: black; padding: 0 10px;}
 
-#first_row_right li a{
-    display: block;
-    color: black;
-    padding: 0 10px;
-}
 
-#second_row{
-    height: 50px;
-    position: relative;
-    width: 100%; 
-}
+#second_row{ height: 50px; position: relative; width: 100%;}
 
-#second_row_image{
-    width: 80px;
-    height: 40px;
-    border: 2px solid #0669BD;
-    height: inherit;
-    margin: 0px 50px 0px 50px;
-    float: left;
-}
+    #second_row_image{ width: 80px; height: 40px; border: 2px solid #0669BD; height: inherit; margin: 0px 50px 0px 50px; float: left;}
 
-.search{
-    height: 40px;
-    margin: 0;
-    padding: 0;
-}
+    .search{ height: 40px; margin: 0; padding: 0;}
 
-#second_row_search{
-    float: left;
-    margin-left: 300px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+    #second_row_search{ float: left; margin-left: 300px; margin-top: 5px; margin-bottom: 5px;}
 
-#second_row_cart{
-    float: right;
-    padding: 10px 25px;
-    margin: 5px 20px 5px 20px;
-    border: 2px red solid;
-}
-#second_row_cart:hover{
-    background-color: deepskyblue;
-    color: black;
-    border: none;
-    border: 2px blue solid;
-}
+    #second_row_cart{ float: right; padding: 10px 25px; margin: 5px 20px 5px 20px; border: 2px red solid;}
 
-#second_row_search_button{
-    width: 60px;
-}
+        #second_row_cart:hover{ background-color: deepskyblue; color: black; border: none; border: 2px blue solid;}
+
+    #second_row_search_button{ width: 60px;}
+
 
 #menu_row {
     display: table;
@@ -175,7 +103,7 @@ li a#button_menu_row:hover{
     position: relative;
     float: left;
     width: 60%;
-    margin: 5px 40px 0;
+    margin: 0% 0 2% 2%;
     z-index: 5;
    /* border: 2px #666 solid;*/
 }
@@ -195,11 +123,10 @@ li a#button_menu_row:hover{
 .right_field{
     position: relative;
     float: left;
-    width: 200px;
+    width: 15%;
     border: 2px #666 solid;
-    margin-top: 2px;
+    margin: 2% 0% 0 1%;
     height: 1200px;
-    margin: 5px 0 0;
 }
 
 #reklam{
@@ -292,121 +219,86 @@ li a#button_menu_row:hover{
 }
 
 /* Категории товаров*/
-#head_of_body{
-    position: relative;
-    width: 100%;
-  /*  margin: 20px 0px;*/
-    height: 400px;
-}
+#head_of_body{ position: relative; width: 100%; height: 400px;}
 
-.reklam_animation{
-    position: relative;
-    float: left;
-    border: 2px #69c solid;
-    width: 70%;
-    height: inherit; 
-}
-.reklam_animation img{
-    width: 100%;
-    height: inherit; 
-}
+    .reklam_animation{ position: relative; float: left; border: 2px #69c solid; width: 60%; height: inherit; margin: 2% 0 2% 2%;}
 
-#rigt_of_reklam_animation{
-    position: relative;
-    float: right;
-     width: 28%;
-     height: inherit; 
-  /*   border: 2px green solid;*/
-}
+        .reklam_animation img{ width: 100%; height: inherit;}
 
-.rigt_of_reklam_animation_position{
-    position: relative;
-    height: 30%;
-    width: 100%;
-    margin: 5px 5px 20px;
+    #rigt_of_reklam_animation{ position: relative; float: left; width: 15%; height: inherit; margin: 2% 0% 0 1%;}
 
-}
+        .rigt_of_reklam_animation_position{ position: relative; height: 30%; width: 100%; margin: 5px 5px 20px;}
 
-.rigt_of_reklam_animation_position a{
-    display: block;
-    width: inherit;
-    height: 100%;
-    color: white;
-    border: 1px red solid;
-/*    background: #69c;*/
+            .rigt_of_reklam_animation_position a{ display: block; width: inherit; height: 100%;  color: white; border: 1px red solid;}
 
-}
+                .rigt_of_reklam_animation_position a img{ width: inherit; height: 100%;}
 
-.rigt_of_reklam_animation_position a img{
-    width: inherit;
-    height: 100%;
+.categories_of_goods{ position: relative; width: 100%; height: 300px; margin: 20px 0px; border: 1px green solid;}
 
-}
-
-.categories_of_goods{
-    position: relative;
-   /* border: 2px blue solid;*/
-    width: 100%;
-    height: 200px;
-    margin: 20px 0px;
-}
-
-.categories_of_goods fieldset{
-    height: 90%;
-}
- /*.categories_of_goods fieldset .categories_of_goods_column{
-     display: block;
-     position: relative;
-     float: left;
-    border-left: 1px red solid;
-     height: 90%;
-    width: 24%;
-    height: 200px;
-    margin: 0;
-}*/
+    .categories_of_goods fieldset{ height: 90%;}
 
 /* Все что ниже для галереи которую можно перелистывать*/
+
 /* Задаем сброс обтекания */
+
 .clear {
 	margin-top: -1px;
 	height: 1px;
 	clear:both;
 	zoom: 1;
 }		
+
+
 /* Slider */
+
 .slider {
+
 	/* Ширина контейнера */
-	width: auto;
-    height: inherit;
+	width: 75%;
+
+	/* Внешние тступы сверху и снизу */
+	margin: 0 auto;
+
+	/* Внутренние отступы для ссылок navy */
+	padding: 0 0px;
+
 	/* Позиционирование */
 	position: relative;
-}
-/* Двойной клик по кнопкам вперед/назад вызывает выделение всех элементов слайдера,
-поэтому предотвращаем это */
-.slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
-.slider::selection { background: transparent; color: #fff; text-shadow: none; }
-
-.slide-list {
-	position: relative;
-	margin: 0;
-	padding: 0;
+    float: left;
 	/* Скроем то что выходит за границы */
 	overflow: hidden;
     height: inherit;
 }
+
+/* Двойной клик по ссылкам вперед/назад вызывает выделение всех элементов слайдера,
+поэтому предотвращаем это */
+
+.slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+
+.slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
+.slide-list {
+    height: 90%;
+	position: relative;
+	margin: 10px;
+	padding: 10px;
+    border: 1px gold solid;
+}
+
+
 .slide-wrap {
+height: 90%;
 	position: relative;
 	left: 0px;
 	top: 0;
 	/* максимально возможная ширина обертки слайдера */
 	width: 10000000px;
-    height: inherit;
 }
+
 .slide-item {
-	/* Ширина слайда */
-	width: 30%;
-    height: inherit;
-    border: 1px blue solid;
+    height: 100%;
+	/* Ширина слайда */width: 280px;
+
 	/* Внутренние отступы */
 	padding: 10px;
 	/* Обтекание */
@@ -414,49 +306,60 @@ li a#button_menu_row:hover{
 }
 
 .slide-item img{
-    width: inherit;
-    height: inherit;
+     height: 75%;
+    border: 1px red solid;
 }
 
 .slide-title {
+    height: 25%;
 	/* Шрифт */
 	font: bold 16px monospace;
 	/* Указываем, что элемент блочный */
 	display: block;
+    border: 1px blue solid;
 }
+
+
 
 /* навигация вперед/назад */
 .navy {
+
 	/* абсолютное позиционирование */
 	position: absolute;
 	top: 0;
 	z-index: 1;
 	height: 100%;
-	/* ширина элементов */
+	/* ширина ссылок */
 	width: 30px;
 	cursor: pointer;
 }
+
+
 .prev-slide {
 	left: 0;
 	background: #dbdbdb url(bg/left-arrow.png) 11px 40% no-repeat;
 }
+
+
 .next-slide {
 	right: 0;
 	background: #dbdbdb url(bg/right-arrow.png) 13px 40% no-repeat;
 }
+
+
 .navy.disable {
 	background: #dbdbdb;
 }
+
 /* навигация старт/пауза */
 .auto {
+    
 	width: 7px;
-	height: 11px;
+	height: 10%;
 	cursor: pointer;
 	margin: 10px auto;
 }
-.play {
-	background: url(bg/play.png) center no-repeat;
-}
-.pause {
-	background: url(bg/pause.png) center no-repeat;
-}
+
+.play {height: 10%; background: url(bg/play.png) center no-repeat;}
+
+.pause {background: url(bg/pause.png) center no-repeat;}
