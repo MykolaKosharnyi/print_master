@@ -2,12 +2,31 @@
 <html lang="ru">
 	<head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>Print Master</title>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
 	<script type="text/javascript" src="js/animation.js"></script>
     <script src="js/slider.js"></script>
+    
+    <!-- for reklam_anamation -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/jgallery.min.css?v=1.5.0" />
+    <script type="text/javascript" src="js/jgallery.min.js?v=1.5.0"></script>
+    <script type="text/javascript" src="js/touchswipe.min.js"></script>
+    
+    <!-- fot carousel -->
+    <link rel="stylesheet" media="all" href="style/type/puritan.css" />
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript">
+jQuery(document).ready(function() {
+    // Initialise the first and second carousel by class selector.
+	// Note that they use both the same configuration options (none in this case).
+	jQuery('.d-carousel .carousel').jcarousel({
+        scroll: 1
+    });
+});
+</script>
 	</head>
 <body>
     <header>
@@ -41,7 +60,7 @@
     </ul>
 </div>
 <div id="second_row">
-    <a href=""><img id="second_row_image" src="picture/logo.jpg" alt=""></a>
+    <a href=""><img id="second_row_image" src="images/logo.jpg" alt=""></a>
 
     <div id="second_row_search">
         <input id="second_row_search_field" class="search" placeholder="Введите слово или фразу..." size="50" type="search">
@@ -67,7 +86,7 @@
         </ul>
     
  </header>   
-    <div id="wrapper">  
+    <div id="the_main_part">  
         <div class="left_field">
     <ul class="menu">
         <li class="menu_list"><a href="#">Сервис</a>
@@ -174,42 +193,57 @@
 </div>
     
         <div id="head_of_body">    
-        <div class="reklam_animation">
-            <img src="picture/1.png" alt="" />
-	        <img src="picture/2.png" alt="" />
-            <img src="picture/3.png" alt="" />
+            <div class="reklam_animation">
+               <div id="gallery">   
+                <img src="images/59089-1600x1200.jpg" alt="First image" />
+                <img src="images/53364-1600x1200.jpg" alt="Secong image" />
+                <img src="images/54744-1600x1200.jpg" alt="Third image" />
+                <img src="images/59081-1600x1200.jpg" alt="Fourth image" />
+                </div>
+            </div>
+            <div id="rigt_of_reklam_animation">
+            <div class="rigt_of_reklam_animation_position"><a href=""> <img src="images/1.png" alt="" /></a></div>
+            <div class="rigt_of_reklam_animation_position"><a href=""><img src="images/2.png" alt="" /></a></div>
+            <div class="rigt_of_reklam_animation_position"><a href=""><img src="images/3.png" alt="" /></a></div>
         </div>
-        
-        <div id="rigt_of_reklam_animation">
-            <div class="rigt_of_reklam_animation_position"><a href=""> <img src="picture/1.png" alt="" /></a></div>
-            <div class="rigt_of_reklam_animation_position"><a href=""><img src="picture/2.png" alt="" /></a></div>
-            <div class="rigt_of_reklam_animation_position"><a href=""><img src="picture/3.png" alt="" /></a></div>
         </div>
-    </div>
-       <hr>
+       
         <div id="main">   
         <div class="categories_of_goods">
-            	<div class="slider">
-		            <div class="slide-list">
-			            <div class="slide-wrap">
-					        <div class="slide-item">
-					            <img width="280" height="187" src="img/1.png" alt="" />
-					            <span class="slide-title">Первый слайд</span>
-				            </div>
-				            <div class="slide-item">
-					            <img width="280" height="187" src="img/2.png" alt="" />
-					            <span class="slide-title">Второй слайд</span>
-				            </div>
-				            <div class="slide-item">
-					            <img width="280" height="187" src="img/3.png" alt="" />
-					            <span class="slide-title">Третий слайд</span>
-				            </div>
-			            </div>
-			            <div class="clear"></div>
-		            </div>
-		            <div class="navy prev-slide"></div>
-		            <div class="navy next-slide"></div>
-		            <div class="auto play"></div>
+            <div class="description_slider">
+               
+                    <label> Принтеры </label>
+
+                <div class="body_description">
+                    <ul>
+                        <li><a href="">Экосольвентные</a></li>
+                        <li><a href="">Сольвентные</a></li>
+                        <li><a href="">Текстильные</a></li>
+                        <li><a href="">UV</a></li>
+                    </ul>
+                </div>
+            </div>
+          	<div class="slider">
+		         <div class="slide-list">
+			         <div class="slide-wrap">
+				        <div class="slide-item">
+					        <img width="280" height="187" src="img/1.png" alt="" />
+					        <div class="slide-title">Первый слайд</div>
+				        </div>
+				        <div class="slide-item">
+					        <img width="280" height="187" src="img/2.png" alt="" />
+					        <div class="slide-title">Второй слайд</div>
+				        </div>
+				        <div class="slide-item">
+					        <img width="280" height="187" src="img/3.png" alt="" />
+					        <div class="slide-title">Третий слайд</div>
+				        </div>
+			          </div>
+			          <div class="clear"></div>
+		          </div>
+		          <div class="navy prev-slide"></div>
+		          <div class="navy next-slide"></div>
+		          <div class="auto play"></div>
 	        </div>
         </div>
         <div class="categories_of_goods"></div>
@@ -219,5 +253,22 @@
     
         <div class="right_field"></div>
     </div>
+    
+    <script type="text/javascript">
+$( function() {
+    $( '#gallery' ).jGallery( { mode: 'slider',
+                                utostart: true,
+                                width: '100%',
+                                height: '100%',
+                                transitionBackward: 'auto',
+                                transition:'rotateFoldTop_moveFromBottomFade',
+                                transitionCols:'6',
+                                transitionRows:'1',
+                                thumbnailsPosition:'bottom',
+                                thumbType:'square',
+                                backgroundColor:'FFFFFF',
+                              } );
+} );
+</script>
 </body>
 </html>
