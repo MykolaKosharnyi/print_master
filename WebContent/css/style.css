@@ -180,7 +180,7 @@ ul{
     .left_field{
         position: relative;
         float: left;
-        border: 2px #666 solid;
+ /*       border: 2px #666 solid;*/
         /*  border-left: 10px solid transparent;*/
         transition: 0.5s opacity;
         width: 200px;
@@ -272,10 +272,33 @@ ul{
             position: relative;
             float: left;
             width: inherit;
-            border-top: 2px #666 solid;
+/*            border-top: 2px #666 solid;*/
             margin-top: 2px;
             height: 900px;
         }
+
+             #reklam .slide-item {
+                height: 20%;
+                width: inherit;
+                float: left;
+                margin: 2% 0px;
+                border: 1px blue solid;
+            }
+
+                 #reklam .slide-item img{
+                     height: 85%;
+                    width: 100%;
+                }
+
+             #reklam .slide-title{
+                height: 15%;
+                /* Шрифт */
+                font: bold 16px monospace;
+                /* Указываем, что элемент блочный */
+                display: block;
+                margin-top: -7px;
+                border: 1px blue solid;
+            }
 
 /*----------- ANIMATION IN HEAD PART OF PAGE, AFTER ROW MENU -----------------*/
     #head_of_body{
@@ -290,23 +313,36 @@ ul{
             width: 60%;
             height: 100%;
             margin: 1% 0 1% 1%;
+            overflow: hidden;
         }
 
- /*       #gallery{float: left; position: relative; width: 100%; height: 100%;}*/
-
+/*        #gallery{
+            float: left;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+*/
         #rigt_of_reklam_animation{
             position: relative;
             float: left;
             width: 15%;
             height: inherit;
-            margin: 2% 0% 0 1%;
+            margin: 1% 0% 0% 1%;
         }
 
         .rigt_of_reklam_animation_position{
             position: relative;
-            height: 30%;
+            margin: 4% 0;
+            height: 31%;
             width: 100%;
-            margin: 5px 5px 20px;
+        }
+
+        #rigt_of_reklam_animation:first-child{
+            top: 0;
+        }
+       #rigt_of_reklam_animation:last-child{
+            bottom: 0;
         }
 
             .rigt_of_reklam_animation_position a{
@@ -314,7 +350,7 @@ ul{
                 width: inherit;
                 height: 100%;
                 color: white;
-                border: 1px red solid;
+                border: 1px blue solid;
             }
 
                 .rigt_of_reklam_animation_position a img{
@@ -326,21 +362,25 @@ ul{
         position: relative;
         float: left;
         width: 60%;
-        margin: 0% 0 2% 2%;
+        margin: 0% 0 0% 1%;
         z-index: 5;
        /* border: 2px #666 solid;*/
     }
 
-        .categories_of_goods{
+        .categories_of_goods, .categories_of_goods1{
             position: relative;
             width: 100%;
-            height: 200px;
-            margin: 20px 0px;
-            border: 1px green solid;
+            height: 450px;
+            margin: 0 0 2%;
+/*            border: 1px green solid;*/
+        }
+
+        .categories_of_goods1{
+            height: 225px;
         }
 
             .description_slider{
-                width: 19%;
+                width: 21%;
                 margin: 0 auto;
                 padding: 0 0px;
                 position: relative;
@@ -368,76 +408,96 @@ ul{
 
                 .body_description ul li a{
                     display: block;
-                    text-decoration: underline;
+                    list-style-type: circle;
+                    list-style-position: inside;
+             /*       text-decoration: underline;*/
+                    border-bottom: 1px blue solid;
                     padding: 5% 5% 0 5%;
                 }
-        
+ /*-------------------------------  Первая карусель  ---------------------------------*/       
         /* Все что ниже для галереи которую можно перелистывать*/
         /* Задаем сброс обтекания */
 
-        .clear {
+        .clear, .clear1, .clear2, .clear3 {
             margin-top: -1px;
             height: 1px;
             clear:both;
             zoom: 1;
         }		
 
-        .slider {
-            width: 80%;
+        .slider, .slider1, .slider2, .slider3 {
+            width: 78%;
             margin: 0 auto;
             padding: 0 0px;
             position: relative;
             float: left;
             overflow: hidden;
-            height: inherit;
+            height: 50%;
+            border: 1px blue solid;
+        }
+
+        .slider2, .slider3 {
+            height: 100%;
+            border: 1px blue solid;
         }
 
         /* Двойной клик по ссылкам вперед/назад вызывает выделение всех элементов слайдера,
         поэтому предотвращаем это */
 
-        .slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+        .slider::-moz-selection, .slider1::-moz-selection, .slider2::-moz-selection, .slider3::-moz-selection {
+            background: transparent;
+            color: #fff;
+            text-shadow: none;
+        }
 
-        .slider::selection { background: transparent; color: #fff; text-shadow: none; }
+        .slider::selection, .slider1::selection, .slider2::selection, .slider3::selection {
+            background: transparent;
+            color: #fff;
+            text-shadow: none;
+        }
 
-        .slide-list {
+        .slide-list, .slide-list1, .slide-list2, .slide-list3 {
             height: 90%;
             position: relative;
         }
 
-        .slide-wrap {
+        .slide-wrap, .slide-wrap1, .slide-wrap2, .slide-wrap3 {
             height: 90%;
             position: relative;
-            left: 0px;
+            margin: 1% 0 0 0;
+            left: 32px;
             top: 0;
             /* максимально возможная ширина обертки слайдера */
-            width: 88%;
+            width: 100%;
         }
 
-        .slide-item {
-            height: 90%;
-            width: 140px;
-            padding: 0px auto;
-            margin: 0 30px;
+        .slide-item, .slide-item1, .slide-item2, .slide-item3 {
+            height: 100%;
+            width: 145px;
+            margin: 0 1%;
             float: left;
+            border: 1px blue solid;
         }
 
-        .slide-item img{
+        .slide-item img, .slide-item1 img, .slide-item2 img, .slide-item3 img{
              height: 85%;
             width: 100%;
-            border: 1px red solid;
         }
 
-        .slide-title {
+        .slide-title, .slide-title1, .slide-title2, .slide-title3 {
             height: 15%;
             /* Шрифт */
             font: bold 16px monospace;
             /* Указываем, что элемент блочный */
             display: block;
+            margin-top: -7px;
             border: 1px blue solid;
+            border-top: 2px blue solid;
+            border-bottom: 2px blue solid;
         }
 
         /* навигация вперед/назад */
-        .navy {
+        .navy, .navy1, .navy2, .navy3 {
             position: absolute;
             top: 0;
             z-index: 1;
@@ -446,37 +506,39 @@ ul{
             cursor: pointer;
         }
 
-        .prev-slide {
+        .prev-slide, .prev-slide1, .prev-slide2, .prev-slide3 {
             left: 0;
-            background: #dbdbdb url(../bg/left-arrow.png) 13px 40% no-repeat;
+            background: rgb(77, 134, 239) url(../bg/left-arrow.png) 13px 40% no-repeat;
         }
 
-        .next-slide {
+        .next-slide, .next-slide1, .next-slide2, .next-slide3 {
             right: 0;
-            background: #dbdbdb url(../bg/right-arrow.png) 13px 40% no-repeat;
+            background: rgb(77, 134, 239) url(../bg/right-arrow.png) 13px 40% no-repeat;
         }
 
-        .navy.disable {
+        .navy.disable, .navy1.disable1, .navy2.disable2, .navy3.disable3 {
             background: white;
         }
 
         /* навигация старт/пауза */
-        .auto {
+        .auto, .auto1, .auto2, .auto3 {
             width: 7px;
             height: 10%;
+            margin: 0 0 1%;
             cursor: pointer;
-            margin: 0px auto;
+            margin: -5px auto;
         }
 
-        .play {
+        .play, .play1, .play2, .play3 {
             height: 10%;
             background: url(../bg/play.png) center no-repeat;
         }
 
-        .pause {
+        .pause, .pause1, .pause2, .pause3 {
             height: 10%;
             background: url(../bg/pause.png) center no-repeat;
         }
+
 
 /*--------------------------- RIGHT FIELD ---------------------*/
     .right_field{
@@ -484,8 +546,8 @@ ul{
         float: left;
         width: 15%;
         border: 2px #666 solid;
-        margin: 2% 0% 0 1%;
-        height: 1200px;
+        margin: 0% 0% 0% 1%;
+        height: 800px;
     }
 
 
