@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style_menu.css">
+		<title>Print Master</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	</head>
+<body>
+    <header>
+        <div id="first_row">
+            <ul id="first_row_left">
+                <li><a href="">О нас</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <ul id="first_row_right">
+                <li>
+                    <select>
+                        <option>Русский</option>
+                        <option>English</option>
+                    </select>
+                </li>
+                <li>
+                    <select>
+                        <option onclick="UA">UA</option>
+                        <option onclick="USD">USD</option>
+                        <option onclick="EUR">EUR</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="Аккаунт">
+                        <option>Логин</option>
+                        <option>Лист пожеланий</option>
+                        <option>Корзина</option>
+                        <option>Выход</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div id="second_row">
+            <a href=""><img id="second_row_image" src="images/logo.jpg" alt=""></a>
+
+            <div id="second_row_search">
+                <input id="second_row_search_field" class="search" placeholder="Введите слово или фразу..." size="50" type="search">
+                <input id="second_row_search_button" class="search" size="20" type="submit" value="Поиск">
+            </div>
+
+            <div id="second_row_basket">
+            <a href="">Корзина</a>
+            </div>
+        </div>
+        <div id="head_memu_background">
+                    <div id="mainmenu">
+                                <ul>
+                                <!-- Пункт меню 1 -->
+                                <li><a href="#">Принтеры</a>
+                                  <div class="head_menu_point_1">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="Сольвентные принтеры" ><p>Сольвентные принтеры</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Экосольвентные принтеры</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>UV рулонные принтеры</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>UV плоскопечатные принтеры</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Сублимационные принтеры</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Текстильные принтеры</p></a>
+                                      </div>
+                                  </div>
+
+                                </li>
+                                <!-- Пункт меню 2 -->
+                                <li><a href="#">3D Принтеры</a>
+                                   <div class="head_menu_point_2">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Экструдные FDM (fused deposition modeling)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Фото печать Polyjet</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Лазерного спекания LENS (LASER ENGINEERED NET SHAPING)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Ламинация LOM (laminated object manufacturing)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Стереолитография SL (Stereolithography)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Лазерное спекание LS (laser sintering)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Порошкового склеивания 3DP (three dimensional printing)</p</a>
+                                      </div>
+                                  </div>
+                                </li>
+                                <!-- Пункт меню 3 -->
+                                <li><a href="#">Ламинаторы</a>
+                                    <div class="head_menu_point_3">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Горячего ламинирования</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Холодного ламинирования</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Жидкостные</p></a>
+                                      </div>
+                                  </div>
+                                </li>
+                                <!-- Пункт меню 4 -->
+                                <li><a href="#">Лазеры</a>
+                                    <div class="head_menu_point_4">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Газовые лазеры СО2</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Твердотельные лазеры</p></a>
+                                      </div>
+                                  </div>
+                                </li>
+                                <!-- Пункт меню 5 -->
+                                <li><a href="#">Фрезеры</a>
+                                    <div class="head_menu_point_5">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Для обработки дерева</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Для обработки метала</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Для обработки камня</p></a>
+                                      </div>
+                                  </div>
+                                </li>
+                                <!-- Пункт меню 6 -->
+                                <li><a href="#">Сканеры</a>
+                                   <div class="head_menu_point_6">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Широкоформатные сканеры</p></a>
+                                      </div>
+                                  </div>
+                                </li>
+                                <!-- Пункт меню 7 -->
+                                <li><a href="#">Програмное обеспечение</a>
+                                    <div class="head_menu_point_7">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>RIP системы</p></a>
+                                      </div>
+                                    </div>
+                                </li>
+
+                                </ul><!-- Конец списка -->
+                        </div><!-- Конец блока #mainmenu -->
+        </div>   
+
+ </header>
+      
+
+
+    <script type="text/javascript">
+$( function() {
+
+} );
+        
+</script>
+</body>
+</html>

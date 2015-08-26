@@ -75,7 +75,7 @@ jQuery(document).ready(function() {
             <ul id="head_menu">
                 <li></li>
                 <li><a id="button_menu_row">Menu</a></li>
-                <li><a href="#" data-clone="Сервис1">Сервис</a></li>
+                <li><a href="#" data-clone="Сервис">Сервис</a></li>
                 <li><a href="#" data-clone="Цветокорекция">Цветокорекция</a></li>
                 <li><a href="#" data-clone="Комплектующие">Комплектующие</a></li>
                 <li><a href="#" data-clone="Тренинги">Тренинги</a></li>
@@ -86,6 +86,10 @@ jQuery(document).ready(function() {
                 </ul>
         </div>   
             <div id="mainmenu">
+                               
+                <div id="full_menu">
+                    <a href=""><img src="images/100.png" alt="" /></a>
+                </div>
                                 <ul>
                                 <!-- Пункт меню 1 -->
                                 <li><a href="#">Принтеры</a>
@@ -125,14 +129,14 @@ jQuery(document).ready(function() {
                                     </ul>
                                 </li>
                                 <!-- Пункт меню 4 -->
-                                <li><a href="#">Лазерно-гравировальное оборудование</a>
+                                <li><a href="#">Лазеры</a>
                                     <ul>
                                        <li><a href="#">Газовые лазеры СО2</a></li>
                                        <li><a href="#">Твердотельные лазеры</a></li>
                                     </ul>
                                 </li>
                                 <!-- Пункт меню 5 -->
-                                <li><a href="#">Фрезерно-гравировальное оборудование</a>
+                                <li><a href="#">Фрезеры</a>
                                     <ul>
                                        <li><a href="#">Для обработки дерева</a></li>
                                        <li><a href="#">Для обработки метала</a></li>
@@ -475,6 +479,14 @@ $( function() {
                                 thumbType:'square',
                                 backgroundColor:'FFFFFF',
                               } );
+    
+    $("#full_menu").click(function(){
+       if ( $(".menu").css('display') == 'none' ) {
+             $(".menu").show(400);
+              } else {
+             $(".menu").hide(200);
+             }
+      });
 } );
         
 </script>

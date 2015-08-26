@@ -696,14 +696,27 @@ header{
     position:relative;
     background:#2c5987;
     height:30px;
-    margin:10px 0;
+    margin:10px auto;
     padding:0;
-    float:left;
-    width:100%;
+    width:85%;
     z-index:11;
 }
+#full_menu{
+    position: relative;
+    float: left;
+    height:30px;
+    overflow: hidden;
+    border: 1px black solid;
+}
+
+#full_menu a img{
+    float: left;
+    height:30px;
+    overflow: hidden;
+}
+
 #mainmenu ul {
-    clear:left;
+    
     position:relative;
     right:50%;
     height:30px;
@@ -712,7 +725,7 @@ header{
     font:15px Arial, Helvetica, sans-serif;
     list-style:none;
     padding:0;
-    margin:0
+    margin:0;
 }
 #mainmenu ul li {
     position:relative;
@@ -739,6 +752,43 @@ header{
 #mainmenu ul li.hover, 
 #mainmenu ul li.active {background: #666}
   
+/* Проба самому сделать что-то выпадающее и крутое*/
+#menumain_drop{
+    position:absolute;
+    left:0;
+    top:30px;
+    font-size:12px;
+    display:none;
+    list-style:none;
+    visibility:hidden;
+    padding:0;
+    margin:0;
+    width:150px    
+}
+#point_of_menumain_drop{
+        background-color:#666;
+    position:relative;
+    left:0;
+    display:list-item;
+    float:none;
+    height:auto;
+    margin:0;
+    text-align:left;
+    width: inherit;
+}
+#point_of_menumain_drop img{
+    background-color:#666;
+    position:relative;
+    left:0;
+    display:list-item;
+    float:none;
+    height:auto;
+    margin:0;
+    text-align:left;
+    width: inherit;
+}
+
+
 /* Выпадающие подпункты */
 #mainmenu ul li ul {
     position:absolute;
