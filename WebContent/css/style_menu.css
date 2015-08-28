@@ -1,6 +1,9 @@
+/**{box-sizing:border-box;}*/
+
 body { 
     width: 100%;
     font: 1em/1.4em sans-serif;
+    overflow: hidden;
 }
 
 a{
@@ -100,6 +103,7 @@ header{
         float: right;
         padding: 10px 25px;
         border: 2px red solid;
+        border-radius: 5px 5px 5px 5px;
     }
 
         #second_row_basket:hover{
@@ -127,13 +131,12 @@ header{
     position:relative;
     background:#2c5987;
     height:30px;
-    margin:0 auto;
+    margin:10px auto;
     padding:0;
     width:85%;
     z-index:11;
 }
 #mainmenu ul {
-    clear:left;
     position:relative;
     right:50%;
     height:30px;
@@ -142,9 +145,10 @@ header{
     font:15px Arial, Helvetica, sans-serif;
     list-style:none;
     padding:0;
-    margin:0
+    margin:0;
 }
 #mainmenu ul li {
+    border-left:1px solid #666;
     position:relative;
     left:50%;
     float:left;
@@ -153,15 +157,15 @@ header{
     margin:0
 }
 #mainmenu ul li a {
-    border-left:1px solid #666;
     display:block;
+    height: auto;
     color: #fff;
-    text-decoration: none;
     padding:5px 15px;
+    overflow: hidden;
 }
-#mainmenu ul li:first-child a {
-   /* border:none*/
-}
+/*#mainmenu ul li:first-child a {
+   border:none;
+}*/
   
 #mainmenu ul li:hover a,
 #mainmenu ul li.hover a,
@@ -172,7 +176,9 @@ header{
   
 #mainmenu ul li:hover, 
 #mainmenu ul li.hover, 
-#mainmenu ul li.active {background: #666}
+#mainmenu ul li.active {
+    background: #666;
+}
 
 #mainmenu ul li:hover .head_menu_point_1,
 #mainmenu ul li.hover .head_menu_point_1,
@@ -200,6 +206,12 @@ header{
     left: 0;
 }
 
+#mainmenu ul li:hover .head_menu_point_2,
+#mainmenu ul li.hover .head_menu_point_2,
+#mainmenu ul li.active .head_menu_point_2{
+    left: -60px;
+}
+
 #mainmenu ul li:hover .head_menu_point_5,
 #mainmenu ul li.hover .head_menu_point_5,
 #mainmenu ul li.active .head_menu_point_5{
@@ -216,6 +228,10 @@ header{
     left: 100%;
     top: -9999em;
     transition: 0.5s opacity;
+    border-radius: 0 0 3px 3px;
+}
+.head_menu_point_2{
+    width: 1025px;
 }
 .head_menu_point_4{
     width: 515px;
@@ -233,10 +249,11 @@ header{
             display: block;
             text-align:center;
             position: relative;
-            border: 1px #2c5987 solid;
+            padding:5px 5px;
+            /*border: 1px #2c5987 solid;*/
             color: black;
             width: auto;
-            overflow: hidden;
+            /*background: green;*/
         }
             #mainmenu ul li .head_menu_point_element a img{
                 position: relative;
@@ -244,13 +261,13 @@ header{
                 width: 100%;
                 height: 150px;
                 border: 1px #2c5987 solid;
+                border-radius: 3px 3px 3px 3px;
 
             }
             .head_menu_point_element a p{
                 text-align:center;
                 position: relative;
-                height: auto;
+                height: inherit;
                 width: 100%;
                 color: black;
-
             }
