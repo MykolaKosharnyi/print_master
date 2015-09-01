@@ -1,6 +1,9 @@
 body { 
     width: 100%;
     font: 1em/1.4em sans-serif;
+    padding: 0;
+    margin: 0;
+ /*   overflow-x: hidden;*/
 }
 
 a{
@@ -13,268 +16,98 @@ ul{
     list-style: none;
 }
 
-/* Заголовок */
-header{
-    width: inherit;
-}
-#first_row{
+/*!!!!!!!!-----------hidden menu-----------!!!!!!!!*/
+.menu-container {
     position: relative;
-    width: 85%;
-    margin: 0 auto;
-    border: 2px #e8e8e8 solid;
-    height: 30px;
-    z-index: 100;
-}
-   
-    #first_row_left{
-        position: absolute;
-        left: 50px;
-        height: inherit;
-    }
-
-        #first_row_left li{
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
-            height: inherit;
-            border-right: 2px #e8e8e8 solid;
-        }
-
-            #first_row_left li a{
-                display: block;
-                color: black;
-                padding: 0 10px;
-            }
+  font-family: "Open Sans", sans-serif;
+  z-index: 999;
+  background: #333;
+    width: 200px;
+    left: -200px;
+    line-height: 75px;
     
-    #first_row_right{
-        position: absolute;
-        right: 50px;
-        height: inherit;
-    }
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
+}
+  
+.menu-container.menu-open {
+    position:relative;
+    margin-left: 335px;
+}
 
-        #first_row_right li{
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
-            height: inherit;
-            border-left: 2px #e8e8e8 solid;
-        }
-
-            #first_row_right li a{
-                display: block;
-                color: black;
-                padding: 0 10px;
-            }
-
-
-#second_row{
-    height: 50px;
+.toggle-menu {
     position: relative;
-    width: 85%;
-    margin: 0 auto;
-    padding: 5px 0;
+    float: left; 
+  height: 20px;
+  padding: 5px 5px;
+  background: #000 ;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
+    z-index: 23;
+}
+  .toggle-menu .icon-bar {
+    height: 3px;
+    display: block;
+    width: 30px;
+    opacity: 1;
+    background: #fff;
+    margin-bottom: 5px;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out; 
+  }
+  
+/*.toggle-menu.active {
+    left: 400px; 
+} */
+
+    .toggle-menu .icon-bar:last-child {
+      margin-bottom: 0; 
+    }
+    .toggle-menu .icon-bar.hide-closed {
+      transition-duration: 0.4s; 
+    }
+  .toggle-menu.active {
+    padding-top: 13px; 
+    height:30px;
+      box-sizing:border-box;
+
+  }
+    .toggle-menu.active .icon-bar {
+      margin-bottom: -3px; 
+    }
+    .toggle-menu.active .skew-clock {
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); 
+    }
+    .toggle-menu.active .hide-closed {
+      opacity: 0 !important; 
+    }
+    .toggle-menu.active .skew-counter {
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg); 
+    }
+
+.menu-text {
+    font-family: "Open Sans", sans-serif;
+    float: left;
+    left: 0px;
+    color: #000;
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
 }
 
-    #second_row_image{
-        width: 80px;
-        height: 40px;
-        border: 2px solid #0669BD;
-        height: inherit;
-        float: left;
-    }
-
-    .search{
-        height: 40px;
-        margin: auto;
-        padding: 0;
-    }
-
-    #second_row_search{
-        float: left;
-        margin-left: 200px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    #second_row_basket{
-        float: right;
-        padding: 10px 25px;
-        border: 2px red solid;
-    }
-
-        #second_row_basket:hover{
-            background-color: deepskyblue;
-            color: black;
-            border: 2px blue solid;
-        }
-
-    #second_row_search_button{
-        width: 60px;
-    }
-
-#head_memu_background{
-    background: none repeat scroll #2c5987;
-}
-
-    #head_menu {
-        display: table;
-        position: relative;
-        width: 85%;
-        margin: 0 auto;
-        height: 35px;
-        z-index: 100;
-    }
-
-            #head_menu li a{
-                display: block;
-                float:left;
-                text-align: center; 
-                vertical-align: middle;
-                min-width: 90px; 
-                padding: 0.5em;
-                color: white;
-            }
-
-            #head_menu li :hover {
-                background: #69c;
-            }
-
-         /*   #menu_row_output{
-                background: #69c;
-            }*/
-
-        li a#button_menu_row{
-            background-color: white;
-            color: black; 
-            border: 1px black solid;
-        }
-
-        li a#button_menu_row:hover{
-            background-color: white;
-            color: black; 
-            border: 1px black solid;
-        }
-
-        /* Иконка для меню */ 
-
-        #button_menu_row::afters{
-            content: " ";
-            position: absolute;
-            border: 5px solid;
-            border-color: transparent transparent #eee transparent ;
-            top: 1em;
-            right: 0.7em;
-            transition: 0.5s;
-        }
-
-        #button_menu_row:hover::after{
-            transform: scale(-1);
-        }
-/*-------------------- Тело страницы --------------------*/
-
-#the_main_part {
-    position: relative;
-    width: 85%;
-    margin: 0 auto;
-}
-/*---------------------------- LEFT FIELD -----------------------------------*/
-    .left_field{
-        position: relative;
-        float: left;
-    /*  border: 2px #666 solid;*/
-    /*  border-left: 10px solid transparent;*/
-        transition: 0.5s opacity;
-        width: 14%;
-        margin: 5px 0px 10px;
-        z-index: 10;
-    }
-
-        /*.menu{
-            position: relative;
-            float: left;
-            width: inherit;
-        }*/
-
-            .menu a{
-                background: #2c5987;
-                color: #fff;
-                padding: 10px;
-                display: block;
-                border-bottom: 1px solid #666;
-                transition: 0.5s all;
-            }
-
-            .menu a:hover{
-                background: blue;
-                padding: 10px 0 10px 20px;
-            }
-
-                .menu li:first-child a,
-                .menu li .menu_drop li:first-child a,
-                .menu li .menu_drop li .menu_drop_drop li:first-child a{
-                    border-radius: 3px 3px 0 0;   
-                }
-
-                .menu li:last-child a,
-                .menu li .menu_drop li:last-child a,
-                .menu li .menu_drop li .menu_drop_drop li:last-child a{
-                    border-radius: 0 0 3px 3px; 
-                    border-bottom: 0;
-                }
-
-                .menu li .menu_drop li a,
-                .menu li .menu_drop li .menu_drop_drop a{
-                    border-radius: 0;   
-                    border-bottom: 1px solid #666;
-                }
-
-            /* Всплывающие меню */
-
-            .menu_list{
-                position: relative;
-            }
-
-            .menu_drop,
-            .menu_drop_drop{
-                position: absolute;
-                width: 100%;
-                left: 100%;
-                top: -9999em;
-                opacity: 0;
-                border-left: 10px solid transparent;
-                transition: 0.5s opacity;
-            }
-
-            .menu_list:hover .menu_drop,
-            .menu_list_list:hover .menu_drop_drop{
-                opacity: 1;
-                top: 0;
-            }
-
-            /* Иконки для всплывающих менюшек */ 
-
-            .menu_list::after,
-            .menu_list_list::after{
-                content: " ";
-                position: absolute;
-                border: 5px solid;
-                border-color: transparent transparent transparent #eee;
-                top: 1em;
-                right: 0.7em;
-                transition: 0.5s;
-            }
-
-            .menu_list:hover::after,
-            .menu_list_list:hover::after{
-                transform: scale(-1);
-            }
-
+/*-------------- LEFT FIELD ------------------*/
         #reklam{
             position: relative;
             float: left;
             width: 100%;
-/*            border-top: 2px #666 solid;*/
-            margin-top: 2px;
+/*          border-top: 2px #666 solid;*/
             height: 900px;
         }
 
@@ -282,12 +115,12 @@ header{
                 height: 20%;
                 width: inherit;
                 float: left;
-                margin: 2% 0px;
+                margin: 0 0px 5px;
                 border: 1px blue solid;
             }
 
                  #reklam .slide-item img{
-                     height: 85%;
+                    height: 85%;
                     width: 100%;
                 }
 
@@ -302,48 +135,47 @@ header{
             }
 
 /*----------- ANIMATION IN HEAD PART OF PAGE, AFTER ROW MENU -----------------*/
-    #head_of_body{
+ /*   #head_of_body{
         position: relative;
-        width: 100%;
+        float: left;
+        width: 85%;
         height: 400px;
-    }
+    }*/
 
         .reklam_animation{
+            box-sizing: content-box;
             position: relative;
             float: left;
-            width: 60%;
-            height: 100%;
-            margin: 1% 0 1% 1%;
+            width: 69%;
+            height: 450px;
+            margin: 0 auto 0;
+            padding: 0 5px 0;
             overflow: hidden;
         }
 
-/*        #gallery{
-            float: left;
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-*/
         #rigt_of_reklam_animation{
+            box-sizing: content-box;
             position: relative;
             float: left;
             width: 15%;
-            height: inherit;
-            margin: 1% 0% 0% 1%;
+            height: 450px;
         }
 
         .rigt_of_reklam_animation_position{
-            position: relative;
-            margin: 4% 0;
+            position: absolute;
+            margin: 155px 0;
             height: 31%;
             width: 100%;
         }
 
-        #rigt_of_reklam_animation:first-child{
+        .rigt_of_reklam_animation_position:first-child{
             top: 0;
+            margin: 0;
         }
-       #rigt_of_reklam_animation:last-child{
+
+       .rigt_of_reklam_animation_position:last-child{
             bottom: 0;
+            margin: 0;
         }
 
             .rigt_of_reklam_animation_position a{
@@ -358,25 +190,29 @@ header{
                     width: inherit;
                     height: 100%;
                 }
-/*------------- Категории товаров*--------------------*/
+/*------------- Категории товаров*----------------*/
     #goods{
         position: relative;
+        box-sizing: content-box;
         float: left;
-        width: 60%;
-        margin: 0% 0 0% 1%;
+        width: 69%;
+        margin: 5px auto 0;
+        padding: 0 5px 0;
         z-index: 5;
        /* border: 2px #666 solid;*/
+        box-sizing: content-box;
     }
 
         .categories_of_goods{
             position: relative;
             width: 100%;
-            height: 225px;
-            margin: 0 0 2%;
-/*            border: 1px green solid;*/
+            height: 275px;
+            margin: 0 0 10px;
+/*          border: 1px green solid; */
         }
 
             .description_slider{
+                box-sizing: content-box;
                 width: 21%;
                 margin: 0 auto;
                 padding: 0 0px;
@@ -385,7 +221,7 @@ header{
                 /* Скроем то что выходит за границы */
                 overflow: hidden;
                 height: inherit;
-                border: 1px solid navy;
+                border: 1px solid #2c5987;
             }
 
                 .description_slider label{
@@ -395,7 +231,7 @@ header{
                     vertical-align: middle;
                     background: #2c5987;
                     color: white;
-                    padding: 10% 0px;
+                    padding: 5px 0px;
                     font-size: 1em;
                     position: relative;
                     float: left;
@@ -406,22 +242,19 @@ header{
                 .body_description{
                     position: relative;
                     width: 100%;
-                    overflow-y: auto;
                 }
 
                 .body_description ul {
                     position: relative;
                     width: 100%;
-                     overflow-y: scroll;
                 }
                 .body_description ul li a{
                     display: block;
                     width: 100%;
-                    border-bottom: 1px blue solid;
-                    overflow-y: scroll;
+                    border-bottom: 1px #2c5987 solid;
                     padding: 5% 5% 0 5%;
                 }
- /*-------------------------------  карусель  ---------------------------------*/       
+ /*-----------------------  карусель  -------------------------*/       
         /* Все что ниже для галереи которую можно перелистывать*/
         /* Задаем сброс обтекания */
 
@@ -433,14 +266,16 @@ header{
         }		
 
         .slider, .slider1, .slider2, .slider3 {
+            box-sizing: content-box;
             width: 78%;
             margin: 0 auto;
             padding: 0 0px;
             position: relative;
-            float: left;
+            float: right;
             overflow: hidden;
             height: 100%;
-            border: 1px blue solid;
+            border: 1px #2c5987 solid;
+            border-left: 1px transparent solid;
         }
 
         /* Двойной клик по ссылкам вперед/назад вызывает выделение всех элементов слайдера,
@@ -466,36 +301,35 @@ header{
         .slide-wrap, .slide-wrap1, .slide-wrap2, .slide-wrap3 {
             height: 90%;
             position: relative;
-            margin: 1% 0 0 0;
+            margin: 0% 0 0 0;
             left: 32px;
             top: 0;
             /* максимально возможная ширина обертки слайдера */
-            width: 100%;
+           /* width: 100%;*/
         }
 
         .slide-item, .slide-item1, .slide-item2, .slide-item3 {
+            position: ;
             height: 100%;
-            width: 145px;
-            margin: 0 1%;
+            width: 173px;
+            margin: 0 5px;
             float: left;
-            border: 1px blue solid;
+            border: 1px #2c5987 solid;
         }
 
-        .slide-item img, .slide-item1 img, .slide-item2 img, .slide-item3 img{
-             height: 85%;
-            width: 100%;
+        .slide-item img, .slide-item1 img, .slide-item2 img, .slide-item3 img {
+            height: 100px;
+            width: 100px;
         }
 
-        .slide-title, .slide-title1, .slide-title2, .slide-title3 {
+        .slide-title, .slide-title1, .slide-title2, .slide-title3,.slide-price {
+            box-sizing: border-box;
             height: 15%;
             /* Шрифт */
             font: bold 16px monospace;
             /* Указываем, что элемент блочный */
             display: block;
-            margin-top: -7px;
-            border: 1px blue solid;
-            border-top: 2px blue solid;
-            border-bottom: 2px blue solid;
+            border: 1px #2c5987 solid;
         }
 
         /* навигация вперед/назад */
@@ -544,10 +378,10 @@ header{
 
 /*--------------------------- RIGHT FIELD ---------------------*/
     .right_field{
+        box-sizing: content-box;
         position: relative;
         float: left;
         width: 15%;
-        margin: 0% 0% 0% 1%;
         height: 800px;
     }
 
@@ -573,270 +407,11 @@ header{
             margin-top: -7px;
             border: 1px blue solid;
         }
-/*---------------- footer ------------------*/
+/*---------------- footer -----------------------*/
 #footer { 
     position: relative;
     margin-top: -100px; /* negative value of footer height */
     height: 100px;
     background: #2c5987;    
     clear:both;
-}
-/*-----------------------------------------------------------------------------------*/
-/*	3. CAROUSEL
-/*-----------------------------------------------------------------------------------*/
-#wrapper {
-    border: 1px solid red;
-    	/* Ширина контейнера */
-	width: 80%;
-
-	/* Внешние тступы сверху и снизу */
-	margin: 0 auto;
-
-	/* Внутренние отступы для ссылок navy */
-	padding: 0 0px;
-
-	/* Позиционирование */
-	position: relative;
-    float: left;
-	/* Скроем то что выходит за границы */
-    height: inherit;
-}
-
-#wrapper .d-carousel ul li {
-	background: none;
-	background-color: #FFF;
-	-webkit-box-shadow: 0px 1px 2px 0px #b7b7b7;
-	-moz-box-shadow: 0px 1px 2px 0px #b7b7b7;
-	box-shadow: 0px 1px 2px 0px #b7b7b7; 
-	padding: 15px;
-	width: 175px;
-}
-
-.jcarousel-direction-rtl {
-	direction: rtl;
-}
-
-.d-carousel h4 {
-	margin: 5px 0 5px 0;
-}
-
-.d-carousel .jcarousel-container {
-	display: block;
-	overflow: hidden;
-	margin-bottom: 20px;
-}
-
-.d-carousel .jcarousel-item {
-	width: 190px;
-	height: 290px;
-}
-
-.d-carousel .jcarousel-container-horizontal {
-	width: 870px;
-	height: 325px;
-	padding: 0 45px;
-}
-
-.d-carousel .jcarousel-item-horizontal {
-	margin-left: 3px;
-	margin-bottom: 3px;
-	margin-top: 3px;
-	margin-right: 11px;
-}
-
-.d-carousel .jcarousel-next-horizontal {
-	position: absolute;
-	top: 149px;
-	right: 0;
-	margin-right: 3px;
-	width: 15px;
-	height: 28px;
-	cursor: pointer;
-	background: transparent url(css/images/blog-arrows.jpg) no-repeat top right;
-}
-
-.d-carousel .jcarousel-direction-rtl .jcarousel-next-horizontal {
-	left: 5px;
-	right: auto;
-	background-image: url(style/images/blog-arrows.jpg);
-}
-
-.d-carousel .jcarousel-next-horizontal:hover {
-	background-position: bottom right;
-}
-
-.d-carousel .jcarousel-prev-horizontal {
-	position: absolute;
-	top: 149px;
-	left: 0;
-	margin-left: 3px;
-	width: 15px;
-	height: 28px;
-	cursor: pointer;
-	background: transparent url(style/images/blog-arrows.jpg) no-repeat top left;
-}
-
-.d-carousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
-	left: auto;
-	right: 5px;
-	background-image: url(style/images/blog-arrows.jpg);
-}
-
-.d-carousel .jcarousel-prev-horizontal:hover {
-	background-position: bottom left;
-}
-
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/** Основные пункты **/
-* {/** Сбрасываем все поля и отступы **/
-    margin:0;
-    padding:0
-}
-#mainmenu{
-    position:relative;
-    background:#2c5987;
-    height:30px;
-    margin:10px auto;
-    padding:0;
-    width:85%;
-    z-index:11;
-}
-#full_menu{
-    position: relative;
-    float: left;
-    height:30px;
-    overflow: hidden;
-    border: 1px black solid;
-}
-
-#full_menu a img{
-    float: left;
-    height:30px;
-    overflow: hidden;
-}
-
-#mainmenu ul {
-    position:relative;
-    right:50%;
-    height:30px;
-    float:right;
-    text-align:center;
-    font:15px Arial, Helvetica, sans-serif;
-    list-style:none;
-    padding:0;
-    margin:0;
-}
-#mainmenu ul li {
-    position:relative;
-    left:50%;
-    float:left;
-    height:30px;
-    padding:0;
-    margin:0
-}
-#mainmenu ul li a {
-    border-left:1px solid #666;
-    display:block;
-    color: #fff;
-    text-decoration: none;
-    padding:5px 15px;
-}
-#mainmenu ul li:first-child a {border:none}
-  
-#mainmenu ul li:hover a,
-#mainmenu ul li.hover a,
-#mainmenu ul li.active a {color:#fff}
-  
-#mainmenu ul li:hover, 
-#mainmenu ul li.hover, 
-#mainmenu ul li.active {background: #666}
-  
-/* Проба самому сделать что-то выпадающее и крутое*/
-#menumain_drop{
-    position:absolute;
-    left:0;
-    top:30px;
-    font-size:12px;
-    display:none;
-    list-style:none;
-    visibility:hidden;
-    padding:0;
-    margin:0;
-    width:150px    
-}
-#point_of_menumain_drop{
-    background-color:#666;
-    position:relative;
-    left:0;
-    display:list-item;
-    float:none;
-    height:auto;
-    margin:0;
-    text-align:left;
-    width: inherit;
-}
-#point_of_menumain_drop img{
-    background-color:#666;
-    position:relative;
-    left:0;
-    display:list-item;
-    float:none;
-    height:auto;
-    margin:0;
-    text-align:left;
-    width: inherit;
-}
-
-
-/* Выпадающие подпункты */
-#mainmenu ul li ul {
-    position:absolute;
-    left:0;
-    top:30px;
-    font-size:12px;
-    display:none;
-    list-style:none;
-    visibility:hidden;
-    padding:0;
-    margin:0;
-    width:150px    
-}
-#mainmenu ul li ul li {
-    background-color:#666;
-    position:relative;
-    left:0;
-    display:list-item;
-    float:none;
-    height:auto;
-    margin:0;
-    text-align:left;
-    width: inherit;
-}
-#mainmenu ul li ul li a{
-    border-bottom:1px solid #999 !important;
-    padding:8px 10px;
-    border:none
-}
-#mainmenu ul li ul li img{
-    width: inherit;
-    height: 150px;
-}
-#mainmenu ul li ul li:hover,
-#mainmenu ul li ul li.hover {
-    background-color:#444
-}
-#mainmenu ul li:hover ul,
-#mainmenu ul li.hover ul {display:block}
-  
-/* Выпадающие пункты второго уровня */
-#mainmenu ul li:hover > ul {
-    opacity: 1;
-    visibility: visible;
-    margin: 0;
-}
-#mainmenu ul li ul li ul {
-    top: 0;
-    left: 150px;
-    margin: 0 0 0 20px;
-    width:180px           
 }

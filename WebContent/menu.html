@@ -51,6 +51,15 @@
         </div>
         <div id="head_memu_background">
                     <div id="mainmenu">
+                       <div id="full_menu">
+                         <div class="toggle-menu">
+						<!--	<span class="menu-text hide-on-med-and-down">Меню</span>-->
+							<span class="icon-bar skew-clock"></span>
+							<span class="icon-bar hide-closed"></span>
+							<span class="icon-bar skew-counter"></span>
+						</div>
+                        </div>
+
                                 <ul>
                                 <!-- Пункт меню 1 -->
                                 <li><a href="#">Принтеры</a>
@@ -89,9 +98,6 @@
                                           <a href="#"><img src="images/head/1.jpg" alt="" ><p>Лазерного спекания LENS (LASER ENGINEERED NET SHAPING)</p></a>
                                       </div>
                                       <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/1.jpg" alt="" ><p>Порошкового склеивания 3DP (three dimensional printing)</p</a>
-                                      </div>
-                                      <div class="head_menu_point_element">
                                           <a href="#"><img src="images/head/1.jpg" alt="" ><p>Ламинация LOM (laminated object manufacturing)</p></a>
                                       </div>
                                       <div class="head_menu_point_element">
@@ -99,6 +105,9 @@
                                       </div>
                                       <div class="head_menu_point_element">
                                           <a href="#"><img src="images/head/1.jpg" alt="" ><p>Лазерное спекание LS (laser sintering)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                        <a href="#"><img src="images/head/1.jpg" alt="" ><p>Порошкового склеивания 3DP (three dimensional printing)</p></a>
                                       </div>
                                   </div>
                                 </li>
@@ -161,15 +170,28 @@
                                 </ul><!-- Конец списка -->
                         </div><!-- Конец блока #mainmenu -->
         </div>   
+                        
 
+						<div class="menu-container">
+							<ul class="menu">
+								<li data-menuanchor="home"><a href="">О компании</a></li>
+								<li data-menuanchor="services"><a href="">Услуги</a></li>
+								<li data-menuanchor="testimonials"><a href="">Отзывы</a></li>
+								<li data-menuanchor="documents"><a href="">Документы</a></li>
+								<li data-menuanchor="contact"><a href="">Контакты</a></li>
+							</ul>
+						</div>
  </header>
       
 
 
     <script type="text/javascript">
-$( function() {
-
-} );
+$(document).ready(function(){
+				$('.toggle-menu').click(function () {
+					$('.menu-container').toggleClass('menu-open');
+					$(this).toggleClass('active');
+				});
+});
         
 </script>
 </body>

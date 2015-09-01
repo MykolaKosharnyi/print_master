@@ -1,28 +1,12 @@
 /**{box-sizing:border-box;}*/
 
-body { 
-    width: 100%;
-    font: 1em/1.4em sans-serif;
-    overflow: hidden;
-}
-
-a{
-    text-decoration: none;
-}
-
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 /* Заголовок */
 header{
     width: inherit;
 }
 #first_row{
     position: relative;
-    width: 85%;
+    width: 1340px;
     margin: 0 auto;
     border: 2px #e8e8e8 solid;
     height: 30px;
@@ -31,7 +15,7 @@ header{
    
     #first_row_left{
         position: absolute;
-        left: 0px;
+        left: 50px;
         height: inherit;
     }
 
@@ -51,7 +35,7 @@ header{
     
     #first_row_right{
         position: absolute;
-        right: 0px;
+        right: 50px;
         height: inherit;
     }
 
@@ -73,9 +57,9 @@ header{
 #second_row{
     height: 50px;
     position: relative;
-    width: 85%;
+    width: 1340px;
     margin: 0 auto;
-    padding: 5px 0;
+    padding: 5px 0 0;
 }
 
     #second_row_image{
@@ -88,7 +72,7 @@ header{
 
     .search{
         height: 40px;
-        margin: auto;
+        margin:0px auto;
         padding: 0;
     }
 
@@ -103,7 +87,7 @@ header{
         float: right;
         padding: 10px 25px;
         border: 2px red solid;
-        border-radius: 5px 5px 5px 5px;
+        border-radius: 5px;
     }
 
         #second_row_basket:hover{
@@ -116,26 +100,37 @@ header{
         width: 60px;
     }
 
+/*!!!!!!!!!!!!!!!!!-----   HEAD MENU    ------!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 #head_memu_background{
+    margin: 0;
     background: none repeat scroll #2c5987;
 }
 
-
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/** Основные пункты **/
-* {/** Сбрасываем все поля и отступы **/
-    margin:0;
-    padding:0
-}
 #mainmenu{
     position:relative;
     background:#2c5987;
     height:30px;
     margin:10px auto;
     padding:0;
-    width:85%;
+    width:1340px;
     z-index:11;
 }
+
+    #full_menu{
+        position: relative;
+        float: left;
+        height:30px;
+        overflow: hidden;
+        box-sizing:border-box;
+    }
+
+            #full_menu a img{
+                float: left;
+                height:30px;
+                overflow: hidden;
+            }
+
 #mainmenu ul {
     position:relative;
     right:50%;
@@ -147,22 +142,22 @@ header{
     padding:0;
     margin:0;
 }
-#mainmenu ul li {
-    border-left:1px solid #666;
-    position:relative;
-    left:50%;
-    float:left;
-    height:30px;
-    padding:0;
-    margin:0
-}
-#mainmenu ul li a {
-    display:block;
-    height: auto;
-    color: #fff;
-    padding:5px 15px;
-    overflow: hidden;
-}
+    #mainmenu ul li {
+        border-left:1px solid #666;
+        position:relative;
+        left:50%;
+        float:left;
+        height:30px;
+        padding:0;
+        margin:0
+    }
+        #mainmenu ul li a {
+            display:block;
+            height: auto;
+            color: #fff;
+            padding:5px 15px;
+            overflow: hidden;
+        }
 /*#mainmenu ul li:first-child a {
    border:none;
 }*/
@@ -224,11 +219,12 @@ header{
     width: 770px;
     border: 1px #2c5987 solid;
 /*    border-top: 5px solid transparent;*/
-    opacity: 0;
+    opacity: 0.1;
     left: 100%;
     top: -9999em;
     transition: 0.5s opacity;
     border-radius: 0 0 3px 3px;
+   background: transparent;
 }
 .head_menu_point_2{
     width: 1025px;
@@ -250,10 +246,11 @@ header{
             text-align:center;
             position: relative;
             padding:5px 5px;
-            /*border: 1px #2c5987 solid;*/
+          /*  border: 1px #2c5987 solid;*/
+           border: none;
             color: black;
             width: auto;
-            /*background: green;*/
+            background: white;
         }
             #mainmenu ul li .head_menu_point_element a img{
                 position: relative;
@@ -262,12 +259,230 @@ header{
                 height: 150px;
                 border: 1px #2c5987 solid;
                 border-radius: 3px 3px 3px 3px;
-
             }
+
             .head_menu_point_element a p{
                 text-align:center;
                 position: relative;
                 height: inherit;
                 width: 100%;
                 color: black;
+                margin: 0;
             }
+
+/*-------------------- Тело страницы --------------------*/
+
+#the_main_part {
+    position: relative;
+    width: 1340px;
+    margin: 0 auto;
+}
+    .left_field{
+        box-sizing: content-box;
+        position: relative;
+        float: left;
+    /*  border: 2px #666 solid;*/
+    /*  border-left: 10px solid transparent;*/
+        transition: 0.5s opacity;
+        width: 15%;
+        z-index: 10;
+    }
+
+        /*.menu{
+            position: relative;
+            float: left;
+            width: inherit;
+        }*/
+
+            .menu a{
+                background: #2c5987;
+                color: #fff;
+                padding: 10px;
+                display: block;
+                border-bottom: 1px solid #666;
+                transition: 0.5s all;
+            }
+
+            .menu a:hover{
+                background: blue;
+                padding: 10px 0 10px 20px;
+            }
+
+                .menu li:first-child a,
+                .menu li .menu_drop li:first-child a,
+                .menu li .menu_drop li .menu_drop_drop li:first-child a{
+                    border-radius: 3px 3px 0 0;   
+                }
+
+                .menu li:last-child a,
+                .menu li .menu_drop li:last-child a,
+                .menu li .menu_drop li .menu_drop_drop li:last-child a{
+                    border-radius: 0 0 3px 3px; 
+                    border-bottom: 0;
+                }
+
+                .menu li .menu_drop li a,
+                .menu li .menu_drop li .menu_drop_drop a{
+                    border-radius: 0;   
+                    border-bottom: 1px solid #666;
+                }
+
+            /* Всплывающие меню */
+
+            .menu_list{
+                position: relative;
+            }
+
+            .menu_drop,
+            .menu_drop_drop{
+                position: absolute;
+                width: 100%;
+                left: 100%;
+                top: -9999em;
+                opacity: 0;
+                border-left: 10px solid transparent;
+                transition: 0.5s opacity;
+            }
+
+            .menu_list:hover .menu_drop,
+            .menu_list_list:hover .menu_drop_drop{
+                opacity: 1;
+                top: 0;
+            }
+
+            /* Иконки для всплывающих менюшек */ 
+
+            .menu_list::after,
+            .menu_list_list::after{
+                content: " ";
+                position: absolute;
+                border: 5px solid;
+                border-color: transparent transparent transparent #eee;
+                top: 1em;
+                right: 0.7em;
+                transition: 0.5s;
+            }
+
+            .menu_list:hover::after,
+            .menu_list_list:hover::after{
+                transform: scale(-1);
+            }
+/*!!!!!!!!!!!!!----------------------!!!!!!!!!!!!!*/
+/*.menu-container {
+    position: relative;
+  font-family: "Open Sans", sans-serif;
+  z-index: 10;
+  background: #333;
+    width: 200px;
+    left: -200px;
+    line-height: 75px;
+    
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  
+.menu-container.menu-open {
+    position:relative;
+    margin-left: 335px;
+
+}
+
+.toggle-menu {
+    position: relative;
+    float: left; 
+  height: 20px;
+  padding: 5px 5px;
+  background: #000 ;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
+    z-index: 23;
+}
+  .toggle-menu .icon-bar {
+    height: 3px;
+    display: block;
+    width: 30px;
+    opacity: 1;
+    background: #fff;
+    margin-bottom: 5px;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out; 
+  }
+  
+.toggle-menu.active {
+    left: 400px; 
+} 
+
+    .toggle-menu .icon-bar:last-child {
+      margin-bottom: 0; 
+    }
+    .toggle-menu .icon-bar.hide-closed {
+      transition-duration: 0.4s; 
+    }
+  .toggle-menu.active {
+    padding-top: 13px; 
+    height:30px;
+      box-sizing:border-box;
+
+  }
+    .toggle-menu.active .icon-bar {
+      margin-bottom: -3px; 
+    }
+    .toggle-menu.active .skew-clock {
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); 
+    }
+    .toggle-menu.active .hide-closed {
+      opacity: 0 !important; 
+    }
+    .toggle-menu.active .skew-counter {
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg); 
+    }
+
+.menu-text {
+    font-family: "Open Sans", sans-serif;
+    float: left;
+    left: 0px;
+    color: #000;
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.menu {
+  width: 100%;
+  margin: 0 0 30px 0;
+  list-style: none;
+}
+  .menu li {
+    border-bottom: 1px solid #9e9e9e;
+    width: 100%;
+    height: 50px;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+  }
+    .menu li:hover, .menu li.active {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+    .menu li a {
+      display: block;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-decoration: none;
+      padding-left: 30px;
+    }
+      .menu li a:hover {
+        color: #bdbdbd;
+        background: none;
+      }
+    .menu li .current-menu-item {
+      color: #00bbeb;
+    }*/

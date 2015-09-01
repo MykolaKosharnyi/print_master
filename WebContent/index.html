@@ -3,6 +3,7 @@
 	<head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style_menu.css">
 		<title>Print Master</title>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
@@ -72,94 +73,138 @@ jQuery(document).ready(function() {
             </div>
         </div>
         <div id="head_memu_background">
-            <ul id="head_menu">
-                <li></li>
-                <li><a id="button_menu_row">Menu</a></li>
-                <li><a href="#" data-clone="Сервис">Сервис</a></li>
-                <li><a href="#" data-clone="Цветокорекция">Цветокорекция</a></li>
-                <li><a href="#" data-clone="Комплектующие">Комплектующие</a></li>
-                <li><a href="#" data-clone="Тренинги">Тренинги</a></li>
-                <li><a href="#" data-clone="Техподдержка">Техподдержка</a></li>
-                <li><a href="#" data-clone="Оборудование">Оборудование</a></li>
-                <li><a href="#" data-clone="Чернила">Чернила</a></li>
-                <li></li>
-                </ul>
-        </div>   
-            <div id="mainmenu">
-                               
-                <div id="full_menu">
-                    <a href=""><img src="images/100.png" alt="" /></a>
-                </div>
+                    <div id="mainmenu">
+                       <div id="full_menu">
+                         <div class="toggle-menu">
+						<!--	<span class="menu-text hide-on-med-and-down">Меню</span>-->
+							<span class="icon-bar skew-clock"></span>
+							<span class="icon-bar hide-closed"></span>
+							<span class="icon-bar skew-counter"></span>
+						</div>
+                        </div>
+
                                 <ul>
                                 <!-- Пункт меню 1 -->
-                                <li id="li_head_menu"><a href="#">Принтеры</a>
-                                     <ul>
-                                       <li>
-                                            <img src="images/1.jpg" alt="" />
-                                            <a href="#">Сольвентные принтеры</a>
-                                        </li>
-                                       <li>
-                                           <img src="images/2.jpg" alt="" />
-                                           <a href="#">Экосольвентные принтеры</a>
-                                        </li>
-                                       <li><a href="#">UV рулонные принтеры</a></li>
-                                       <li><a href="#">UV плоскопечатные принтеры</a></li>
-                                       <li><a href="#">Сублимационные принтеры</a></li>
-                                       <li><a href="#">Текстильные принтеры</a></li>
-                                    </ul>
+                                <li><a href="#">Принтеры</a>
+                                  <div class="head_menu_point_1">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="Сольвентные принтеры" ><p>Сольвентные принтеры</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Экосольвентные принтеры</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>UV рулонные принтеры</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>UV плоскопечатные принтеры</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Сублимационные принтеры</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Текстильные принтеры</p></a>
+                                      </div>
+                                  </div>
+
                                 </li>
                                 <!-- Пункт меню 2 -->
                                 <li><a href="#">3D Принтеры</a>
-                                    <ul>
-                                       <li><a href="#">Экструдные FDM (fused deposition modeling)</a></li>
-                                       <li><a href="#">Фото печать Polyjet</a></li>
-                                       <li><a href="#">Лазерного спекания LENS (LASER ENGINEERED NET SHAPING)</a></li>
-                                       <li><a href="#">Ламинация LOM (laminated object manufacturing)</a></li>
-                                       <li><a href="#">Стереолитография SL (Stereolithography)</a></li>
-                                       <li><a href="#">Лазерное спекание LS (laser sintering)</a></li>
-                                       <li><a href="#">Порошкового склеивания 3DP (three dimensional printing)</a></li>
-                                    </ul>
+                                   <div class="head_menu_point_2">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Экструдные FDM (fused deposition modeling)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Фото печать Polyjet</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Лазерного спекания LENS (LASER ENGINEERED NET SHAPING)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Ламинация LOM (laminated object manufacturing)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Стереолитография SL (Stereolithography)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/2.jpg" alt="" ><p>Лазерное спекание LS (laser sintering)</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                        <a href="#"><img src="images/head/2.jpg" alt="" ><p>Порошкового склеивания 3DP (three dimensional printing)</p></a>
+                                      </div>
+                                  </div>
                                 </li>
                                 <!-- Пункт меню 3 -->
                                 <li><a href="#">Ламинаторы</a>
-                                    <ul>
-                                       <li><a href="#">Горячего ламинирования</a></li>
-                                       <li><a href="#">Холодного ламинирования</a></li>
-                                       <li><a href="#">Жидкостные</a></li>
-                                    </ul>
+                                    <div class="head_menu_point_3">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/lam1.bmp" alt="" ><p>Горячего ламинирования</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/lamnew2.jpg" alt="" ><p>Холодного ламинирования</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/goods_610.jpg" alt="" ><p>Жидкостные</p></a>
+                                      </div>
+                                  </div>
                                 </li>
                                 <!-- Пункт меню 4 -->
                                 <li><a href="#">Лазеры</a>
-                                    <ul>
-                                       <li><a href="#">Газовые лазеры СО2</a></li>
-                                       <li><a href="#">Твердотельные лазеры</a></li>
-                                    </ul>
+                                    <div class="head_menu_point_4">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/hqdefault.jpg" alt="" ><p>Газовые лазеры СО2</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/5ef01e5506b7.jpg" alt="" ><p>Твердотельные лазеры</p></a>
+                                      </div>
+                                  </div>
                                 </li>
                                 <!-- Пункт меню 5 -->
                                 <li><a href="#">Фрезеры</a>
-                                    <ul>
-                                       <li><a href="#">Для обработки дерева</a></li>
-                                       <li><a href="#">Для обработки метала</a></li>
-                                       <li><a href="#">Для обработки камня</a></li>
-                                    </ul>
+                                    <div class="head_menu_point_5">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/maxresdefault.jpg" alt="" ><p>Для обработки дерева</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/stanoktok.jpg" alt="" ><p>Для обработки метала</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/fr278r-frezer-ruchnoi-mnogofunktsionalnyi-7800200-B.jpg" alt="" ><p>Для обработки камня</p></a>
+                                      </div>
+                                  </div>
                                 </li>
                                 <!-- Пункт меню 6 -->
                                 <li><a href="#">Сканеры</a>
-                                    <ul>
-                                       <li><a href="#">Широкоформатные сканеры</a></li>
-                                    </ul>
+                                   <div class="head_menu_point_6">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/SD_series.png" alt="" ><p>Широкоформатные сканеры</p></a>
+                                      </div>
+                                  </div>
                                 </li>
                                 <!-- Пункт меню 7 -->
                                 <li><a href="#">Програмное обеспечение</a>
-                                    <ul>
-                                       <li><a href="#">RIP системы</a></li>
-                                    </ul>
+                                    <div class="head_menu_point_7">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>RIP системы</p></a>
+                                      </div>
+                                    </div>
                                 </li>
 
                                 </ul><!-- Конец списка -->
                         </div><!-- Конец блока #mainmenu -->
+        </div>   
+                  <!--      
+
+						<div class="menu-container">
+							<ul class="menu">
+								<li data-menuanchor="home"><a href="">О компании</a></li>
+								<li data-menuanchor="services"><a href="">Услуги</a></li>
+								<li data-menuanchor="testimonials"><a href="">Отзывы</a></li>
+								<li data-menuanchor="documents"><a href="">Документы</a></li>
+								<li data-menuanchor="contact"><a href="">Контакты</a></li>
+							</ul>
+						</div>-->
  </header>
-      
     <div id="the_main_part">  
         <div class="left_field">
             <ul class="menu">
@@ -261,50 +306,7 @@ jQuery(document).ready(function() {
 					        <img width="280" height="187" src="img/2.png" alt="" />
 					        <div class="slide-title">Второй слайд</div>
 				        </div>
-           </div>
-        </div>
-    
-        <div id="head_of_body">    
-            <div class="reklam_animation">
-               <div id="gallery">   
-                <img src="images/59089-1600x1200.jpg" alt="First image" />
-                <img src="images/53364-1600x1200.jpg" alt="Secong image" />
-                <img src="images/54744-1600x1200.jpg" alt="Third image" />
-                <img src="images/59081-1600x1200.jpg" alt="Fourth image" />
-                </div>
-            </div>
-            <div id="rigt_of_reklam_animation">
-            <div class="rigt_of_reklam_animation_position"><a href=""> <img src="images/1.png" alt="" /></a></div>
-            <div class="rigt_of_reklam_animation_position"><a href=""><img src="images/2.png" alt="" /></a></div>
-            <div class="rigt_of_reklam_animation_position"><a href=""><img src="images/3.png" alt="" /></a></div>
-        </div>
-        </div>
-       
-        <div id="goods">   
-        <div class="categories_of_goods">
-            <div class="description_slider">
-               
-                    <label> Принтеры </label>
-
-                <div class="body_description">
-                    <ul>
-                        <li><a href="">Сольвентные принтеры</a></li>
-                        <li><a href="">Экосольвентные принтеры</a></li>
-                        <li><a href="">UV рулонные принтеры</a></li>
-                        <li><a href="">UV плоскопечатные принтеры</a></li>
-                        <li><a href="">Сублимационные принтеры</a></li>
-                        <li><a href="">Текстильные принтеры</a></li>
-                    </ul>
-                </div>
-            </div>
-          	<div class="slider">
-		         <div class="slide-list">
-			         <div class="slide-wrap">
-				        <div class="slide-item">
-					        <img width="280" height="187" src="img/1.png" alt="" />
-					        <div class="slide-title">Первый слайд</div>
-				        </div>
-				       <div class="slide-item">
+				        				       <div class="slide-item">
 					        <img width="280" height="187" src="img/2.png" alt="" />
 					        <div class="slide-title">Второй слайд</div>
 				        </div>
@@ -313,128 +315,278 @@ jQuery(document).ready(function() {
 					        <img width="280" height="187" src="img/3.png" alt="" />
 					        <div class="slide-title">Третий слайд</div>
 				        </div>
-			          </div>
-			          <div class="clear"></div>
-		          </div>
-		          <div class="navy prev-slide"></div>
-		          <div class="navy next-slide"></div>
-		          <div class="auto play"></div>
-	        </div>
-        </div>
-        <div class="categories_of_goods">
-             <div class="description_slider">
-               
-                    <label> 3D Принтеры </label>
-
-                <div class="body_description">
-                    <ul>
-                        <li><a href="">Экструдные FDM (fused deposition modeling)</a></li>
-                        <li><a href="">Фото печать Polyjet</a></li>
-                        <li><a href="">Лазерного спекания LENS (LASER ENGINEERED NET SHAPING)</a></li>
-                        <li><a href="">Ламинация LOM (laminated object manufacturing)</a></li>
-                        <li><a href="">Стереолитография SL (Stereolithography)</a></li>
-                        <li><a href="">Лазерное спекание LS (laser sintering)</a></li>
-                        <li><a href="">Порошкового склеивания 3DP (three dimensional printing)</a></li>
-                    </ul>
-                </div>
-            </div>
-          	<div class="slider1">
-		         <div class="slide-list1">
-			         <div class="slide-wrap1">
-				        <div class="slide-item1">
+				        <div class="slide-item">
 					        <img width="280" height="187" src="img/1.png" alt="" />
-					        <div class="slide-title1">Первый слайд</div>
-				        </div>
-				       <div class="slide-item1">
-					        <img width="280" height="187" src="img/2.png" alt="" />
-					        <div class="slide-title1">Второй слайд</div>
+					        <div class="slide-title">Первый слайд</div>
 				        </div>
 				        
-				        <div class="slide-item1">
-					        <img width="280" height="187" src="img/3.png" alt="" />
-					        <div class="slide-title1">Третий слайд</div>
-				        </div>
-			          </div>
-			          <div class="clear1"></div>
-		          </div>
-		          <div class="navy1 prev-slide1"></div>
-		          <div class="navy1 next-slide1"></div>
-		          <div class="auto1 play1"></div>
-	        </div>
+           </div>
         </div>
-        <div class="categories_of_goods">
-            <div class="description_slider">
-               
-                    <label> Ламинаторы </label>
-
-                <div class="body_description">
-                    <ul>
-                        <li><a href="">Горячего ламинирования</a></li>
-                        <li><a href="">Холодного ламинирования</a></li>
-                        <li><a href="">Жидкостные</a></li>
-                    </ul>
+       
+            <div class="reklam_animation">
+               <div id="gallery">   
+                    <img src="images/59089-1600x1200.jpg" alt="First image" />
+                    <img src="images/53364-1600x1200.jpg" alt="Secong image" />
+                    <img src="images/54744-1600x1200.jpg" alt="Third image" />
+                    <img src="images/59081-1600x1200.jpg" alt="Fourth image" />
                 </div>
             </div>
-          	<div class="slider2">
-		         <div class="slide-list2">
-			         <div class="slide-wrap2">
-				        <div class="slide-item2">
-					        <img width="280" height="187" src="img/1.png" alt="" />
-					        <div class="slide-title2">Первый слайд</div>
-				        </div>
-				       <div class="slide-item2">
-					        <img width="280" height="187" src="img/2.png" alt="" />
-					        <div class="slide-title2">Второй слайд</div>
-				        </div>
-				        
-				        <div class="slide-item2">
-					        <img width="280" height="187" src="img/3.png" alt="" />
-					        <div class="slide-title2">Третий слайд</div>
-				        </div>
-			          </div>
-			          <div class="clear2"></div>
-		          </div>
-		          <div class="navy2 prev-slide2"></div>
-		          <div class="navy2 next-slide2"></div>
-		          <div class="auto2 play2"></div>
-	        </div>
-        </div>
-        <div class="categories_of_goods">
-            <div class="description_slider">
-               
-                    <label> Лазерно-гравировальное </label>
+            <div id="rigt_of_reklam_animation">
+                <div class="rigt_of_reklam_animation_position"><a href=""> <img src="images/1.png" alt="" /></a></div>
+                <div class="rigt_of_reklam_animation_position"><a href=""><img src="images/2.png" alt="" /></a></div>
+                <div class="rigt_of_reklam_animation_position"><a href=""><img src="images/3.png" alt="" /></a></div>
+            </div>
+       
+        <div id="goods">   
+            <div class="categories_of_goods">
+                <div class="description_slider">
+                        <label> Принтеры </label>
+                    <div class="body_description">
+                        <ul>
+                            <li><a href="">Сольвентные принтеры</a></li>
+                            <li><a href="">Экосольвентные принтеры</a></li>
+                            <li><a href="">UV рулонные принтеры</a></li>
+                            <li><a href="">UV плоскопечатные принтеры</a></li>
+                            <li><a href="">Сублимационные принтеры</a></li>
+                            <li><a href="">Текстильные принтеры</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider">
+                     <div class="slide-list">
+                         <div class="slide-wrap">
+                            <div class="slide-item">
+                                <img width="280" height="187" src="img/1.png" alt="" />
+                                <div class="slide-title">Name of product: </div>
+                                <div class="slide-price">Prise: </div>
+                                <div class="slide-buy">Buy: </div>
+                            </div>
+                           <div class="slide-item">
+                                <img width="280" height="187" src="img/2.png" alt="" />
+                                <div class="slide-title">Второй слайд</div>
+                            </div>
 
-                <div class="body_description">
-                    <ul>
-                        <li><a href="">Газовые лазеры СО2</a></li>
-                        <li><a href="">Твердотельные лазеры</a></li>
-                    </ul>
+                            <div class="slide-item">
+                                <img width="280" height="187" src="img/3.png" alt="" />
+                                <div class="slide-title">Третий слайд</div>
+                            </div>
+                          </div>
+                          <div class="clear"></div>
+                      </div>
+                      <div class="navy prev-slide"></div>
+                      <div class="navy next-slide"></div>
+                      <div class="auto play"></div>
                 </div>
             </div>
-          	<div class="slider3">
-		         <div class="slide-list3">
-			         <div class="slide-wrap3">
-				        <div class="slide-item3">
-					        <img width="280" height="187" src="img/1.png" alt="" />
-					        <div class="slide-title3">Первый слайд</div>
-				        </div>
-				       <div class="slide-item3">
-					        <img width="280" height="187" src="img/2.png" alt="" />
-					        <div class="slide-title3">Второй слайд</div>
-				        </div>
-				        
-				        <div class="slide-item3">
-					        <img width="280" height="187" src="img/3.png" alt="" />
-					        <div class="slide-title3">Третий слайд</div>
-				        </div>
-			          </div>
-			          <div class="clear3"></div>
-		          </div>
-		          <div class="navy3 prev-slide3"></div>
-		          <div class="navy3 next-slide3"></div>
-		          <div class="auto3 play3"></div>
-	        </div>
-        </div>
+            <div class="categories_of_goods">
+                 <div class="description_slider">
+                        <label> 3D Принтеры </label>
+                    <div class="body_description">
+                        <ul>
+                            <li><a href="">Экструдные FDM (fused deposition modeling)</a></li>
+                            <li><a href="">Фото печать Polyjet</a></li>
+                            <li><a href="">Лазерного спекания LENS (LASER ENGINEERED NET SHAPING)</a></li>
+                            <li><a href="">Ламинация LOM (laminated object manufacturing)</a></li>
+                            <li><a href="">Стереолитография SL (Stereolithography)</a></li>
+                            <li><a href="">Лазерное спекание LS (laser sintering)</a></li>
+                            <li><a href="">Порошкового склеивания 3DP (three dimensional printing)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider1">
+                     <div class="slide-list1">
+                         <div class="slide-wrap1">
+                            <div class="slide-item1">
+                                <img width="280" height="187" src="img/1.png" alt="" />
+                                <div class="slide-title1">Первый слайд</div>
+                            </div>
+                           <div class="slide-item1">
+                                <img width="280" height="187" src="img/2.png" alt="" />
+                                <div class="slide-title1">Второй слайд</div>
+                            </div>
+
+                            <div class="slide-item1">
+                                <img width="280" height="187" src="img/3.png" alt="" />
+                                <div class="slide-title1">Третий слайд</div>
+                            </div>
+                          </div>
+                          <div class="clear1"></div>
+                      </div>
+                      <div class="navy1 prev-slide1"></div>
+                      <div class="navy1 next-slide1"></div>
+                      <div class="auto1 play1"></div>
+                </div>
+            </div>
+            <div class="categories_of_goods">
+                <div class="description_slider">
+                        <label> Ламинаторы </label>
+                    <div class="body_description">
+                        <ul>
+                            <li><a href="">Горячего ламинирования</a></li>
+                            <li><a href="">Холодного ламинирования</a></li>
+                            <li><a href="">Жидкостные</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider2">
+                     <div class="slide-list2">
+                         <div class="slide-wrap2">
+                            <div class="slide-item2">
+                                <img width="280" height="187" src="img/1.png" alt="" />
+                                <div class="slide-title2">Первый слайд</div>
+                            </div>
+                           <div class="slide-item2">
+                                <img width="280" height="187" src="img/2.png" alt="" />
+                                <div class="slide-title2">Второй слайд</div>
+                            </div>
+
+                            <div class="slide-item2">
+                                <img width="280" height="187" src="img/3.png" alt="" />
+                                <div class="slide-title2">Третий слайд</div>
+                            </div>
+                          </div>
+                          <div class="clear2"></div>
+                      </div>
+                      <div class="navy2 prev-slide2"></div>
+                      <div class="navy2 next-slide2"></div>
+                      <div class="auto2 play2"></div>
+                </div>
+            </div>
+            <div class="categories_of_goods">
+                <div class="description_slider">
+                        <label> Лазерно-гравировальное </label>
+                    <div class="body_description">
+                        <ul>
+                            <li><a href="">Газовые лазеры СО2</a></li>
+                            <li><a href="">Твердотельные лазеры</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider3">
+                    <div class="slide-list3">
+                            <div class="slide-wrap3">
+                            <div class="slide-item3">
+                                <img width="280" height="187" src="img/1.png" alt="" />
+                                <div class="slide-title3">Первый слайд</div>
+                            </div>
+                            <div class="slide-item3">
+                                <img width="280" height="187" src="img/2.png" alt="" />
+                                <div class="slide-title3">Второй слайд</div>
+                            </div>
+
+                            <div class="slide-item3">
+                                <img width="280" height="187" src="img/3.png" alt="" />
+                                <div class="slide-title3">Третий слайд</div>
+                            </div>
+                            </div>
+                            <div class="clear3"></div>
+                        </div>
+                        <div class="navy3 prev-slide3"></div>
+                        <div class="navy3 next-slide3"></div>
+                        <div class="auto3 play3"></div>
+                </div>
+            </div>
+            <div class="categories_of_goods">
+                <div class="description_slider">
+                        <label>Фрезеры</label>
+                    <div class="body_description">
+                        <ul>
+                            <li><a href="">Для обробки дерева</a></li>
+                            <li><a href="">Для обробки металла</a></li>
+                            <li><a href="">Для обробки камня</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider3">
+                        <div class="slide-list3">
+                            <div class="slide-wrap3">
+                            <div class="slide-item3">
+                                <img width="280" height="187" src="img/1.png" alt="" />
+                                <div class="slide-title3">Первый слайд</div>
+                            </div>
+                            <div class="slide-item3">
+                                <img width="280" height="187" src="img/2.png" alt="" />
+                                <div class="slide-title3">Второй слайд</div>
+                            </div>
+
+                            <div class="slide-item3">
+                                <img width="280" height="187" src="img/3.png" alt="" />
+                                <div class="slide-title3">Третий слайд</div>
+                            </div>
+                            </div>
+                            <div class="clear3"></div>
+                        </div>
+                        <div class="navy3 prev-slide3"></div>
+                        <div class="navy3 next-slide3"></div>
+                        <div class="auto3 play3"></div>
+                </div>
+            </div>
+                <div class="categories_of_goods">
+                    <div class="description_slider">
+                            <label> Сканеры </label>
+                        <div class="body_description">
+                            <ul>
+                                <li><a href="">Широкоформатные сканеры</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slider3">
+                         <div class="slide-list3">
+                             <div class="slide-wrap3">
+                                <div class="slide-item3">
+                                    <img width="280" height="187" src="img/1.png" alt="" />
+                                    <div class="slide-title3">Первый слайд</div>
+                                </div>
+                               <div class="slide-item3">
+                                    <img width="280" height="187" src="img/2.png" alt="" />
+                                    <div class="slide-title3">Второй слайд</div>
+                                </div>
+
+                                <div class="slide-item3">
+                                    <img width="280" height="187" src="img/3.png" alt="" />
+                                    <div class="slide-title3">Третий слайд</div>
+                                </div>
+                              </div>
+                              <div class="clear3"></div>
+                          </div>
+                          <div class="navy3 prev-slide3"></div>
+                          <div class="navy3 next-slide3"></div>
+                          <div class="auto3 play3"></div>
+                    </div>
+                </div>
+                <div class="categories_of_goods">
+                    <div class="description_slider">
+                            <label> Программное обеспечение </label>
+                        <div class="body_description">
+                            <ul>
+                                <li><a href="">RIP системы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slider3">
+                         <div class="slide-list3">
+                             <div class="slide-wrap3">
+                                <div class="slide-item3">
+                                    <img width="280" height="187" src="img/1.png" alt="" />
+                                    <div class="slide-title3">Первый слайд</div>
+                                </div>
+                               <div class="slide-item3">
+                                    <img width="280" height="187" src="img/2.png" alt="" />
+                                    <div class="slide-title3">Второй слайд</div>
+                                </div>
+
+                                <div class="slide-item3">
+                                    <img width="280" height="187" src="img/3.png" alt="" />
+                                    <div class="slide-title3">Третий слайд</div>
+                                </div>
+                              </div>
+                              <div class="clear3"></div>
+                          </div>
+                          <div class="navy3 prev-slide3"></div>
+                          <div class="navy3 next-slide3"></div>
+                          <div class="auto3 play3"></div>
+                    </div>
+                </div>
     </div>
     
         <div class="right_field">
@@ -447,6 +599,18 @@ jQuery(document).ready(function() {
 					        <div class="slide-title">Второй слайд</div>
 				        </div>
 				        
+				        <div class="slide-item">
+					        <img width="280" height="187" src="images/53364-1600x1200.jpg" alt="" />
+					        <div class="slide-title">Третий слайд</div>
+				        </div>
+				        <div class="slide-item">
+					        <img width="280" height="187" src="images/53364-1600x1200.jpg" alt="" />
+					        <div class="slide-title">Первый слайд</div>
+				        </div>
+				       <div class="slide-item">
+					        <img width="280" height="187" src="images/53364-1600x1200.jpg" alt="" />
+					        <div class="slide-title">Второй слайд</div>
+				        </div>
 				        <div class="slide-item">
 					        <img width="280" height="187" src="images/53364-1600x1200.jpg" alt="" />
 					        <div class="slide-title">Третий слайд</div>
@@ -480,14 +644,23 @@ $( function() {
                                 backgroundColor:'FFFFFF',
                               } );
     
-    $("#full_menu").click(function(){
+   $("#full_menu").click(function(){
        if ( $(".menu").css('display') == 'none' ) {
-             $(".menu").show(400);
+             $(".menu").show(1000);
               } else {
-             $(".menu").hide(200);
+             $(".menu").hide(400);
              }
       });
 } );
+        
+</script>
+   <script type="text/javascript">
+$(document).ready(function(){
+				$('.toggle-menu').click(function () {
+					$('.menu-container').toggleClass('menu-open');
+					$(this).toggleClass('active');
+				});
+});
         
 </script>
 </body>
