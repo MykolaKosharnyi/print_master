@@ -30,7 +30,7 @@ header{
    
     #first_row_left{
         position: absolute;
-        left: 0px;
+        left: 50px;
         height: inherit;
     }
 
@@ -50,7 +50,7 @@ header{
     
     #first_row_right{
         position: absolute;
-        right: 0px;
+        right: 50px;
         height: inherit;
     }
 
@@ -68,100 +68,53 @@ header{
                 padding: 0 10px;
             }
 
+
 #second_row{
+    height: 50px;
     position: relative;
-    height: 90px;
     width: 1340px;
     margin: 0 auto;
     padding: 5px 0 0;
-    border: 1px solid #2c5987;
 }
-    
-    #second_row_logo,
-    #second_row_contact{
-        position: relative;
-        top: 0;
+
+    #second_row_image{
+        width: 80px;
+        height: 40px;
+        border: 2px solid #0669BD;
+        height: inherit;
         float: left;
-        margin-left: 5px;
     }
 
-        .second_row_image{
-            position: relative;
-            width: 80px;
-            height: 80px;
-            border: 1px solid #0669BD;
-            float: left;
-            padding: 1px;
-        }
-
-        #second_row_logo .second_row_image{
-            width: 160px;
-            padding: 0;
-        }
+    .search{
+        height: 40px;
+        margin:0px auto;
+        padding: 0;
+    }
 
     #second_row_search{
-        position: absolute;
-        margin-left: 450px;
-        margin-top: 20px;
-        width: auto;
-        height: auto;
+        float: left;
+        margin-left: 200px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
-        #second_row_search_field{
-            position: relative;
-            float: left;
-            height: 45px;
-            width: 320px;
-        }
-
-        #second_row_search_button{
-            position: relative;
-            box-sizing: border-box;
-            margin-left: 3px;
-            float: left;
-            height: 45px;
-            padding: 0;
-        }
-
-        #second_row_search_button:hover{
-            transform: scale(1.1);
-        }
-
-            #second_row_search_button img{
-                padding: 3px;
-                position: relative;
-                box-sizing: border-box;
-                height: 45px;
-                width: 45px;
-                border: 1px #2c5987 solid;
-                margin: 0;
-            }
-
-    #second_row_basket,
-    #second_row_user,
-    #second_row_price_equality,
-    #second_row_language{
-        top: 0;
+    #second_row_basket{
         float: right;
-        margin-right: 5px;
-  /*      border: 2px red solid;
-        border-radius: 5px;*/
+        padding: 10px 25px;
+        border: 2px red solid;
+        border-radius: 5px;
     }
-        
-        #second_row_contact:hover,
-        #second_row_basket:hover,
-        #second_row_user:hover,
-        #second_row_price_equality:hover,
-        #second_row_language:hover,
-        #second_row_logo:hover{
+
+        #second_row_basket:hover{
             background-color: deepskyblue;
-            transform: scale(1.1);
+            color: black;
+            border: 2px blue solid;
         }
 
-        #second_row_logo:hover{
-            transform: scaleX(1.05);
-            transform: scaleY(1.1);
-        }
+    #second_row_search_button{
+        width: 60px;
+    }
+
 /*!!!!!!!!!!!!!!!!!-----   HEAD MENU    ------!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #head_memu_background{
@@ -173,7 +126,7 @@ header{
     position:relative;
     background:#2c5987;
     height:30px;
-    margin:5px auto;
+    margin:10px auto;
     padding:0;
     width:1340px;
     z-index:11;
@@ -288,8 +241,9 @@ header{
     border-radius: 0 0 3px 3px;
    background: transparent;
 }
+.head_menu_point_1,
 .head_menu_point_2{
-    width: 1025px;
+    width: 750px;
 }
 .head_menu_point_4{
     width: 515px;
@@ -323,6 +277,15 @@ header{
                 border-radius: 3px 3px 3px 3px;
             }
 
+            .head_menu_point_1 img,
+            .head_menu_point_2 img{
+                position: relative;
+                float: left;
+                height: 300px;
+                width: 480px;
+                border-right: 1px #2c5987 solid;
+                border-radius: 0px 0px 0px 3px;
+            }
             .head_menu_point_element a p{
                 text-align:center;
                 position: relative;
@@ -330,6 +293,22 @@ header{
                 width: 100%;
                 color: black;
                 margin: 0;
+            }
+
+            .head_menu_point_1 .head_menu_point_element a p,
+            .head_menu_point_2 .head_menu_point_element a p{
+                display: block;
+                float: left;
+                text-align:left;
+                position: relative;
+                height: inherit;
+                width: 250px;
+                color: black;
+            }
+
+            .head_menu_point_1 .head_menu_point_element a p:hover,
+            .head_menu_point_2 .head_menu_point_element a p:hover{
+                color: greenyellow;
             }
 
 /*-------------------- Тело страницы --------------------*/

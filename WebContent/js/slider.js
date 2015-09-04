@@ -1,85 +1,6 @@
 jQuery(document).ready(function(){
-	function htmSlider(){
-		/* Зададим следующие переменные */
-
-		/* обертка слайдера */
-		var slideWrap = jQuery('.slide-wrap');
-		/* ссылки на предудыщий иследующий слайд */
-		var nextLink = jQuery('.next-slide');
-		var prevLink = jQuery('.prev-slide');
-
-		var playLink = jQuery('.auto');
-		
-		var is_animate = false;
-		
-		/* ширина слайда с отступами */
-		var slideWidth = jQuery('.slide-item').outerWidth();
-		
-		/* смещение слайдера */
-		var newLeftPos = slideWrap.position().left - slideWidth;
-		
-		/* Клик по ссылке на следующий слайд */
-		nextLink.click(function(){
-			if(!slideWrap.is(':animated')) {
 	
-				slideWrap.animate({left: newLeftPos}, 500, function(){
-					slideWrap
-						.find('.slide-item:first')
-						.appendTo(slideWrap)
-						.parent()
-						.css({'left': 32});
-				});
-
-			}
-		});
-
-		/* Клик по ссылке на предыдующий слайд */
-		prevLink.click(function(){
-			if(!slideWrap.is(':animated')) {
-			
-				slideWrap
-					.css({'left': newLeftPos})
-					.find('.slide-item:last')
-					.prependTo(slideWrap)
-					.parent()
-					.animate({left: 32}, 500);
-
-			}
-		});
-		
-		
-		/* Функция автоматической прокрутки слайдера */
-		function autoplay(){
-			if(!is_animate){
-				is_animate = true;
-				slideWrap.animate({left: newLeftPos}, 500, function(){
-					slideWrap
-						.find('.slide-item:first')
-						.appendTo(slideWrap)
-						.parent()
-						.css({'left': 32});
-					is_animate = false;
-				});
-			}
-		}
-		
-		/* Клики по ссылкам старт/пауза */
-		playLink.click(function(){
-			if(playLink.hasClass('play')){
-				playLink.removeClass('play').addClass('pause');
-				jQuery('.navy').addClass('disable');
-				timer = setInterval(autoplay, 500);
-			} else {
-				playLink.removeClass('pause').addClass('play');
-				jQuery('.navy').removeClass('disable');
-				clearInterval(timer);
-			}
-		});
-
-	}
-	htmSlider();
-
-/*--------------------------------------- for second block -----------------------------------------------------------*/
+/*--------------------------------------- for first block -----------------------------------------------------------*/
 		function htmSlider1(){
 		/* Зададим следующие переменные */
 
@@ -108,7 +29,7 @@ jQuery(document).ready(function(){
 						.find('.slide-item1:first')
 						.appendTo(slideWrap1)
 						.parent()
-						.css({'left': 32});
+						.css({'left': 21});
 				});
 
 			}
@@ -123,7 +44,7 @@ jQuery(document).ready(function(){
 					.find('.slide-item1:last')
 					.prependTo(slideWrap1)
 					.parent()
-					.animate({left: 32}, 500);
+					.animate({left: 21}, 500);
 
 			}
 		});
@@ -138,7 +59,7 @@ jQuery(document).ready(function(){
 						.find('.slide-item1:first')
 						.appendTo(slideWrap1)
 						.parent()
-						.css({'left': 32});
+						.css({'left': 21});
 					is_animate1 = false;
 				});
 			}
@@ -159,9 +80,9 @@ jQuery(document).ready(function(){
 
 	}
 
-	/* иницилизируем функцию слайдера 2 */
+	/* иницилизируем функцию слайдера 1 */
 	htmSlider1();
-/*--------------------------------------- for third block -----------------------------------------------------------*/
+/*--------------------------------------- for second block -----------------------------------------------------------*/
 		function htmSlider2(){
 		/* Зададим следующие переменные */
 
@@ -190,7 +111,7 @@ jQuery(document).ready(function(){
 						.find('.slide-item2:first')
 						.appendTo(slideWrap2)
 						.parent()
-						.css({'left': 32});
+						.css({'left': 21});
 				});
 
 			}
@@ -205,7 +126,7 @@ jQuery(document).ready(function(){
 					.find('.slide-item2:last')
 					.prependTo(slideWrap2)
 					.parent()
-					.animate({left: 32}, 500);
+					.animate({left: 21}, 500);
 
 			}
 		});
@@ -220,7 +141,7 @@ jQuery(document).ready(function(){
 						.find('.slide-item2:first')
 						.appendTo(slideWrap2)
 						.parent()
-						.css({'left': 32});
+						.css({'left': 21});
 					is_animate2 = false;
 				});
 			}
@@ -241,7 +162,7 @@ jQuery(document).ready(function(){
 
 	}
 
-	/* иницилизируем функцию слайдера 3 */
+	/* иницилизируем функцию слайдера 2 */
 	htmSlider2();
 
 /*--------------------------------------- for third block -----------------------------------------------------------*/
@@ -273,7 +194,7 @@ jQuery(document).ready(function(){
 						.find('.slide-item3:first')
 						.appendTo(slideWrap3)
 						.parent()
-						.css({'left': 32});
+						.css({'left': 21});
 				});
 
 			}
@@ -288,7 +209,7 @@ jQuery(document).ready(function(){
 					.find('.slide-item3:last')
 					.prependTo(slideWrap3)
 					.parent()
-					.animate({left: 32}, 500);
+					.animate({left: 21}, 500);
 
 			}
 		});
@@ -303,7 +224,7 @@ jQuery(document).ready(function(){
 						.find('.slide-item3:first')
 						.appendTo(slideWrap3)
 						.parent()
-						.css({'left': 32});
+						.css({'left': 21});
 					is_animate3 = false;
 				});
 			}
@@ -324,6 +245,334 @@ jQuery(document).ready(function(){
 
 	}
 
-	/* иницилизируем функцию слайдера 4 */
+	/* иницилизируем функцию слайдера 3 */
 	htmSlider3();
+/*--------------------------------------- for forth block -----------------------------------------------------------*/
+		function htmSlider4(){
+		/* Зададим следующие переменные */
+
+		/* обертка слайдера */
+		var slideWrap4 = jQuery('.slide-wrap4');
+		/* ссылки на предудыщий иследующий слайд */
+		var nextLink4 = jQuery('.next-slide4');
+		var prevLink4 = jQuery('.prev-slide4');
+
+		var playLink4 = jQuery('.auto4');
+		
+		var is_animate4 = false;
+		
+		/* ширина слайда с отступами */
+		var slideWidth4 = jQuery('.slide-item4').outerWidth();
+		
+		/* смещение слайдера */
+		var newLeftPos4 = slideWrap4.position().left - slideWidth4;
+		
+		/* Клик по ссылке на следующий слайд */
+		nextLink4.click(function(){
+			if(!slideWrap4.is(':animated')) {
+	
+				slideWrap4.animate({left: newLeftPos4}, 500, function(){
+					slideWrap4
+						.find('.slide-item4:first')
+						.appendTo(slideWrap4)
+						.parent()
+						.css({'left': 21});
+				});
+
+			}
+		});
+
+		/* Клик по ссылке на предыдующий слайд */
+		prevLink4.click(function(){
+			if(!slideWrap4.is(':animated')) {
+			
+				slideWrap4
+					.css({'left': newLeftPos4})
+					.find('.slide-item4:last')
+					.prependTo(slideWrap4)
+					.parent()
+					.animate({left: 21}, 500);
+
+			}
+		});
+		
+		
+		/* Функция автоматической прокрутки слайдера */
+		function autoplay(){
+			if(!is_animate4){
+				is_animate4 = true;
+				slideWrap4.animate({left: newLeftPos4}, 500, function(){
+					slideWrap4
+						.find('.slide-item4:first')
+						.appendTo(slideWrap4)
+						.parent()
+						.css({'left': 21});
+					is_animate4 = false;
+				});
+			}
+		}
+		
+		/* Клики по ссылкам старт/пауза */
+		playLink4.click(function(){
+			if(playLink4.hasClass('play4')){
+				playLink4.removeClass('play4').addClass('pause4');
+				jQuery('.navy4').addClass('disable4');
+				timer = setInterval(autoplay, 500);
+			} else {
+				playLink4.removeClass('pause4').addClass('play4');
+				jQuery('.navy4').removeClass('disable4');
+				clearInterval(timer);
+			}
+		});
+
+	}
+
+	/* иницилизируем функцию слайдера 4 */
+	htmSlider4();
+/*--------------------------------------- for fifth block -----------------------------------------------------------*/
+		function htmSlider5(){
+		/* Зададим следующие переменные */
+
+		/* обертка слайдера */
+		var slideWrap5 = jQuery('.slide-wrap5');
+		/* ссылки на предудыщий иследующий слайд */
+		var nextLink5 = jQuery('.next-slide5');
+		var prevLink5 = jQuery('.prev-slide5');
+
+		var playLink5 = jQuery('.auto5');
+		
+		var is_animate5 = false;
+		
+		/* ширина слайда с отступами */
+		var slideWidth5 = jQuery('.slide-item5').outerWidth();
+		
+		/* смещение слайдера */
+		var newLeftPos5 = slideWrap5.position().left - slideWidth5;
+		
+		/* Клик по ссылке на следующий слайд */
+		nextLink5.click(function(){
+			if(!slideWrap5.is(':animated')) {
+	
+				slideWrap5.animate({left: newLeftPos5}, 500, function(){
+					slideWrap5
+						.find('.slide-item5:first')
+						.appendTo(slideWrap5)
+						.parent()
+						.css({'left': 21});
+				});
+
+			}
+		});
+
+		/* Клик по ссылке на предыдующий слайд */
+		prevLink5.click(function(){
+			if(!slideWrap5.is(':animated')) {
+			
+				slideWrap5
+					.css({'left': newLeftPos5})
+					.find('.slide-item5:last')
+					.prependTo(slideWrap5)
+					.parent()
+					.animate({left: 21}, 500);
+
+			}
+		});
+		
+		
+		/* Функция автоматической прокрутки слайдера */
+		function autoplay(){
+			if(!is_animate5){
+				is_animate5 = true;
+				slideWrap5.animate({left: newLeftPos5}, 500, function(){
+					slideWrap5
+						.find('.slide-item5:first')
+						.appendTo(slideWrap5)
+						.parent()
+						.css({'left': 21});
+					is_animate5 = false;
+				});
+			}
+		}
+		
+		/* Клики по ссылкам старт/пауза */
+		playLink5.click(function(){
+			if(playLink5.hasClass('play5')){
+				playLink5.removeClass('play5').addClass('pause5');
+				jQuery('.navy5').addClass('disable5');
+				timer = setInterval(autoplay, 500);
+			} else {
+				playLink5.removeClass('pause5').addClass('play5');
+				jQuery('.navy5').removeClass('disable5');
+				clearInterval(timer);
+			}
+		});
+
+	}
+
+	/* иницилизируем функцию слайдера 5 */
+	htmSlider5();
+/*--------------------------------------- for sixth block -----------------------------------------------------------*/
+		function htmSlider6(){
+		/* Зададим следующие переменные */
+
+		/* обертка слайдера */
+		var slideWrap6 = jQuery('.slide-wrap6');
+		/* ссылки на предудыщий иследующий слайд */
+		var nextLink6 = jQuery('.next-slide6');
+		var prevLink6 = jQuery('.prev-slide6');
+
+		var playLink6 = jQuery('.auto6');
+		
+		var is_animate6 = false;
+		
+		/* ширина слайда с отступами */
+		var slideWidth6 = jQuery('.slide-item6').outerWidth();
+		
+		/* смещение слайдера */
+		var newLeftPos6 = slideWrap6.position().left - slideWidth6;
+		
+		/* Клик по ссылке на следующий слайд */
+		nextLink6.click(function(){
+			if(!slideWrap6.is(':animated')) {
+	
+				slideWrap6.animate({left: newLeftPos6}, 500, function(){
+					slideWrap6
+						.find('.slide-item6:first')
+						.appendTo(slideWrap6)
+						.parent()
+						.css({'left': 21});
+				});
+
+			}
+		});
+
+		/* Клик по ссылке на предыдующий слайд */
+		prevLink6.click(function(){
+			if(!slideWrap6.is(':animated')) {
+			
+				slideWrap6
+					.css({'left': newLeftPos6})
+					.find('.slide-item6:last')
+					.prependTo(slideWrap6)
+					.parent()
+					.animate({left: 21}, 500);
+
+			}
+		});
+		
+		
+		/* Функция автоматической прокрутки слайдера */
+		function autoplay(){
+			if(!is_animate6){
+				is_animate6 = true;
+				slideWrap6.animate({left: newLeftPos6}, 500, function(){
+					slideWrap6
+						.find('.slide-item6:first')
+						.appendTo(slideWrap6)
+						.parent()
+						.css({'left': 21});
+					is_animate6 = false;
+				});
+			}
+		}
+		
+		/* Клики по ссылкам старт/пауза */
+		playLink6.click(function(){
+			if(playLink6.hasClass('play6')){
+				playLink6.removeClass('play6').addClass('pause6');
+				jQuery('.navy6').addClass('disable6');
+				timer = setInterval(autoplay, 500);
+			} else {
+				playLink6.removeClass('pause6').addClass('play6');
+				jQuery('.navy6').removeClass('disable6');
+				clearInterval(timer);
+			}
+		});
+
+	}
+
+	/* иницилизируем функцию слайдера 6 */
+	htmSlider6();
+/*--------------------------------------- for seventh block -----------------------------------------------------------*/
+		function htmSlider7(){
+		/* Зададим следующие переменные */
+
+		/* обертка слайдера */
+		var slideWrap7 = jQuery('.slide-wrap7');
+		/* ссылки на предудыщий иследующий слайд */
+		var nextLink7 = jQuery('.next-slide7');
+		var prevLink7 = jQuery('.prev-slide7');
+
+		var playLink7 = jQuery('.auto7');
+		
+		var is_animate7 = false;
+		
+		/* ширина слайда с отступами */
+		var slideWidth7 = jQuery('.slide-item7').outerWidth();
+		
+		/* смещение слайдера */
+		var newLeftPos7 = slideWrap7.position().left - slideWidth7;
+		
+		/* Клик по ссылке на следующий слайд */
+		nextLink7.click(function(){
+			if(!slideWrap7.is(':animated')) {
+	
+				slideWrap7.animate({left: newLeftPos7}, 500, function(){
+					slideWrap7
+						.find('.slide-item7:first')
+						.appendTo(slideWrap7)
+						.parent()
+						.css({'left': 21});
+				});
+
+			}
+		});
+
+		/* Клик по ссылке на предыдующий слайд */
+		prevLink7.click(function(){
+			if(!slideWrap7.is(':animated')) {
+			
+				slideWrap7
+					.css({'left': newLeftPos7})
+					.find('.slide-item7:last')
+					.prependTo(slideWrap7)
+					.parent()
+					.animate({left: 21}, 500);
+
+			}
+		});
+		
+		
+		/* Функция автоматической прокрутки слайдера */
+		function autoplay(){
+			if(!is_animate7){
+				is_animate7 = true;
+				slideWrap7.animate({left: newLeftPos7}, 500, function(){
+					slideWrap7
+						.find('.slide-item7:first')
+						.appendTo(slideWrap7)
+						.parent()
+						.css({'left': 21});
+					is_animate7 = false;
+				});
+			}
+		}
+		
+		/* Клики по ссылкам старт/пауза */
+		playLink7.click(function(){
+			if(playLink7.hasClass('play7')){
+				playLink7.removeClass('play7').addClass('pause7');
+				jQuery('.navy7').addClass('disable7');
+				timer = setInterval(autoplay, 500);
+			} else {
+				playLink7.removeClass('pause7').addClass('play7');
+				jQuery('.navy7').removeClass('disable7');
+				clearInterval(timer);
+			}
+		});
+
+	}
+
+	/* иницилизируем функцию слайдера 7 */
+	htmSlider7();
 });

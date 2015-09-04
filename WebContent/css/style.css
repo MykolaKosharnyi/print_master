@@ -1,21 +1,3 @@
-body { 
-    width: 100%;
-    font: 1em/1.4em sans-serif;
-    padding: 0;
-    margin: 0;
- /*   overflow-x: hidden;*/
-}
-
-a{
-    text-decoration: none;
-}
-
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 /*!!!!!!!!-----------hidden menu-----------!!!!!!!!*/
 .menu-container {
     position: relative;
@@ -107,8 +89,6 @@ ul{
             position: relative;
             float: left;
             width: 100%;
-/*          border-top: 2px #666 solid;*/
-            height: 900px;
         }
 
              #reklam .slide-item {
@@ -116,7 +96,7 @@ ul{
                 width: inherit;
                 float: left;
                 margin: 0 0px 5px;
-                border: 1px blue solid;
+                border: 1px #2c5987 solid;
             }
 
                  #reklam .slide-item img{
@@ -124,15 +104,22 @@ ul{
                     width: 100%;
                 }
 
-             #reklam .slide-title{
-                height: 15%;
-                /* Шрифт */
-                font: bold 16px monospace;
-                /* Указываем, что элемент блочный */
-                display: block;
-                margin-top: -7px;
-                border: 1px blue solid;
-            }
+         #reklam .slide-title,
+         #reklam .slide-price,
+         #reklam .slide-buy{
+            width: 100%;
+            box-sizing: border-box;
+            height: auto;
+            /* Шрифт */
+            font: bold 16px monospace;
+            /* Указываем, что элемент блочный */
+            display: block;
+            border: 1px #2c5987 solid;
+        }
+
+         #reklam .slide-title{
+            border-top: 2px #2c5987 solid;
+        }
 
 /*----------- ANIMATION IN HEAD PART OF PAGE, AFTER ROW MENU -----------------*/
  /*   #head_of_body{
@@ -206,14 +193,14 @@ ul{
         .categories_of_goods{
             position: relative;
             width: 100%;
-            height: 275px;
+            height: 300px;
             margin: 0 0 10px;
 /*          border: 1px green solid; */
         }
 
             .description_slider{
                 box-sizing: content-box;
-                width: 21%;
+                width: 199px;
                 margin: 0 auto;
                 padding: 0 0px;
                 position: relative;
@@ -258,73 +245,94 @@ ul{
         /* Все что ниже для галереи которую можно перелистывать*/
         /* Задаем сброс обтекания */
 
-        .clear, .clear1, .clear2, .clear3 {
+       .clear1, .clear2, .clear3, .clear4, .clear5, .clear6, .clear7{
             margin-top: -1px;
             height: 1px;
             clear:both;
             zoom: 1;
         }		
 
-        .slider, .slider1, .slider2, .slider3 {
+        .slider1, .slider2, .slider3, .slider4, .slider5, .slider6, .slider7 {
             box-sizing: content-box;
             width: 78%;
             margin: 0 auto;
             padding: 0 0px;
             position: relative;
             float: right;
-            overflow: hidden;
             height: 100%;
             border: 1px #2c5987 solid;
             border-left: 1px transparent solid;
+            overflow: hidden;
         }
 
         /* Двойной клик по ссылкам вперед/назад вызывает выделение всех элементов слайдера,
         поэтому предотвращаем это */
 
-        .slider::-moz-selection, .slider1::-moz-selection, .slider2::-moz-selection, .slider3::-moz-selection {
+        .slider1::-moz-selection, .slider2::-moz-selection, .slider3::-moz-selection, .slider4::-moz-selection, .slider5::-moz-selection, .slider6::-moz-selection, .slider7::-moz-selection {
             background: transparent;
             color: #fff;
             text-shadow: none;
         }
 
-        .slider::selection, .slider1::selection, .slider2::selection, .slider3::selection {
+        .slider1::selection, .slider2::selection, .slider3::selection, .slider4::selection, .slider5::selection, .slider6::selection, .slider7::selection {
             background: transparent;
             color: #fff;
             text-shadow: none;
         }
 
-        .slide-list, .slide-list1, .slide-list2, .slide-list3 {
+        .slide-list1, .slide-list2, .slide-list3, .slide-list4, .slide-list5, .slide-list6, .slide-list7 {
             height: 90%;
             position: relative;
         }
 
-        .slide-wrap, .slide-wrap1, .slide-wrap2, .slide-wrap3 {
-            height: 90%;
-            position: relative;
-            margin: 0% 0 0 0;
-            left: 32px;
-            top: 0;
-            /* максимально возможная ширина обертки слайдера */
-           /* width: 100%;*/
-        }
-
-        .slide-item, .slide-item1, .slide-item2, .slide-item3 {
-            position: ;
+        .slide-wrap1, .slide-wrap2, .slide-wrap3, .slide-wrap4, .slide-wrap5, .slide-wrap6, .slide-wrap7 {
             height: 100%;
-            width: 173px;
-            margin: 0 5px;
+            position: absolute;
+            margin: 0% 0 0 0;
+            left: 21px;
+            top: 0;
+            right: 21px;
+            /* максимально возможная ширина обертки слайдера */
+          /*  width: 100%;*/
+        }
+
+        .slide-item1, .slide-item2, .slide-item3, .slide-item4, .slide-item5, .slide-item6, .slide-item7 {
+            position: relative;
+            height: 100%;
+            width: 224px;
             float: left;
             border: 1px #2c5987 solid;
         }
 
-        .slide-item img, .slide-item1 img, .slide-item2 img, .slide-item3 img {
-            height: 100px;
-            width: 100px;
+        .slide-item1 img, .slide-item2 img, .slide-item3 img, .slide-item4 img, .slide-item5 img, .slide-item6 img, .slide-item7 img {
+            height: 200px;
+            width: inherit;
         }
 
-        .slide-title, .slide-title1, .slide-title2, .slide-title3,.slide-price {
+        .slide-title1,
+        .slide-title2,
+        .slide-title3,
+        .slide-title4,
+        .slide-title5,
+        .slide-title6,
+        .slide-title7,
+        .slide-price1,
+        .slide-price2,
+        .slide-price3,
+        .slide-price4,
+        .slide-price5,
+        .slide-price6,
+        .slide-price7,
+        .slide-buy1,
+        .slide-buy2,
+        .slide-buy3,
+        .slide-buy4,
+        .slide-buy5,
+        .slide-buy6,
+        .slide-buy7{
+            width: 100%;
             box-sizing: border-box;
-            height: 15%;
+            height: auto;
             /* Шрифт */
             font: bold 16px monospace;
             /* Указываем, что элемент блочный */
@@ -332,45 +340,58 @@ ul{
             border: 1px #2c5987 solid;
         }
 
+        .slide-title1, .slide-title2, .slide-title3, .slide-title4, .slide-title5, .slide-title6, .slide-title7{
+            border-top: 2px #2c5987 solid;
+        }
+
+        .slide-buy1, .slide-buy2, .slide-buy3, .slide-buy4, .slide-buy5, .slide-buy6, .slide-buy7{
+            border-bottom: 2px #2c5987 solid;
+        }
+
+        .slide-buy1. .slide-buy-button1, .slide-buy2. .slide-buy-button2, .slide-buy3. .slide-buy-button3, .slide-buy4. .slide-buy-button4, .slide-buy5. .slide-buy-button5, .slide-buy6. .slide-buy-button6, .slide-buy7. .slide-buy-button7{
+            position: relative;
+            left: 80px;
+        }
+
         /* навигация вперед/назад */
-        .navy, .navy1, .navy2, .navy3 {
+        .navy1, .navy2, .navy3, .navy4, .navy5, .navy6, .navy7 {
             position: absolute;
             top: 0;
             z-index: 1;
             height: 100%;
-            width: 5%;
+            width: 20px;
             cursor: pointer;
         }
 
-        .prev-slide, .prev-slide1, .prev-slide2, .prev-slide3 {
+        .prev-slide1, .prev-slide2, .prev-slide3, .prev-slide4, .prev-slide5, .prev-slide6, .prev-slide7 {
             left: 0;
-            background: #2c5987 url(../bg/left-arrow.png) 13px 40% no-repeat;
+            background: #2c5987 url(../bg/left-arrow.png) 8px 40% no-repeat;
         }
 
-        .next-slide, .next-slide1, .next-slide2, .next-slide3 {
+        .next-slide1, .next-slide2, .next-slide3, .next-slide4, .next-slide5, .next-slide6, .next-slide7 {
             right: 0;
-            background: #2c5987 url(../bg/right-arrow.png) 13px 40% no-repeat;
+            background: #2c5987 url(../bg/right-arrow.png) 8px 40% no-repeat;
         }
 
-        .navy.disable, .navy1.disable1, .navy2.disable2, .navy3.disable3 {
+ /*       .navy1.disable1, .navy2.disable2, .navy3.disable3, .navy4.disable4, .navy5.disable5, .navy6.disable6, .navy7.disable7 {
             background: white;
-        }
+        }*/
 
         /* навигация старт/пауза */
-        .auto, .auto1, .auto2, .auto3 {
+        .auto1, .auto2, .auto3, .auto4, .auto5, .auto6, .auto7 {
             width: 7px;
             height: 10%;
             margin: 0 0 1%;
             cursor: pointer;
-            margin: -5px auto;
+            margin: 0px auto;
         }
 
-        .play, .play1, .play2, .play3 {
+        .play1, .play2, .play3, .play4, .play5, .play6, .play7 {
             height: 10%;
             background: url(../bg/play.png) center no-repeat;
         }
 
-        .pause, .pause1, .pause2, .pause3 {
+        .pause1, .pause2, .pause3, .pause4, .pause5, .pause6, .pause7 {
             height: 10%;
             background: url(../bg/pause.png) center no-repeat;
         }
