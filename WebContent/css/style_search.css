@@ -1,0 +1,109 @@
+/*-------------- LEFT FIELD ------------------*/
+        #reklam{
+            position: relative;
+            float: left;
+            width: 100%;
+        }
+
+             #reklam .slide-item {
+                height: 20%;
+                width: inherit;
+                float: left;
+                margin: 0 0px 5px;
+                border: 1px #2c5987 solid;
+            }
+
+                 #reklam .slide-item img{
+                    height: 85%;
+                    width: 100%;
+                }
+
+         #reklam .slide-title,
+         #reklam .slide-price,
+         #reklam .slide-buy{
+            width: 100%;
+            box-sizing: border-box;
+            height: auto;
+            /* Шрифт */
+            font: bold 16px monospace;
+            /* Указываем, что элемент блочный */
+            display: block;
+            border: 1px #2c5987 solid;
+        }
+
+         #reklam .slide-title{
+            border-top: 2px #2c5987 solid;
+        }
+
+/* ------ product page ------ */
+#search_printer{
+    position: relative;
+    height: auto;
+    width: 85%;
+    float: left;
+    padding-left: 5px;
+}
+
+    .search_criteria{
+        position: relative;
+        height: auto;
+        max-width: 500px;
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+        .search_criteria fieldset{
+            position: relative;
+            margin: 0;
+            padding-top: 5px;
+            padding-left: 5px;
+            border: 1px #006080 solid;
+        }
+    #tabs{
+        position: relative;
+        width: 100%;
+        height: auto;
+        display:inline-block;
+    }
+        #tabs > div{
+            padding-top:10px;
+        }
+
+        #tabs ul{
+            margin:0px;
+            padding:0px;
+        }
+        #tabs ul:after{
+            content:"";
+            display:block;
+            clear:both;
+            height:3px;
+            background:#006080;
+        }
+        #tabs ul li{
+            margin:0px;
+            padding:0px;
+            cursor:pointer;
+            display:block;
+            float:left;
+            padding:5px 15px;
+            background:#e9eaeb;
+            color:#707070;
+        }
+        #tabs ul li.active, #tabs ul li.active:hover{
+            background:#006080;
+            color:#fff;
+        }
+        #tabs ul li:hover{
+            background:#d6d6d7;
+        }
+
+#out_result_of_search{
+    position: relative;
+    height: 200px;
+    width: 85%;
+    float: left;
+    padding-left: 5px;
+    border: 2px violet solid;
+}

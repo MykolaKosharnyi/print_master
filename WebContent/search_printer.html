@@ -2,10 +2,14 @@
 <html lang="ru">
 	<head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style_product.css">
+        <link rel="stylesheet" type="text/css" href="css/style_search.css">
         <link rel="stylesheet" type="text/css" href="css/style_head_and_footer.css">
-		<title>Продукт</title>
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+
+		<title>Search printer</title>
 	    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	    <script type="text/javascript" src="js/jquery-ui.js"></script>
+	   <!-- <script type="text/javascript" src="js/search_printer.js"></script>-->
 	</head>
 <body>
     <header>
@@ -254,108 +258,263 @@
            </ul>
             <div id="reklam">
                	        <div class="slide-item">
-					        <img width="280" height="187" src="img/1.png" alt="" />
+					        <img src="img/1.png" alt="" />
 					        <div class="slide-title">Name of product: </div>
                             <div class="slide-price">Prise: </div>
                             <input class="slide-buy" type="button" value="Добавить в корзину" >
 				        </div>
 				       <div class="slide-item">
-					        <img width="280" height="187" src="img/2.png" alt="" />
+					        <img src="img/2.png" alt="" />
 					        <div class="slide-title">Name of product: </div>
                             <div class="slide-price">Prise: </div>
                             <input class="slide-buy" type="button" value="Добавить в корзину" >
 				        </div>
 				        
 				        <div class="slide-item">
-					        <img width="280" height="187" src="img/3.png" alt="" />
+					        <img src="img/3.png" alt="" />
 					        <div class="slide-title">Name of product: </div>
                             <div class="slide-price">Prise: </div>
                             <input class="slide-buy" type="button" value="Добавить в корзину" >
 				        </div>
 				        <div class="slide-item">
-					        <img width="280" height="187" src="img/1.png" alt="" />
+					        <img src="img/1.png" alt="" />
 					        <div class="slide-title">Name of product: </div>
                             <div class="slide-price">Prise: </div>
                             <input class="slide-buy" type="button" value="Добавить в корзину" >
 				        </div>
            </div>
         </div>
-        <div id="product">
-           <p>Широкоформатный принтер Mimaki</p>
-            <div id="foto_and_descriptions">
-                <div id="foto">
-                    <div class="image_container"><img src="images/head/progo1.jpg" alt="" ></div>
-                    <div class="small_pictures">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-                <div id="descriptions">
-                    <table>
-                       <caption></caption>
-                       <tr><td>Цена:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                       <tr><td>Характеристика:</td><td>значение</td></tr>
-                  </table>
-                </div>
+        <div id="search_printer">
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Ширина печати</legend>
+                    <div id="tabs">
+                        <ul>
+                            <li>в дюймах</li>
+                            <li>в форматах</li>
+                            <li>в сантиметрах</li>
+                        </ul>
+                        <div>
+                            <div>
+                                <input type="radio" name="radio_weight_print_inch" checked>24</input>
+                                <input type="radio" name="radio_weight_print_inch">36</input>
+                                <input type="radio" name="radio_weight_print_inch">42</input>
+                                <input type="radio" name="radio_weight_print_inch">60</input>
+                                <input type="radio" name="radio_weight_print_inch">70</input>
+                                <input type="radio" name="radio_weight_print_inch">100</input>
+                            </div>
+                            <div>
+                                <input type="radio" name="radio_weight_print_format" checked>A0</input>
+                                <input type="radio" name="radio_weight_print_format">A1</input>
+                                <input type="radio" name="radio_weight_print_format">A2</input>
+                                <input type="radio" name="radio_weight_print_format">A3</input>
+                                <input type="radio" name="radio_weight_print_format">A3+</input>
+                                <input type="radio" name="radio_weight_print_format">B0</input>
+                                <input type="radio" name="radio_weight_print_format">B1</input> 
+                            </div>
+                            <div>
+                                <input type="radio" name="radio_weight_print_sm" checked>60</input>
+                                <input type="radio" name="radio_weight_print_sm">90</input>
+                                <input type="radio" name="radio_weight_print_sm">107</input>
+                                <input type="radio" name="radio_weight_print_sm">130</input>
+                                <input type="radio" name="radio_weight_print_sm">160</input>
+                                <input type="radio" name="radio_weight_print_sm">180</input>
+                                <input type="radio" name="radio_weight_print_sm">250</input>
+                                <input type="radio" name="radio_weight_print_sm">260</input>
+                                <input type="radio" name="radio_weight_print_sm">3200</input>
+                                <input type="radio" name="radio_weight_print_sm">5000</input>
+                            </div>
+                        </div>            
+                    </div> 
+                </fieldset>         
             </div>
-            <div id="tabs">
-                <ul>
-                    <li>Описание</li>
-                    <li>Технические характеристики</li>
-                    <li>Отзывы</li>
-                    <li>Используется с другими товарами</li>
-                </ul>
-                <div>
-                    <div>Первое содержимое</div>
-                    <div>
-                        <table>
-                           <caption>Характеристики:</caption>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                           <tr><td>Характеристика:</td><td>значение</td></tr>
-                        </table>
-                    </div>
-                    <div>Третье содержимое</div>
-                    <div>Четвертое содержимое</div>
-                </div>            
-            </div> 
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Тип печати</legend>
+                        <input type="checkbox" name="checkbox_type_print">Термо-струйная</input>
+                        <input type="checkbox" name="checkbox_type_print">Пьезо-струйная</input>
+                </fieldset>  
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Подача метериала</legend>
+                        <input type="checkbox" name="checkbox_feed">Рулонный</input>
+                        <input type="checkbox" name="checkbox_feed">Плоскопечатный</input>
+                        <input type="checkbox" name="checkbox_feed">Гибридный</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Цветность</legend>
+                        <input type="checkbox" name="checkbox_chromaticity">CMYK</input>
+                        <input type="checkbox" name="checkbox_chromaticity">CMYK X 2</input>
+                        <input type="checkbox" name="checkbox_chromaticity">CMYKLcLm</input>
+                        <input type="checkbox" name="checkbox_chromaticity">CMYKLcLmOG</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Производитель печатающей головки</legend>
+                        <input type="checkbox" name="checkbox_manufacturer_printhead">Spectra</input>
+                        <input type="checkbox" name="checkbox_manufacturer_printhead">XAAR</input>
+                        <input type="checkbox" name="checkbox_manufacturer_printhead">SPT</input>
+                        <input type="checkbox" name="checkbox_manufacturer_printhead">Konika-Minolta</input>
+                        <input type="checkbox" name="checkbox_manufacturer_printhead">Toshiba</input>
+                        <input type="checkbox" name="checkbox_manufacturer_printhead">Rico</input>
+                        <input type="checkbox" name="checkbox_manufacturer_printhead">Epson</input>
+                        <input type="checkbox" name="checkbox_manufacturer_printhead">Lexmark</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Тип печатающей головки</legend>
+                        <input type="checkbox" name="checkbox_type_printhead">Nova 256, Galaxy256, Polyaris 512</input>
+                        <input type="checkbox" name="checkbox_type_printhead">126/50, 126/80, 128/40, 128/80, 500</input>
+                        <input type="checkbox" name="checkbox_type_printhead">255, 510, 1020</input>
+                        <input type="checkbox" name="checkbox_type_printhead">256, 512, 1024</input>
+                        <input type="checkbox" name="checkbox_type_printhead">CA3, CA4</input>
+                        <input type="checkbox" name="checkbox_type_printhead">Gen4, Gen5</input>
+                        <input type="checkbox" name="checkbox_type_printhead">DX2, DX4, DX5, DX6, DX7</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Совместимые чернила</legend>
+                        <input type="checkbox" name="checkbox_compatible_ink">Водные</input>
+                        <input type="checkbox" name="checkbox_compatible_ink">Пигментные</input>
+                        <input type="checkbox" name="checkbox_compatible_ink">Сублимационные </input>
+                        <input type="checkbox" name="checkbox_compatible_ink">Экосольвентные</input>
+                        <input type="checkbox" name="checkbox_compatible_ink">Сольвентные</input>
+                        <input type="checkbox" name="checkbox_compatible_ink">UV-чернила</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Тип капли</legend>
+                        <input type="checkbox" name="checkbox_type_drops">Постоянная</input>
+                        <input type="checkbox" name="checkbox_type_drops">Переменная</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Размер капли</legend>
+                        <input type="checkbox" name="checkbox_size_drops">1,5</input>
+                        <input type="checkbox" name="checkbox_size_drops">2</input>
+                        <input type="checkbox" name="checkbox_size_drops">4</input>
+                        <input type="checkbox" name="checkbox_size_drops">8</input>
+                        <input type="checkbox" name="checkbox_size_drops">12</input>
+                        <input type="checkbox" name="checkbox_size_drops">15</input>
+                        <input type="checkbox" name="checkbox_size_drops">20</input>
+                        <input type="checkbox" name="checkbox_size_drops">30</input>
+                        <input type="checkbox" name="checkbox_size_drops">35</input>
+                        <input type="checkbox" name="checkbox_size_drops">40</input>
+                        <input type="checkbox" name="checkbox_size_drops">80</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Скорость печати</legend>
+                        <input type="range" min="1" max="300" name="range_speed_print" draggable="auto" >м.кв./ч.</input>
+                        <div id="slider-range"></div>
+                        <p>
+                          <label for="amount">Укажите размах цен:</label>
+                          <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
+                        </p>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Разрешение печати</legend>
+                        <input type="checkbox" name="checkbox_print_resolution">360dpi</input>
+                        <input type="checkbox" name="checkbox_print_resolution">600dpi</input>
+                        <input type="checkbox" name="checkbox_print_resolution">720dpi</input>
+                        <input type="checkbox" name="checkbox_print_resolution">1200dpi</input>
+                        <input type="checkbox" name="checkbox_print_resolution">1440dpi</input>
+                        <input type="checkbox" name="checkbox_print_resolution">2880dpi</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Производитель Оборудования</legend>
+                        <input type="checkbox" name="checkbox_equipment_manufacturer">Mimaki</input>
+                        <input type="checkbox" name="checkbox_equipment_manufacturer">Roland</input>
+                        <input type="checkbox" name="checkbox_equipment_manufacturer">Mutoh</input>
+                        <input type="checkbox" name="checkbox_equipment_manufacturer">HP</input>
+                        <input type="checkbox" name="checkbox_equipment_manufacturer">OCE</input>
+                        <input type="checkbox" name="checkbox_equipment_manufacturer">Agfa</input>
+                        <input type="checkbox" name="checkbox_equipment_manufacturer">LIYU</input>
+                        <input type="checkbox" name="checkbox_equipment_manufacturer">Infinity</input>
+                        <input type="checkbox" name="checkbox_equipment_manufacturer">Gonzeng</input>
+                        <input type="checkbox" name="checkbox_equipment_manufacturer">Jong Ye</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Интерфейс подключения</legend>
+                        <input type="checkbox" name="checkbox_interface_connection">SCSI</input>
+                        <input type="checkbox" name="checkbox_interface_connection">PCI Adapter</input>
+                        <input type="checkbox" name="checkbox_interface_connection">USB</input>
+                        <input type="checkbox" name="checkbox_interface_connection">Fire-Wire</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Максимальная толщина  носителя</legend>
+                        <input type="checkbox" name="checkbox_maximum_media_thickness">1mm</input>
+                        <input type="checkbox" name="checkbox_maximum_media_thickness">2mm Adapter</input>
+                        <input type="checkbox" name="checkbox_maximum_media_thickness">3mm</input>
+                        <input type="checkbox" name="checkbox_maximum_media_thickness">4mm</input>
+                        <input type="range" min="1" max="500" name="range_maximum_media_thickness">mm</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Максимальный вес носителя</legend>
+                        <input type="range" min="5" max="500" name="range_maximum_weight_of_vehicle">кг</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>П/О RIP</legend>
+                        <input type="checkbox" name="checkbox_RIP">ONYX Graphics</input>
+                        <input type="checkbox" name="checkbox_RIP">SA International/PhotoPRINT™ Family</input>
+                        <input type="checkbox" name="checkbox_RIP">Wasatch SOFTRIP</input>
+                        <input type="checkbox" name="checkbox_RIP">ColorGATE Productionserver</input>
+                        <input type="checkbox" name="checkbox_RIP">Poster Print</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Максимальная потребляемая мощность</legend>
+                        <input type="range" min="0,1" max="100" name="range_max_power_consumption">кВт</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Вес</legend>
+                        <input type="range" min="50" max="5000" name="range_weight">кг</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Ширина</legend>
+                        <input type="range" min="0.1" max="10" name="range_width">м</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Высота</legend>
+                        <input type="range" min="0.1" max="10" name="range_heigth">м</input>
+                </fieldset>
+            </div>
+            <div class="search_criteria">
+                <fieldset>
+                    <legend>Глубина</legend>
+                        <input type="range" min="0.1" max="10" name="range_depth">м</input>
+                </fieldset>
+            </div>
         </div>
+        <div id="out_result_of_search"></div>
     </div>
     
 <div id="footer">
@@ -373,37 +532,37 @@
         } );       
     </script>
     <script>
-(function($){				
-    jQuery.fn.lightTabs = function(options){
-        
-        var createTabs = function(){
-            tabs = this;
-            i = 0;
-            
-            showPage = function(i){
-                $(tabs).children("div").children("div").hide();
-                $(tabs).children("div").children("div").eq(i).show();
-                $(tabs).children("ul").children("li").removeClass("active");
-                $(tabs).children("ul").children("li").eq(i).addClass("active");
-            }
-            
-            showPage(0);				
-            
-            $(tabs).children("ul").children("li").each(function(index, element){
-                $(element).attr("data-page", i);
-                i++;                        
-            });
-            
-            $(tabs).children("ul").children("li").click(function(){
-                showPage(parseInt($(this).attr("data-page")));
-            });				
-        };		
-        return this.each(createTabs);
-    };	
-})(jQuery);
-$(document).ready(function(){
-    $("#tabs").lightTabs();
-});
+        (function($){				
+            jQuery.fn.lightTabs = function(options){
+
+                var createTabs = function(){
+                    tabs = this;
+                    i = 0;
+
+                    showPage = function(i){
+                        $(tabs).children("div").children("div").hide();
+                        $(tabs).children("div").children("div").eq(i).show();
+                        $(tabs).children("ul").children("li").removeClass("active");
+                        $(tabs).children("ul").children("li").eq(i).addClass("active");
+                    }
+
+                    showPage(0);				
+
+                    $(tabs).children("ul").children("li").each(function(index, element){
+                        $(element).attr("data-page", i);
+                        i++;                        
+                    });
+
+                    $(tabs).children("ul").children("li").click(function(){
+                        showPage(parseInt($(this).attr("data-page")));
+                    });				
+                };		
+                return this.each(createTabs);
+            };	
+        })(jQuery);
+        $(document).ready(function(){
+            $("#tabs").lightTabs();
+        });
     </script>
 </body>
 </html>
