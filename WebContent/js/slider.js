@@ -22,7 +22,7 @@ jQuery(document).ready(function(){
 		
 		/* Click for href on next slide */
 		nextLink1.click(function(){
-			if(!is_animate1) {
+			if(!slideWrap1.is(':animated')) {
 	
 				slideWrap1.animate({left: newLeftPos1}, 100, function(){
 					slideWrap1
@@ -37,7 +37,7 @@ jQuery(document).ready(function(){
 
 		/* Click for href on next slide */
 		prevLink1.click(function(){
-			if(!is_animate1) {
+			if(!slideWrap1.is(':animated')) {
 			
 				slideWrap1
 					.css({'left': newLeftPos1})

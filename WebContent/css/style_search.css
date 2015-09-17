@@ -1,57 +1,226 @@
 /*-------------- LEFT FIELD ------------------*/
-        #reklam{
-            position: relative;
-            float: left;
+#reklam{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+    #reklam .slide-item {
+        height: 20%;
+        width: inherit;
+        float: left;
+        margin: 0 0px 5px;
+        border: 1px #006080 solid;
+    }
+
+        .slide-item .slider_image {
+            height: 201px;
             width: 100%;
         }
 
-             #reklam .slide-item {
-                height: 20%;
+            #reklam .slide-item .slider_image img{
+                height: inherit;
                 width: inherit;
-                float: left;
-                margin: 0 0px 5px;
-                border: 1px #2c5987 solid;
             }
 
-                 #reklam .slide-item img{
-                    height: 85%;
-                    width: 100%;
-                }
+            #reklam .slide-item .slider_image img:hover{
+                transform: scale(1.1);
+            }
 
-         #reklam .slide-title,
+        #reklam .slide-title,
          #reklam .slide-price,
          #reklam .slide-buy{
             width: 100%;
-            box-sizing: border-box;
             height: auto;
             /* Шрифт */
-            font: bold 16px monospace;
+            font: 1em/1.4em sans-serif;
             /* Указываем, что элемент блочный */
             display: block;
-            border: 1px #2c5987 solid;
+            border: 1px #006080 solid;
         }
 
          #reklam .slide-title{
-            border-top: 2px #2c5987 solid;
+            border-top: 2px #006080 solid;
         }
 
+                .slide-buy {
+                    width: 100%;
+                    height: auto;
+                    padding: 0 0 2px;
+                    font: 16px "Trebuchet MS", Tahoma, Arial, sans-serif;
+                    outline: none;
+                    position: relative;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    color: white;
+                    text-shadow: 1px 1px #006080;
+                    border: 1px solid #006080;
+                    border-top: 1px solid #006080;
+                    border-bottom: 1px solid #006080;
+                    box-shadow:
+                        inset 0 1px #939393,
+                        inset 1px 0 #707070,
+                        inset -1px 0 #707070,
+                        inset 0 -1px #5A5A5A,
+                        0 2px #414141,
+                        0 3px #343434,
+                        0 4px 2px rgba(0,0,0,0.4)
+                        ;
+                    background: -moz-linear-gradient(top,  #abe4f8 0%, #74d0f4 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#abe4f8), color-stop(100%,#74d0f4)); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top,  #00779f 0%,#004860 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top,  #abe4f8 0%,#74d0f4 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(top,  #abe4f8 0%,#74d0f4 100%); /* IE10+ */
+                    background: linear-gradient(top,  #abe4f8 0%,#74d0f4 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abe4f8', endColorstr='#74d0f4',GradientType=0 ); /* IE6-9 */
+                    background-color: #006080;
+                }
+
+                .slide-buy::-moz-focus-inner{border:0}
+
+                .slide-buy:hover{
+                    border-top: 1px solid #79ACBE;
+                    box-shadow:
+                        inset 0 1px #939393,
+                        inset 1px 0 #707070,
+                        inset -1px 0 #707070,
+                        inset 0 -1px #5A5A5A,
+                        0 2px #414141,
+                        0 3px #343434,
+                        0 4px 2px rgba(0,0,0,0.4)
+                        ;
+                    background: -moz-linear-gradient(top,  #80d4f5 0%, #92dbf6 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#80d4f5), color-stop(100%,#92dbf6)); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top,  #004860 0%,#00779f 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top,  #80d4f5 0%,#92dbf6 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(top,  #80d4f5 0%,#92dbf6 100%); /* IE10+ */
+                    background: linear-gradient(top,  #80d4f5 0%,#92dbf6 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80d4f5', endColorstr='#92dbf6',GradientType=0 ); /* IE6-9 */
+                    background-color: #006080;
+                }
+
+                .slide-buy:active{
+                    top: 3px;
+                    border: 1px solid #006080;
+                    border-top: 1px solid #006080;
+                    border-bottom: 1px solid #006080;
+                    background: #006080;
+                    box-shadow: inset 0 1px 2px #006080;
+                }
 /* ------ product page ------ */
 #search_printer{
     position: relative;
     height: auto;
-    width: 85%;
+    width: auto;
     float: left;
-    padding-left: 5px;
+    padding-left: 10px;
+    background: #f5f5f5;
 }
 
     .search_criteria{
-        position: relative;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        color: rgb(51, 51, 51);
+        display: block;
+        font: 12px Arial;
         height: auto;
-        max-width: 500px;
-        float: left;
-        margin-right: 5px;
-        margin-bottom: 5px;
+        line-height: 16px;
+        padding: 0px 0px 3px 0px;
+        width: 250px;
     }
+
+        .block_title{
+            color: rgb(51, 51, 51);
+            cursor: pointer;
+            display: block;
+            font: 12px Arial;
+            font-weight: bold;
+            height: auto;
+            line-height: auto;
+            margin: 5px 0px 5px 0px;
+            position: relative;
+            width: 250px;
+            z-index: 1;
+        }
+
+            .block_title i.opened{ /* Opened state of point. */
+                background-clip: border-box;
+                background-color: inherit;
+                background-image: none;
+                background-origin: padding-box;
+                background-size: auto;
+                border: 4px rgb(144, 144, 144) solid; 
+                border-bottom-width: 0px;
+                border-left-color: rgba(0, 0, 0, 0);
+                border-right-color: rgba(0, 0, 0, 0);
+                color: rgb(51, 51, 51);
+                cursor: pointer;
+                display: block;
+                font-family: Arial;
+                font: 12px italic;
+                font-weight: bold;
+                height: 0px;
+                left: 0px;
+                line-height: 16px;
+                margin: 3px 10px 0px 0px;
+                position: absolute;
+                top: 3px;
+                width: 0px;
+                z-index: 1;
+            }
+
+             .block_title i{/* Normal state of point - closed */
+                background-clip: border-box;
+                background-color: inherit;
+                background-image: none;
+                background-origin: padding-box;
+                background-size: auto;
+                border: 4px rgb(144, 144, 144) solid; 
+                border-right-width: 0px;
+                border-top-color: rgba(0, 0, 0, 0);
+                border-bottom-color: rgba(0, 0, 0, 0);
+                color: rgb(51, 51, 51);
+                cursor: pointer;
+                display: block;
+                font: 12px Arial;
+                font-weight: bold;
+                height: 0px;
+                left: 0px;
+                line-height: 16px;
+                margin: 3px 10px 0px 0px;
+                position: absolute;
+                top:0px;
+                width: 0px;
+                z-index: 1;
+            }
+
+             .block_title p{
+                color: black;
+                cursor: pointer;
+                display: block;
+                font: 12px Arial;
+                font-weight: bold;
+                height: auto;
+                left: 10px;
+                line-height: 16px;
+                margin: 0px 10px 0px 0px;
+                position: relative;
+                top:0px;
+                z-index: 1;
+            }
+
+        .check_boxes{
+            color: rgb(51, 51, 51);
+            display: none;
+            font: 12px Arial;
+            height: auto;
+            line-height: 16px;
+            list-style-image: none;
+            list-style-position: outside;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            padding-bottom: 5px;
+        }
 
         .search_criteria fieldset{
             position: relative;
@@ -68,6 +237,7 @@
     }
         #tabs > div{
             padding-top:10px;
+            max-width: 300px;
         }
 
         #tabs ul{
@@ -87,7 +257,7 @@
             cursor:pointer;
             display:block;
             float:left;
-            padding:5px 15px;
+            padding:5px 5px;
             background:#e9eaeb;
             color:#707070;
         }
@@ -101,9 +271,10 @@
 
 #out_result_of_search{
     position: relative;
-    height: 200px;
-    width: 85%;
+    height: 1350px;
+    width: 65%;
     float: left;
     padding-left: 5px;
-    border: 2px violet solid;
+    margin-left: 5px;
+    background: #f5f5f5;
 }

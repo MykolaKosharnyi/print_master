@@ -4,9 +4,7 @@ public class Printer {
 	private int id;
 	private int partNumber;// партийный номер
 	private String name;//название
-	private int weightPrintInch;//ширина печати в дюймах
-	private int weightPrintFormat;//ширина печати в форматах
-	private int weightPrintSM;//ширина печати в сантиметрах
+	private int weightPrintMM;//ширина печати в миллиметрах
 	private TypePrint typePrint;//тип печати
 	private Feed feed; //подача материала
 	private Chromaticity chromaticity;// цветность

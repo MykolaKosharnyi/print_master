@@ -9,41 +9,12 @@
 		<title>Search printer</title>
 	    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	    <script type="text/javascript" src="js/jquery-ui.js"></script>
-	   <!-- <script type="text/javascript" src="js/search_printer.js"></script>-->
+	    <script type="text/javascript" src="js/search_printer.js"></script>
 	</head>
 <body>
     <header>
-   <!--     <div id="first_row">
-            <ul id="first_row_left">
-                <li><a href="">О нас</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-            <ul id="first_row_right">
-                <li>
-                    <select>
-                        <option>Русский</option>
-                        <option>English</option>
-                    </select>
-                </li>
-                <li>
-                    <select>
-                        <option onclick="UA">UA</option>
-                        <option onclick="USD">USD</option>
-                        <option onclick="EUR">EUR</option>
-                    </select>
-                </li>
-                <li>
-                    <select name="Аккаунт">
-                        <option>Логин</option>
-                        <option>Лист пожеланий</option>
-                        <option>Корзина</option>
-                        <option>Выход</option>
-                    </select>
-                </li>
-            </ul>
-        </div>-->
         <div id="second_row">
-            <a id="second_row_logo" href=""><img class="second_row_image" src="images/head/Logo_Print_Master.jpg" alt=""></a>
+            <a id="second_row_logo" href="index.html"><img class="second_row_image" src="images/head/Logo_Print_Master.jpg" alt=""></a>
             <a id="second_row_contact" href=""><img class="second_row_image" src="images/head/Contact.png" alt=""></a>
             <div id="second_row_search">
                 <input id="second_row_search_field" placeholder="Введите слово или фразу..." size="50" type="search">
@@ -55,127 +26,129 @@
             <a id="second_row_language" href=""><img class="second_row_image" src="images/head/Langiuge.jpg" alt=""></a>
         </div>
         <div id="head_memu_background">
-                    <div id="mainmenu">
-                       <div id="full_menu">
-                         <div class="toggle-menu">
-						<!--	<span class="menu-text hide-on-med-and-down">Меню</span>-->
-							<span class="icon-bar skew-clock"></span>
-							<span class="icon-bar hide-closed"></span>
-							<span class="icon-bar skew-counter"></span>
-						</div>
+            <div id="mainmenu">
+                <div id="full_menu">
+                    <div class="toggle-menu">
+				        <!--<span class="menu-text hide-on-med-and-down">Меню</span>-->
+				        <span class="icon-bar skew-clock"></span>
+				        <span class="icon-bar hide-closed"></span>
+				        <span class="icon-bar skew-counter"></span>
+				    </div>
+                </div>
+                <ul>
+                    <!-- Пункт меню 1 -->
+                    <li><a href="search_printer.html">Принтеры</a>
+                        <div class="head_menu_point_1">
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>Сольвентные принтеры</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/progo1.jpg" alt=""><p>Экосольвентные принтеры</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>UV рулонные принтеры</p></a>
+                            </div>                                           
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>UV плоскопечатные принтеры</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>Сублимационные принтеры</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>Текстильные принтеры</p></a>
+                            </div>
                         </div>
-                                <ul>
-                                <!-- Пункт меню 1 -->
-                                <li><a href="#">Принтеры</a>
-                                  <div class="head_menu_point_1">
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>Сольвентные принтеры</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/progo1.jpg" alt=""><p>Экосольвентные принтеры</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>UV рулонные принтеры</p></a>
-                                      </div>                                       
-                                        
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>UV плоскопечатные принтеры</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>Сублимационные принтеры</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>Текстильные принтеры</p></a>
-                                      </div>
-                                  </div>
-
-                                </li>
-                                <!-- Пункт меню 2 -->
-                                <li><a href="#">3D Принтеры</a>
-                                  <div class="head_menu_point_2">
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_1.jpg" alt="" ><p>Экструдные FDM</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_10.jpg" alt="" ><p>Фото печать Polyjet</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_11.jpg" alt="" ><p>Лазерного спекания LENS</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_12.jpg" alt="" ><p>Ламинация LOM</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_13.jpg" alt="" ><p>Стереолитография SL</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_14.jpg" alt="" ><p>Лазерное спекание LS</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_15.jpg" alt="" ><p>Порошкового склеивания 3DP</p></a>
-                                      </div>                                      
-                                  </div>
-                                </li>
-                                <!-- Пункт меню 3 -->
-                                <li><a href="#">Ламинаторы</a>
-                                    <div class="head_menu_point_3">
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/lam1.bmp" alt="" ><p>Горячего ламинирования</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/lam1.bmp" alt="" ><p>Холодного ламинирования</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/lam1.bmp" alt="" ><p>Жидкостные</p></a>
-                                      </div>                                                                            
-                                  </div>
-                                </li>
-                                <!-- Пункт меню 4 -->
-                                <li><a href="#">Лазеры</a>
-                                    <div class="head_menu_point_4">
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/hqdefault.jpg" alt="" ><p>Газовые лазеры СО2</p></a>
-                                      </div>
-                                       <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/hqdefault.jpg" alt="" ><p>Твердотельные лазеры</p></a>
-                                      </div>                                     
-                                  </div>
-                                </li>
-                                <!-- Пункт меню 5 -->
-                                <li><a href="#">Фрезеры</a>
-                                    <div class="head_menu_point_5">
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/maxresdefault.jpg" alt="" ><p>Для обработки дерева</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/maxresdefault.jpg" alt="" ><p>Для обработки метала</p></a>
-                                      </div>
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/maxresdefault.jpg" alt="" ><p>Для обработки камня</p></a>
-                                      </div>                                                                            
-                                  </div>
-                                </li>
-                                <!-- Пункт меню 6 -->
-                                <li><a href="#">Сканеры</a>
-                                   <div class="head_menu_point_6">
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/SD_series.png" alt="" ><p>Широкоформатные сканеры</p></a>
-                                      </div>
-                                  </div>
-                                </li>
-                                <!-- Пункт меню 7 -->
-                                <li><a href="#">Програмное обеспечение</a>
-                                    <div class="head_menu_point_7">
-                                      <div class="head_menu_point_element">
-                                          <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>RIP системы</p></a>
-                                      </div>
-                                    </div>
-                                </li>
-
-                                </ul><!-- Конец списка -->
-                        </div><!-- Конец блока #mainmenu -->
+                    </li>
+                    <!-- Пункт меню 2 -->
+                    <li><a href="#">3D Принтеры</a>
+                        <div class="head_menu_point_2">
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_1.jpg" alt="" ><p>Экструдные FDM</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_10.jpg" alt="" ><p>Фото печать Polyjet</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_11.jpg" alt="" ><p>Лазерного спекания LENS</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_12.jpg" alt="" ><p>Ламинация LOM</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_13.jpg" alt="" ><p>Стереолитография SL</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_14.jpg" alt="" ><p>Лазерное спекание LS</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/Edit/3D_Print_Master_Slide_15.jpg" alt="" ><p>Порошкового склеивания 3DP</p></a>
+                            </div>                                      
+                        </div>
+                    </li>
+                    <!-- Пункт меню 3 -->
+                    <li><a href="#">Ламинаторы</a>
+                        <div class="head_menu_point_3">
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/lam1.bmp" alt="" ><p>Горячего ламинирования</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/lam1.bmp" alt="" ><p>Холодного ламинирования</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/lam1.bmp" alt="" ><p>Жидкостные</p></a>
+                            </div>                                                                            
+                        </div>
+                    </li>
+                    <!-- Пункт меню 4 -->
+                    <li><a href="#">Лазеры</a>
+                        <div class="head_menu_point_4">
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/hqdefault.jpg" alt="" ><p>Газовые лазеры СО2</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/hqdefault.jpg" alt="" ><p>Твердотельные лазеры</p></a>
+                            </div>                                     
+                        </div>
+                    </li>
+                    <!-- Пункт меню 5 -->
+                    <li><a href="#">Фрезеры</a>
+                        <div class="head_menu_point_5">
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/maxresdefault.jpg" alt="" ><p>Для обработки дерева</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/maxresdefault.jpg" alt="" ><p>Для обработки метала</p></a>
+                            </div>
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/maxresdefault.jpg" alt="" ><p>Для обработки камня</p></a>
+                            </div>                                                                            
+                        </div>
+                    </li>
+                    <!-- Пункт меню 6 -->
+                    <li><a href="#">Сканеры</a>
+                        <div class="head_menu_point_6">
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/SD_series.png" alt="" ><p>Широкоформатные сканеры</p></a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Пункт меню 7 -->
+                    <li><a href="#">Програмное обеспечение</a>
+                        <div class="head_menu_point_7">
+                            <div class="head_menu_point_element">
+                                <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>RIP системы</p></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul><!-- Конец списка -->
+            </div><!-- Конец блока #mainmenu -->
+        </div>
+        <div id="navigation">
+            <a href="index.html">Home</a>
+            <span> > </span>
+            <p> Принтеры </p>
         </div>    
- </header>
+    </header>
    
     <div id="the_main_part">  
         <div class="left_field">
@@ -257,312 +230,384 @@
                </li>
            </ul>
             <div id="reklam">
-               	        <div class="slide-item">
-					        <img src="img/1.png" alt="" />
-					        <div class="slide-title">Name of product: </div>
-                            <div class="slide-price">Prise: </div>
-                            <input class="slide-buy" type="button" value="Добавить в корзину" >
-				        </div>
-				       <div class="slide-item">
-					        <img src="img/2.png" alt="" />
-					        <div class="slide-title">Name of product: </div>
-                            <div class="slide-price">Prise: </div>
-                            <input class="slide-buy" type="button" value="Добавить в корзину" >
-				        </div>
-				        
-				        <div class="slide-item">
-					        <img src="img/3.png" alt="" />
-					        <div class="slide-title">Name of product: </div>
-                            <div class="slide-price">Prise: </div>
-                            <input class="slide-buy" type="button" value="Добавить в корзину" >
-				        </div>
-				        <div class="slide-item">
-					        <img src="img/1.png" alt="" />
-					        <div class="slide-title">Name of product: </div>
-                            <div class="slide-price">Prise: </div>
-                            <input class="slide-buy" type="button" value="Добавить в корзину" >
-				        </div>
+				<div class="slide-item">
+				    <div class="slider_image"><img src="img/2.png" alt="" /></div>
+				    <div class="slide-title">Name of product: </div>
+                    <div class="slide-price">Prise: </div>
+                    <input class="slide-buy" type="button" value="Добавить в корзину" >
+				</div>
+				<div class="slide-item">
+				    <div class="slider_image"><img src="img/3.png" alt="" /></div>
+				    <div class="slide-title">Name of product: </div>
+                    <div class="slide-price">Prise: </div>
+                    <input class="slide-buy" type="button" value="Добавить в корзину" >
+				</div>
+				<div class="slide-item">
+				    <div class="slider_image"><img src="img/1.png" alt="" /></div>
+				    <div class="slide-title">Name of product: </div>
+                    <div class="slide-price">Prise: </div>
+                    <input class="slide-buy" type="button" value="Добавить в корзину" >
+				</div>
            </div>
         </div>
         <div id="search_printer">
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Ширина печати</legend>
+                <div class="block_title">
+                    <i></i>
+                    <p>Ширина печати</p>
+                </div>
+                <ul class="check_boxes">
                     <div id="tabs">
                         <ul>
                             <li>в дюймах</li>
                             <li>в форматах</li>
-                            <li>в сантиметрах</li>
+                            <li>в миллиметрах</li>
                         </ul>
                         <div>
                             <div>
-                                <input type="radio" name="radio_weight_print_inch" checked>24</input>
-                                <input type="radio" name="radio_weight_print_inch">36</input>
-                                <input type="radio" name="radio_weight_print_inch">42</input>
-                                <input type="radio" name="radio_weight_print_inch">60</input>
-                                <input type="radio" name="radio_weight_print_inch">70</input>
-                                <input type="radio" name="radio_weight_print_inch">100</input>
+                                <li><input type="checkbox" name="radio_weight_print_inch" checked>24</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_inch">36</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_inch">42</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_inch">60</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_inch">70</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_inch">100</input></li>
                             </div>
                             <div>
-                                <input type="radio" name="radio_weight_print_format" checked>A0</input>
-                                <input type="radio" name="radio_weight_print_format">A1</input>
-                                <input type="radio" name="radio_weight_print_format">A2</input>
-                                <input type="radio" name="radio_weight_print_format">A3</input>
-                                <input type="radio" name="radio_weight_print_format">A3+</input>
-                                <input type="radio" name="radio_weight_print_format">B0</input>
-                                <input type="radio" name="radio_weight_print_format">B1</input> 
+                                <li><input type="checkbox" name="radio_weight_print_format" checked>A0</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_format">A1</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_format">A2</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_format">A3</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_format">A3+</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_format">B0</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_format">B1</input></li> 
                             </div>
                             <div>
-                                <input type="radio" name="radio_weight_print_sm" checked>60</input>
-                                <input type="radio" name="radio_weight_print_sm">90</input>
-                                <input type="radio" name="radio_weight_print_sm">107</input>
-                                <input type="radio" name="radio_weight_print_sm">130</input>
-                                <input type="radio" name="radio_weight_print_sm">160</input>
-                                <input type="radio" name="radio_weight_print_sm">180</input>
-                                <input type="radio" name="radio_weight_print_sm">250</input>
-                                <input type="radio" name="radio_weight_print_sm">260</input>
-                                <input type="radio" name="radio_weight_print_sm">3200</input>
-                                <input type="radio" name="radio_weight_print_sm">5000</input>
+                                <li><input type="checkbox" name="radio_weight_print_sm" checked>600</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_sm">900</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_sm">1070</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_sm">1300</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_sm">1600</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_sm">1800</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_sm">2500</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_sm">2600</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_sm">32000</input></li>
+                                <li><input type="checkbox" name="radio_weight_print_sm">50000</input></li>
                             </div>
                         </div>            
-                    </div> 
-                </fieldset>         
+                    </div>
+                </ul>       
+            </div>
+            
+            <div class="search_criteria">
+                <div class="block_title">
+                    <i></i>
+                    <p>Цена</p>
+                </div>
+                <ul class="check_boxes">
+                    <p>
+                      <label for="amount"><!--Price range:--></label>
+                      <input type="text" class="amount-prise" readonly style="border:0; color:#006080; background: inherit; font-weight:bold;">
+                    </p>
+                    <div class="slider-range-prise" ></div>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Тип печати</legend>
-                        <input type="checkbox" name="checkbox_type_print">Термо-струйная</input>
-                        <input type="checkbox" name="checkbox_type_print">Пьезо-струйная</input>
-                </fieldset>  
+                <div class="block_title">
+                    <i></i>
+                    <p>Тип печати</p>
+                </div>
+                <ul class="check_boxes">
+                    <li><input type="checkbox" name="checkbox_type_print">Термо-струйная</input></li>
+                    <li><input type="checkbox" name="checkbox_type_print">Пьезо-струйная</input></li>
+                </ul>  
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Подача метериала</legend>
-                        <input type="checkbox" name="checkbox_feed">Рулонный</input>
-                        <input type="checkbox" name="checkbox_feed">Плоскопечатный</input>
-                        <input type="checkbox" name="checkbox_feed">Гибридный</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Подача метериала</p>
+                </div>
+                <ul class="check_boxes">
+                    <li><input type="checkbox" name="checkbox_feed">Рулонный</input></li>
+                    <li><input type="checkbox" name="checkbox_feed">Плоскопечатный</input></li>
+                    <li><input type="checkbox" name="checkbox_feed">Гибридный</input></li>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Цветность</legend>
-                        <input type="checkbox" name="checkbox_chromaticity">CMYK</input>
-                        <input type="checkbox" name="checkbox_chromaticity">CMYK X 2</input>
-                        <input type="checkbox" name="checkbox_chromaticity">CMYKLcLm</input>
-                        <input type="checkbox" name="checkbox_chromaticity">CMYKLcLmOG</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Цветность</p>
+                </div>
+                <ul class="check_boxes">
+                        <li><input type="checkbox" name="checkbox_chromaticity">CMYK</input></li>
+                        <li><input type="checkbox" name="checkbox_chromaticity">CMYK X 2</input></li>
+                        <li><input type="checkbox" name="checkbox_chromaticity">CMYKLcLm</input></li>
+                        <li><input type="checkbox" name="checkbox_chromaticity">CMYKLcLmOG</input></li>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Производитель печатающей головки</legend>
-                        <input type="checkbox" name="checkbox_manufacturer_printhead">Spectra</input>
-                        <input type="checkbox" name="checkbox_manufacturer_printhead">XAAR</input>
-                        <input type="checkbox" name="checkbox_manufacturer_printhead">SPT</input>
-                        <input type="checkbox" name="checkbox_manufacturer_printhead">Konika-Minolta</input>
-                        <input type="checkbox" name="checkbox_manufacturer_printhead">Toshiba</input>
-                        <input type="checkbox" name="checkbox_manufacturer_printhead">Rico</input>
-                        <input type="checkbox" name="checkbox_manufacturer_printhead">Epson</input>
-                        <input type="checkbox" name="checkbox_manufacturer_printhead">Lexmark</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Производитель печатающей головки</p>
+                </div>
+                <ul class="check_boxes">
+                        <li><input type="checkbox" name="checkbox_manufacturer_printhead">Spectra</input></li>
+                        <li><input type="checkbox" name="checkbox_manufacturer_printhead">XAAR</input></li>
+                        <li><input type="checkbox" name="checkbox_manufacturer_printhead">SPT</input></li>
+                        <li><input type="checkbox" name="checkbox_manufacturer_printhead">Konika-Minolta</input></li>
+                        <li><input type="checkbox" name="checkbox_manufacturer_printhead">Toshiba</input></li>
+                        <li><input type="checkbox" name="checkbox_manufacturer_printhead">Ricoh</input></li>
+                        <li><input type="checkbox" name="checkbox_manufacturer_printhead">Epson</input></li>
+                        <li><input type="checkbox" name="checkbox_manufacturer_printhead">Lexmark</input></li>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Тип печатающей головки</legend>
-                        <input type="checkbox" name="checkbox_type_printhead">Nova 256, Galaxy256, Polyaris 512</input>
-                        <input type="checkbox" name="checkbox_type_printhead">126/50, 126/80, 128/40, 128/80, 500</input>
-                        <input type="checkbox" name="checkbox_type_printhead">255, 510, 1020</input>
-                        <input type="checkbox" name="checkbox_type_printhead">256, 512, 1024</input>
-                        <input type="checkbox" name="checkbox_type_printhead">CA3, CA4</input>
-                        <input type="checkbox" name="checkbox_type_printhead">Gen4, Gen5</input>
-                        <input type="checkbox" name="checkbox_type_printhead">DX2, DX4, DX5, DX6, DX7</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Тип печатающей головки</p>
+                </div>
+                <ul class="check_boxes">
+                    <li><input type="checkbox" name="checkbox_type_printhead">Nova 256</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">Galaxy 256</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">Polyaris 512</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">126/50</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">126/80</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">128/40</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">128/80</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">255</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">256</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">500</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">510</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">512</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">512KN</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">1020</input></li>                    
+                    <li><input type="checkbox" name="checkbox_type_printhead">1024</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">1024I</input></li>                    
+                    <li><input type="checkbox" name="checkbox_type_printhead">CA3</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">CA4</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">Gen4</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">Gen5</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">DX2</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">DX4</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">DX5</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">DX6</input></li>
+                    <li><input type="checkbox" name="checkbox_type_printhead">DX7</input></li>
+                </ul>  
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Совместимые чернила</legend>
-                        <input type="checkbox" name="checkbox_compatible_ink">Водные</input>
-                        <input type="checkbox" name="checkbox_compatible_ink">Пигментные</input>
-                        <input type="checkbox" name="checkbox_compatible_ink">Сублимационные </input>
-                        <input type="checkbox" name="checkbox_compatible_ink">Экосольвентные</input>
-                        <input type="checkbox" name="checkbox_compatible_ink">Сольвентные</input>
-                        <input type="checkbox" name="checkbox_compatible_ink">UV-чернила</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Совместимые чернила</p>
+                </div>
+                <ul class="check_boxes">
+                        <li><input type="checkbox" name="checkbox_compatible_ink">Водные</input></li>
+                        <li><input type="checkbox" name="checkbox_compatible_ink">Пигментные</input></li>
+                        <li><input type="checkbox" name="checkbox_compatible_ink">Сублимационные </input></li>
+                        <li><input type="checkbox" name="checkbox_compatible_ink">Экосольвентные</input></li>
+                        <li><input type="checkbox" name="checkbox_compatible_ink">Сольвентные</input></li>
+                        <li><input type="checkbox" name="checkbox_compatible_ink">UV-чернила</input></li>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Тип капли</legend>
-                        <input type="checkbox" name="checkbox_type_drops">Постоянная</input>
-                        <input type="checkbox" name="checkbox_type_drops">Переменная</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Тип капли</p>
+                </div>
+                <ul class="check_boxes">
+                        <li><input type="checkbox" name="checkbox_type_drops">Постоянная</input></li>
+                        <li><input type="checkbox" name="checkbox_type_drops">Переменная</input></li>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Размер капли</legend>
-                        <input type="checkbox" name="checkbox_size_drops">1,5</input>
-                        <input type="checkbox" name="checkbox_size_drops">2</input>
-                        <input type="checkbox" name="checkbox_size_drops">4</input>
-                        <input type="checkbox" name="checkbox_size_drops">8</input>
-                        <input type="checkbox" name="checkbox_size_drops">12</input>
-                        <input type="checkbox" name="checkbox_size_drops">15</input>
-                        <input type="checkbox" name="checkbox_size_drops">20</input>
-                        <input type="checkbox" name="checkbox_size_drops">30</input>
-                        <input type="checkbox" name="checkbox_size_drops">35</input>
-                        <input type="checkbox" name="checkbox_size_drops">40</input>
-                        <input type="checkbox" name="checkbox_size_drops">80</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Размер капли</p>
+                </div>
+                <ul class="check_boxes">
+                    <li><input type="checkbox" name="checkbox_size_drops">1,5</input></li>
+                    <li><input type="checkbox" name="checkbox_size_drops">2</input></li>
+                    <li><input type="checkbox" name="checkbox_size_drops">4</input></li>
+                    <li><input type="checkbox" name="checkbox_size_drops">8</input></li>
+                    <li><input type="checkbox" name="checkbox_size_drops">12</input></li>
+                    <li><input type="checkbox" name="checkbox_size_drops">15</input></li>
+                    <li><input type="checkbox" name="checkbox_size_drops">20</input></li>
+                    <li><input type="checkbox" name="checkbox_size_drops">30</input></li>
+                    <li><input type="checkbox" name="checkbox_size_drops">35</input></li>
+                    <li><input type="checkbox" name="checkbox_size_drops">40</input></li>
+                    <li><input type="checkbox" name="checkbox_size_drops">80</input></li>   
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Скорость печати</legend>
-                        <input type="range" min="1" max="300" name="range_speed_print" draggable="auto" >м.кв./ч.</input>
-                        <div id="slider-range"></div>
-                        <p>
-                          <label for="amount">Укажите размах цен:</label>
-                          <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
-                        </p>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Скорость печати</p>
+                </div>
+                <ul class="check_boxes">
+                    <p>
+                      <input type="text" class="amount-speed-print" readonly style="border:0; color:#006080; background: inherit; font-weight:bold;">
+                    </p>
+                    <div class="slider-range-speed-print" ></div>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Разрешение печати</legend>
-                        <input type="checkbox" name="checkbox_print_resolution">360dpi</input>
-                        <input type="checkbox" name="checkbox_print_resolution">600dpi</input>
-                        <input type="checkbox" name="checkbox_print_resolution">720dpi</input>
-                        <input type="checkbox" name="checkbox_print_resolution">1200dpi</input>
-                        <input type="checkbox" name="checkbox_print_resolution">1440dpi</input>
-                        <input type="checkbox" name="checkbox_print_resolution">2880dpi</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Разрешение печати</p>
+                </div>
+                <ul class="check_boxes">
+                    <li><input type="checkbox" name="checkbox_print_resolution">360dpi</input></li>
+                    <li><input type="checkbox" name="checkbox_print_resolution">600dpi</input></li>
+                    <li><input type="checkbox" name="checkbox_print_resolution">720dpi</input></li>
+                    <li><input type="checkbox" name="checkbox_print_resolution">1200dpi</input></li>
+                    <li><input type="checkbox" name="checkbox_print_resolution">1440dpi</input></li>
+                    <li><input type="checkbox" name="checkbox_print_resolution">2880dpi</input></li>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Производитель Оборудования</legend>
-                        <input type="checkbox" name="checkbox_equipment_manufacturer">Mimaki</input>
-                        <input type="checkbox" name="checkbox_equipment_manufacturer">Roland</input>
-                        <input type="checkbox" name="checkbox_equipment_manufacturer">Mutoh</input>
-                        <input type="checkbox" name="checkbox_equipment_manufacturer">HP</input>
-                        <input type="checkbox" name="checkbox_equipment_manufacturer">OCE</input>
-                        <input type="checkbox" name="checkbox_equipment_manufacturer">Agfa</input>
-                        <input type="checkbox" name="checkbox_equipment_manufacturer">LIYU</input>
-                        <input type="checkbox" name="checkbox_equipment_manufacturer">Infinity</input>
-                        <input type="checkbox" name="checkbox_equipment_manufacturer">Gonzeng</input>
-                        <input type="checkbox" name="checkbox_equipment_manufacturer">Jong Ye</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Производитель оборудования</p>
+                </div>
+                <ul class="check_boxes">
+                    <li><input type="checkbox" name="checkbox_equipment_manufacturer">Mimaki</input></li>
+                    <li><input type="checkbox" name="checkbox_equipment_manufacturer">Roland</input></li>
+                    <li><input type="checkbox" name="checkbox_equipment_manufacturer">Mutoh</input></li>
+                    <li><input type="checkbox" name="checkbox_equipment_manufacturer">HP</input></li>
+                    <li><input type="checkbox" name="checkbox_equipment_manufacturer">OCE</input></li>
+                    <li><input type="checkbox" name="checkbox_equipment_manufacturer">Agfa</input></li>
+                    <li><input type="checkbox" name="checkbox_equipment_manufacturer">LIYU</input></li>
+                    <li><input type="checkbox" name="checkbox_equipment_manufacturer">Infinity</input></li>
+                    <li><input type="checkbox" name="checkbox_equipment_manufacturer">Gonzeng</input></li>
+                    <li><input type="checkbox" name="checkbox_equipment_manufacturer">Jong Ye</input></li>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Интерфейс подключения</legend>
-                        <input type="checkbox" name="checkbox_interface_connection">SCSI</input>
-                        <input type="checkbox" name="checkbox_interface_connection">PCI Adapter</input>
-                        <input type="checkbox" name="checkbox_interface_connection">USB</input>
-                        <input type="checkbox" name="checkbox_interface_connection">Fire-Wire</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Интерфейс подключения</p>
+                </div>
+                <ul class="check_boxes">
+                    <li><input type="checkbox" name="checkbox_interface_connection">SCSI</input></li>
+                    <li><input type="checkbox" name="checkbox_interface_connection">PCI Adapter</input></li>
+                    <li><input type="checkbox" name="checkbox_interface_connection">USB</input></li>
+                    <li><input type="checkbox" name="checkbox_interface_connection">Fire-Wire</input></li>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Максимальная толщина  носителя</legend>
-                        <input type="checkbox" name="checkbox_maximum_media_thickness">1mm</input>
-                        <input type="checkbox" name="checkbox_maximum_media_thickness">2mm Adapter</input>
-                        <input type="checkbox" name="checkbox_maximum_media_thickness">3mm</input>
-                        <input type="checkbox" name="checkbox_maximum_media_thickness">4mm</input>
-                        <input type="range" min="1" max="500" name="range_maximum_media_thickness">mm</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Максимальная толщина носителя</p>
+                </div>
+                <ul class="check_boxes">
+                    <li><input type="checkbox" name="checkbox_maximum_media_thickness">1mm</input></li>
+                    <li><input type="checkbox" name="checkbox_maximum_media_thickness">2mm</input></li>
+                    <li><input type="checkbox" name="checkbox_maximum_media_thickness">3mm</input></li>
+                    <li><input type="checkbox" name="checkbox_maximum_media_thickness">4mm</input></li>
+                    <p>
+                      <input type="text" class="amount-maximum_media_thickness" readonly style="border:0; color:#006080; background: inherit; font-weight:bold;">
+                    </p>
+                    <div class="slider-range-maximum_media_thickness" ></div>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Максимальный вес носителя</legend>
-                        <input type="range" min="5" max="500" name="range_maximum_weight_of_vehicle">кг</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Максимальный вес носителя</p>
+                </div>
+                <ul class="check_boxes">
+                    <p>
+                      <input type="text" class="amount-maximum_weight_of_vehicle" readonly style="border:0; color:#006080; background: inherit; font-weight:bold;">
+                    </p>
+                    <div class="slider-range-maximum_weight_of_vehicle" ></div>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>П/О RIP</legend>
-                        <input type="checkbox" name="checkbox_RIP">ONYX Graphics</input>
-                        <input type="checkbox" name="checkbox_RIP">SA International/PhotoPRINT™ Family</input>
-                        <input type="checkbox" name="checkbox_RIP">Wasatch SOFTRIP</input>
-                        <input type="checkbox" name="checkbox_RIP">ColorGATE Productionserver</input>
-                        <input type="checkbox" name="checkbox_RIP">Poster Print</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>П/О RIP</p>
+                </div>
+                <ul class="check_boxes">
+                    <li><input type="checkbox" name="checkbox_RIP">ONYX Graphics</input></li>
+                    <li><input type="checkbox" name="checkbox_RIP">SA International/PhotoPRINT™ Family</input></li>
+                    <li><input type="checkbox" name="checkbox_RIP">Wasatch SOFTRIP</input></li>
+                    <li><input type="checkbox" name="checkbox_RIP">ColorGATE Productionserver</input></li>
+                    <li><input type="checkbox" name="checkbox_RIP">Poster Print</input></li>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Максимальная потребляемая мощность</legend>
-                        <input type="range" min="0,1" max="100" name="range_max_power_consumption">кВт</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Максимальная потребляемая мощность</p>
+                </div>
+                <ul class="check_boxes">
+                    <p>
+                      <input type="text" class="amount-max_power_consumption" readonly style="border:0; color:#006080; background: inherit; font-weight:bold;">
+                    </p>
+                    <div class="slider-range-max_power_consumption" ></div>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Вес</legend>
-                        <input type="range" min="50" max="5000" name="range_weight">кг</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Вес</p>
+                </div>
+                <ul class="check_boxes">
+                    <p>
+                      <input type="text" class="amount-weight" readonly style="border:0; color:#006080; background: inherit; font-weight:bold;">
+                    </p>
+                    <div class="slider-range-weight" ></div>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Ширина</legend>
-                        <input type="range" min="0.1" max="10" name="range_width">м</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Ширина</p>
+                </div>
+                <ul class="check_boxes">
+                    <p>
+                      <input type="text" class="amount-width" readonly style="border:0; color:#006080; background: inherit; font-weight:bold;">
+                    </p>
+                    <div class="slider-range-width" ></div>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Высота</legend>
-                        <input type="range" min="0.1" max="10" name="range_heigth">м</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Высота</p>
+                </div>
+                <ul class="check_boxes">
+                    <p>
+                      <input type="text" class="amount-heigth" readonly style="border:0; color:#006080; background: inherit; font-weight:bold;">
+                    </p>
+                    <div class="slider-range-heigth" ></div>
+                </ul>
             </div>
             <div class="search_criteria">
-                <fieldset>
-                    <legend>Глубина</legend>
-                        <input type="range" min="0.1" max="10" name="range_depth">м</input>
-                </fieldset>
+                <div class="block_title">
+                    <i></i>
+                    <p>Глубина</p>
+                </div>
+                <ul class="check_boxes">
+                    <p>
+                      <input type="text" class="amount-depth" readonly style="border:0; color:#006080; background: inherit; font-weight:bold;">
+                    </p>
+                    <div class="slider-range-depth" ></div>
+                </ul>
             </div>
         </div>
         <div id="out_result_of_search"></div>
     </div>
     
-<div id="footer">
-
-</div>
-    <script type="text/javascript">
+<div id="footer"></div>
+    <script>
         $( function() {
-           $("#full_menu").click(function(){
-               if ( $(".menu").css('display') == 'none' ) {
+           $("#full_menu").click(function(){ 
+              if ( $(".menu").css('display') == 'none' ) {
                      $(".menu").show(1000);
                       } else {
                      $(".menu").hide(400);
                      }
               });
         } );       
-    </script>
-    <script>
-        (function($){				
-            jQuery.fn.lightTabs = function(options){
-
-                var createTabs = function(){
-                    tabs = this;
-                    i = 0;
-
-                    showPage = function(i){
-                        $(tabs).children("div").children("div").hide();
-                        $(tabs).children("div").children("div").eq(i).show();
-                        $(tabs).children("ul").children("li").removeClass("active");
-                        $(tabs).children("ul").children("li").eq(i).addClass("active");
-                    }
-
-                    showPage(0);				
-
-                    $(tabs).children("ul").children("li").each(function(index, element){
-                        $(element).attr("data-page", i);
-                        i++;                        
-                    });
-
-                    $(tabs).children("ul").children("li").click(function(){
-                        showPage(parseInt($(this).attr("data-page")));
-                    });				
-                };		
-                return this.each(createTabs);
-            };	
-        })(jQuery);
-        $(document).ready(function(){
-            $("#tabs").lightTabs();
-        });
     </script>
 </body>
 </html>
