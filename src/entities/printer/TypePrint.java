@@ -2,25 +2,25 @@ package entities.printer;
 
 public enum TypePrint {
 	THERMAL_INKJET("Термо-струйная")/* Термо-струйная */, PIJ("Пьезо-струйная")/* Пьезоструйная */;
-	private String nameTypePrint;
+	
+	private String valueTypePrint;
 
-	private TypePrint(String nameTypePrint) {
-		this.nameTypePrint = nameTypePrint;
+	private TypePrint(String valueTypePrint) {
+		this.valueTypePrint = valueTypePrint;
 	}
 
 	/**
-	 * @return the nameTypePrint
+	 * @return the valueTypePrint
 	 */
-	public String getNameTypePrint() {
-		return nameTypePrint;
+	public String getValueTypePrint() {
+		return valueTypePrint;
 	}
 
 	/**
-	 * @param nameTypePrint
-	 *            the nameTypePrint to set
+	 * @param valueTypePrint the valueTypePrint to set
 	 */
-	public void setNameTypePrint(String nameTypePrint) {
-		this.nameTypePrint = nameTypePrint;
+	public void setValueTypePrint(String valueTypePrint) {
+		this.valueTypePrint = valueTypePrint;
 	}
 
 }

@@ -2,25 +2,25 @@ package entities.printer;
 
 public enum TypeDrops {
 	PERMANENT("Постоянная")/* Постоянная */, PARTIALLY("Переменная")/* Переменная */;
-	private String nameTypeDrops;
+	
+	private String valueDrops;
 
-	private TypeDrops(String nameTypeDrops) {
-		this.nameTypeDrops = nameTypeDrops;
+	private TypeDrops(String valueDrops) {
+		this.valueDrops = valueDrops;
 	}
 
 	/**
-	 * @return the nameTypeDrops
+	 * @return the valueDrops
 	 */
-	public String getNameTypeDrops() {
-		return nameTypeDrops;
+	public String getValueDrops() {
+		return valueDrops;
 	}
 
 	/**
-	 * @param nameTypeDrops
-	 *            the nameTypeDrops to set
+	 * @param valueDrops the valueDrops to set
 	 */
-	public void setNameTypeDrops(String nameTypeDrops) {
-		this.nameTypeDrops = nameTypeDrops;
+	public void setValueDrops(String valueDrops) {
+		this.valueDrops = valueDrops;
 	}
 
 }

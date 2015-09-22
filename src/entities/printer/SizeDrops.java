@@ -5,7 +5,6 @@ _1_5("1.5"), _2("2"), _4("4"), _8("8"), _12("12"), _15("15"), _20("20"), _30("30
 
 private String size;
 
-
 private SizeDrops(String size) {
 	this.size = size;
 }

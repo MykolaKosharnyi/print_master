@@ -186,14 +186,14 @@ public class Printer {
 	/**
 	 * @return the manufacturer_printhead
 	 */
-	public ManufacturerPrinthead getManufacturer_printhead() {
+	public ManufacturerPrinthead getManufacturerPrinthead() {
 		return manufacturer_printhead;
 	}
 
 	/**
 	 * @param manufacturer_printhead the manufacturer_printhead to set
 	 */
-	public void setManufacturer_printhead(
+	public void setManufacturerPrinthead(
 			ManufacturerPrinthead manufacturer_printhead) {
 		this.manufacturer_printhead = manufacturer_printhead;
 	}
