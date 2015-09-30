@@ -89,6 +89,17 @@ header{
         transition: 0.5s ;
     }
 
+        #second_row_contact .contact{
+            padding: 5px 0;
+            float: left;
+            height: 80px;
+        }
+
+            .contact p{
+                padding: 0px 10px;
+                margin: 0;
+            }
+
         .second_row_image{
             position: relative;
             width: 80px;
@@ -154,7 +165,6 @@ header{
         border-radius: 5px;*/
     }
         
-        #second_row_contact:hover,
         #second_row_basket:hover,
         #second_row_user:hover,
         #second_row_price_equality:hover,
@@ -314,7 +324,7 @@ header{
 #mainmenu ul li:hover, 
 #mainmenu ul li.hover, 
 #mainmenu ul li.active {
-    background: #666;
+    background: #006080;
 }
 
 #mainmenu ul li:hover .head_menu_point_1,
@@ -337,7 +347,10 @@ header{
 #mainmenu ul li.active .head_menu_point_6,
 #mainmenu ul li:hover .head_menu_point_7,
 #mainmenu ul li.hover .head_menu_point_7,
-#mainmenu ul li.active .head_menu_point_7{
+#mainmenu ul li.active .head_menu_point_7,
+#mainmenu ul li:hover .head_menu_point_8,
+#mainmenu ul li.hover .head_menu_point_8,
+#mainmenu ul li.active .head_menu_point_8{
     opacity: 1;
     top: 50px;
     left: 0;
@@ -355,8 +368,20 @@ header{
     left: -150px;
 }
 
+#mainmenu ul li:hover .head_menu_point_7,
+#mainmenu ul li.hover .head_menu_point_7,
+#mainmenu ul li.active .head_menu_point_7{
+    left: -100px;
+}
+
+#mainmenu ul li:hover .head_menu_point_8,
+#mainmenu ul li.hover .head_menu_point_8,
+#mainmenu ul li.active .head_menu_point_8{
+    left: -40px;
+}
+
 /*-----------------------*/
-.head_menu_point_1, .head_menu_point_2, .head_menu_point_3, .head_menu_point_4, .head_menu_point_5, .head_menu_point_6, .head_menu_point_7{
+.head_menu_point_1, .head_menu_point_2, .head_menu_point_3, .head_menu_point_4, .head_menu_point_5, .head_menu_point_6, .head_menu_point_7, .head_menu_point_8{
     position: absolute;
     width: 770px;
 /*    border: 1px #2c5987 solid;*/
@@ -367,18 +392,18 @@ header{
     transition: 0.5s opacity;
     border-radius: 0 0 3px 3px;
     background: transparent;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.25);
     padding-top: 5px;
 }
 
 .head_menu_point_2{
     width: 1027px;
 }
-.head_menu_point_4{
+.head_menu_point_4, .head_menu_point_7{
     width: 515px;
 }
 
-.head_menu_point_6, .head_menu_point_7{
+.head_menu_point_6, .head_menu_point_8{
     width: 260px;
 }
     .head_menu_point_element{

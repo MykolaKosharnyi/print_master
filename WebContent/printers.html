@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/admin/style_admin.css">
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<title>Принтера</title>
+	</head>
+<body>
+    <div id="add_printer">
+        <div class="block_title">
+            <i></i>
+            <p>Добавить принтер</p>
+        </div>
+        <ul class="check_boxes">
+                <p>Введите название принтера:</p>
+                <input type="text" name="name" placeholder="Введите название..."/>
+            <br>
+            <br>
+                <p>Введите париийный номер принтера:</p>
+                <input type="text" name="partNumber"  placeholder="Введите партийный номер..."/>
+            <br>
+            <br>
+                <p>Цена товара в долларах:</p>
+                <input type="text" name="prise" placeholder="Введите цену товара в долларах..."/>
+            <br>
+            <br>
+                <p>Ширина печати, мм:</p>
+                <input type="text" name="weightPrintMM" placeholder="Введите ширину печати принтера..."/>
+            <br>
+            <br>
+                <p>Тип печати:</p>
+                <li><input type="radio" name="typePrint" checked>Термо-струйная</input></li>
+                <li><input type="radio" name="typePrint">Пьезо-струйная</input></li>
+            <br>
+                <p>Подача материала:</p>
+                <li><input type="radio" name="feed" checked>Рулонный</input></li>
+                <li><input type="radio" name="feed">Плоскопечатный</input></li>
+                <li><input type="radio" name="feed">Гибридный</input></li>
+            <br>
+                <p>Цветность:</p>
+                <li><input type="radio" name="chromaticity" checked>CMYK</input></li>
+                <li><input type="radio" name="chromaticity">CMYK X 2</input></li>
+                <li><input type="radio" name="chromaticity">CMYKLcLm</input></li>
+                <li><input type="radio" name="chromaticity">CMYKLcLmOG</input></li>
+            <br>
+                <p>Производитель печатающей головки:</p>
+                <li><input type="radio" name="manufacturer_printhead" checked>Spectra</input></li>
+                <li><input type="radio" name="manufacturer_printhead">XAAR</input></li>
+                <li><input type="radio" name="manufacturer_printhead">SPT</input></li>
+                <li><input type="radio" name="manufacturer_printhead">Konika-Minolta</input></li>
+                <li><input type="radio" name="manufacturer_printhead">Toshiba</input></li>
+                <li><input type="radio" name="manufacturer_printhead">Ricoh</input></li>
+                <li><input type="radio" name="manufacturer_printhead">Epson</input></li>
+                <li><input type="radio" name="manufacturer_printhead">Lexmark</input></li>
+            <br>
+                <p>Тип печатающей головки:</p>
+                <li><input type="radio" name="typeOfPrinthead" checked>Nova 256</input></li>
+                <li><input type="radio" name="typeOfPrinthead">Galaxy 256</input></li>
+                <li><input type="radio" name="typeOfPrinthead">Polyaris 512</input></li>
+                <li><input type="radio" name="typeOfPrinthead">126/50</input></li>
+                <li><input type="radio" name="typeOfPrinthead">126/80</input></li>
+                <li><input type="radio" name="typeOfPrinthead">128/40</input></li>
+                <li><input type="radio" name="typeOfPrinthead">128/80</input></li>
+                <li><input type="radio" name="typeOfPrinthead">255</input></li>
+                <li><input type="radio" name="typeOfPrinthead">256</input></li>
+                <li><input type="radio" name="typeOfPrinthead">500</input></li>
+                <li><input type="radio" name="typeOfPrinthead">510</input></li>
+                <li><input type="radio" name="typeOfPrinthead">512</input></li>
+                <li><input type="radio" name="typeOfPrinthead">512KN</input></li>
+                <li><input type="radio" name="typeOfPrinthead">1020</input></li>                    
+                <li><input type="radio" name="typeOfPrinthead">1024</input></li>
+                <li><input type="radio" name="typeOfPrinthead">1024I</input></li>                    
+                <li><input type="radio" name="typeOfPrinthead">CA3</input></li>
+                <li><input type="radio" name="typeOfPrinthead">CA4</input></li>
+                <li><input type="radio" name="typeOfPrinthead">Gen4</input></li>
+                <li><input type="radio" name="typeOfPrinthead">Gen5</input></li>
+                <li><input type="radio" name="typeOfPrinthead">DX2</input></li>
+                <li><input type="radio" name="typeOfPrinthead">DX4</input></li>
+                <li><input type="radio" name="typeOfPrinthead">DX5</input></li>
+                <li><input type="radio" name="typeOfPrinthead">DX6</input></li>
+                <li><input type="radio" name="typeOfPrinthead">DX7</input></li>
+            <br>
+                <p>Совместимые чернила:</p>
+                <li><input type="radio" name="compatibleInk" checked>Водные</input></li>
+                <li><input type="radio" name="compatibleInk">Пигментные</input></li>
+                <li><input type="radio" name="compatibleInk">Сублимационные </input></li>
+                <li><input type="radio" name="compatibleInk">Экосольвентные</input></li>
+                <li><input type="radio" name="compatibleInk">Сольвентные</input></li>
+                <li><input type="radio" name="compatibleInk">UV-чернила</input></li>
+            <br>
+                <p>Тип капли:</p>
+                <li><input type="radio" name="typeDrops">Постоянная</input></li>
+                <li><input type="radio" name="typeDrops">Переменная</input></li>
+            <br>
+                <p>Размер капли:</p>
+                <li><input type="radio" name="sizeDrops">1,5</input></li>
+                <li><input type="radio" name="sizeDrops">2</input></li>
+                <li><input type="radio" name="sizeDrops">4</input></li>
+                <li><input type="radio" name="sizeDrops">8</input></li>
+                <li><input type="radio" name="sizeDrops">12</input></li>
+                <li><input type="radio" name="sizeDrops">15</input></li>
+                <li><input type="radio" name="sizeDrops">20</input></li>
+                <li><input type="radio" name="sizeDrops">30</input></li>
+                <li><input type="radio" name="sizeDrops">35</input></li>
+                <li><input type="radio" name="sizeDrops">40</input></li>
+                <li><input type="radio" name="sizeDrops">80</input></li>  
+            <br>
+                <p>Скорость печати:</p>
+                <li><input type="text" name="speedPrint" placeholder="Введите скорость печати..."/></li>  
+            <br>
+            <br>
+                <p>Разрешение печати:</p>
+                <li><input type="radio" name="printResolution">360dpi</input></li>
+                <li><input type="radio" name="printResolution">600dpi</input></li>
+                <li><input type="radio" name="printResolution">720dpi</input></li>
+                <li><input type="radio" name="printResolution">1200dpi</input></li>
+                <li><input type="radio" name="printResolution">1440dpi</input></li>
+                <li><input type="radio" name="printResolution">2880dpi</input></li>
+            <br>
+                <p>Производитель оборудования:</p>
+                <li><input type="radio" name="equipmentManufacturer">Mimaki</input></li>
+                <li><input type="radio" name="equipmentManufacturer">Roland</input></li>
+                <li><input type="radio" name="equipmentManufacturer">Mutoh</input></li>
+                <li><input type="radio" name="equipmentManufacturer">HP</input></li>
+                <li><input type="radio" name="equipmentManufacturer">OCE</input></li>
+                <li><input type="radio" name="equipmentManufacturer">Agfa</input></li>
+                <li><input type="radio" name="equipmentManufacturer">LIYU</input></li>
+                <li><input type="radio" name="equipmentManufacturer">Infinity</input></li>
+                <li><input type="radio" name="equipmentManufacturer">Gonzeng</input></li>
+                <li><input type="radio" name="equipmentManufacturer">Jong Ye</input></li>
+            <br>
+                <p>Модель оборудования:</p>
+                <li><input type="text" name="equipmentModel" placeholder="Введите модель оборудованя..."/></li>  
+            <br>
+            <br>
+                <p>Интерфейс подключения:</p>
+                <li><input type="radio" name="interfaceConnection">SCSI</input></li>
+                <li><input type="radio" name="interfaceConnection">PCI Adapter</input></li>
+                <li><input type="radio" name="interfaceConnection">USB</input></li>
+                <li><input type="radio" name="interfaceConnection">Fire-Wire</input></li>
+            <br>
+                <p>Максимальная толщина носителя:</p>
+                <li><input type="text" name="maximumMediaThickness" placeholder="Введите максимальную толщину носителя..."/></li>  
+            <br>
+            <br>
+                <p>Максимальный вес носителя:</p>
+                <li><input type="text" name="maximumWeightOfVehicle" placeholder="Введите максимальный вес носителя..."/></li>  
+            <br>
+            <br>
+                <p>П/О RIP:</p>
+                <li><input type="radio" name="rip">ONYX Graphics</input></li>
+                <li><input type="radio" name="rip">SA International/PhotoPRINT™ Family</input></li>
+                <li><input type="radio" name="rip">Wasatch SOFTRIP</input></li>
+                <li><input type="radio" name="rip">ColorGATE Productionserver</input></li>
+                <li><input type="radio" name="rip">Poster Print</input></li>
+            <br>
+                <p>Потребляемая мощность:</p>
+                <li><input type="text" name="maxPowerConsumption" placeholder="Введите потребляемую мощность..."/></li>  
+            <br>
+            <br>
+                <p>Вес:</p>
+                <li><input type="text" name="weight" placeholder="Введите вес..."/></li>  
+            <br>
+            <br>
+                <p>Ширина:</p>
+                <li><input type="text" name="width" placeholder="Введите ширину..."/></li>  
+            <br>
+            <br>
+                <p>Высота:</p>
+                <li><input type="text" name="heigth" placeholder="Введите высоту принтера..."/></li>  
+            <br>
+            <br>
+                <p>Глубина:</p>
+                <li><input type="text" name="heigth" placeholder="Введите глубину принтера..."/></li>  
+            <br>
+            <br>
+                <p>Описание:</p>
+                <li><input type="" height="30"  name="heigth" placeholder="Введите описание..."/></li>  
+            <br>
+            <br>
+        </ul>
+    </div>
+    <div id="show_printers"></div>
+    
+    <script>
+    /*--- реализация выпадающих подпунктов ---*/
+        $( function(){
+            $(".block_title").click(function(){
+                var check = $(this).parent('#add_printer').find(".check_boxes");
+                var check_point = $(this).find("i");
+                if (check.css('display') == 'none') {
+                    check.css('display', 'block');
+                    check_point.addClass('opened');
+                }else{
+                    check.css('display', 'none');
+                    check_point.css('color', 'green');
+                    check_point.removeClass('opened');
+                }
+            });
+        } );
+    </script>
+</body>
+</html>

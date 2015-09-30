@@ -62,21 +62,28 @@ jQuery(document).ready(function() {
         </div>-->
         <div id="second_row">
             <a id="second_row_logo" href="index.html"><img class="second_row_image" src="images/head/Logo_Print_Master.jpg" alt=""></a>
-            <a id="second_row_contact" href=""><img class="second_row_image" src="images/head/Contact.png" alt=""></a>
+            <a id="second_row_contact" href="">
+                <img class="second_row_image" src="images/head/Contact.png" alt="">
+                    <div class="contact">
+                        <p>тел.: (044) 274 22 99</p>
+                        <p>тел.: (044) 405 96 11</p>
+                        <p>тел.: (044) 405 96 88</p> 
+                    </div>
+            </a>
             <div id="second_row_search">
                 <input id="second_row_search_field" placeholder="Введите слово или фразу..." size="50" type="search">
                 <a id="second_row_search_button" href="" ><img src="images/head/Search.jpg" alt=""></a>
             </div>
             <a id="second_row_basket" href=""><img class="second_row_image" src="images/head/Basket_full.png" alt=""></a>
-            <a id="second_row_user" href=""><img class="second_row_image" src="images/head/User.jpg" alt=""></a> 
             <a id="second_row_price_equality" href=""><img class="second_row_image" src="images/head/$.jpg" alt=""></a>
             <a id="second_row_language" href=""><img class="second_row_image" src="images/head/Langiuge.jpg" alt=""></a>
+            <a id="second_row_user" href=""><img class="second_row_image" src="images/head/User.jpg" alt=""></a> 
         </div>
         <div id="head_memu_background">
                     <div id="mainmenu">
                        <div id="full_menu">
                          <div class="toggle-menu">
-						<!--	<span class="menu-text hide-on-med-and-down">Меню</span>-->
+						<!--   <span class="menu-text hide-on-med-and-down">Меню</span>   -->
 							<span class="icon-bar skew-clock"></span>
 							<span class="icon-bar hide-closed"></span>
 							<span class="icon-bar skew-counter"></span>
@@ -155,7 +162,13 @@ jQuery(document).ready(function() {
                                       </div>
                                        <div class="head_menu_point_element">
                                           <a href="#"><img src="images/head/hqdefault.jpg" alt="" ><p>Твердотельные лазеры</p></a>
-                                      </div>                                     
+                                      </div>     
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/hqdefault.jpg" alt="" ><p>Для обработки метала</p></a>
+                                      </div>
+                                       <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/hqdefault.jpg" alt="" ><p>С диодной накачкой</p></a>
+                                      </div>                                 
                                   </div>
                                 </li>
                                 <!-- Пункт меню 5 -->
@@ -181,8 +194,19 @@ jQuery(document).ready(function() {
                                   </div>
                                 </li>
                                 <!-- Пункт меню 7 -->
-                                <li><a href="#">Програмное обеспечение</a>
+                                <li><a href="#">Б/У Оборудование</a>
                                     <div class="head_menu_point_7">
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/maxresdefault.jpg" alt="" ><p>Сольвентное оборудование</p></a>
+                                      </div>
+                                      <div class="head_menu_point_element">
+                                          <a href="#"><img src="images/head/maxresdefault.jpg" alt="" ><p>Экосольвентное оборудовние</p></a>
+                                      </div>                                                                           
+                                  </div>
+                                </li>
+                                <!-- Пункт меню 8 -->
+                                <li><a href="#">ПО</a>
+                                    <div class="head_menu_point_8">
                                       <div class="head_menu_point_element">
                                           <a href="#"><img src="images/head/progo1.jpg" alt="" ><p>RIP системы</p></a>
                                       </div>
@@ -196,7 +220,7 @@ jQuery(document).ready(function() {
     <div id="the_main_part">  
         <div class="left_field">
             <ul class="menu">
-                <li class="menu_list"><a href="#">Принтеры</a>
+                <li class="menu_list"><a href="search_printer.html">Принтеры</a>
                     <ul class="menu_drop">
                         <li class="menu_list_list"><a href="#">Сольвентные принтеры</a>
                             <ul class="menu_drop_drop">
@@ -252,6 +276,8 @@ jQuery(document).ready(function() {
                     <ul class="menu_drop">
                         <li><a href="#">Газовые лазеры СО2</a></li>
                         <li><a href="#">Твердотельные лазеры</a></li>
+                        <li><a href="#">Для обработки метала</a></li>
+                        <li><a href="#">С диодной накачкой</a></li>
                     </ul>
                 </li>
                 <li class="menu_list"><a href="#">Фрезерно-гравировальное оборудование</a>
@@ -264,6 +290,12 @@ jQuery(document).ready(function() {
                 <li class="menu_list"><a href="#">Сканеры</a>
                     <ul class="menu_drop">
                         <li><a href="#">Широкоформатные сканеры</a></li>
+                    </ul>
+                </li>
+                <li class="menu_list"><a href="#">Б/У Оборудование</a>
+                    <ul class="menu_drop">
+                        <li><a href="#">Сольвентное оборудование</a></li>
+                        <li><a href="#">Экосольвентное оборудовние</a></li>
                     </ul>
                 </li>
                 <li class="menu_list"><a href="#">Програмное обеспечение</a>
@@ -742,12 +774,11 @@ jQuery(document).ready(function() {
                                         thumbType:'square',
                                         backgroundColor:'FFFFFF',
                                       } );
-
            $("#full_menu").click(function(){
                if ( $(".menu").css('display') == 'none' ) {
-                     $(".menu").show(1000);
+                     $(".menu").slideDown(1000);
                       } else {
-                     $(".menu").hide(400);
+                     $(".menu").slideUp(400);
                      }
               });
         } );       

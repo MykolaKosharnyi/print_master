@@ -4,13 +4,23 @@
               range: true,
               min: 0,
               max: 100000,
-              values: [ 10000, 60000 ],
+              values: [ 0, 100000 ],
               slide: function( event, ui ) {
-                $( ".amount-prise" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                $( ".amount-prise0" ).val(ui.values[ 0 ]);
+                $( ".amount-prise1" ).val(ui.values[ 1 ]);
               }
             });
-            $( ".amount-prise" ).val( "$" + $( ".slider-range-prise" ).slider( "values", 0 ) +
-              " - $" + $( ".slider-range-prise" ).slider( "values", 1 ) );
+                
+            $( ".amount-prise0" ).val( $( ".slider-range-prise" ).slider("values", 0 ));             
+            $( ".amount-prise1" ).val( $( ".slider-range-prise" ).slider("values", 1 ));
+                
+            $( ".amount-prise0" ).change(function() {
+            $(".slider-range-prise").slider('values',0,this.value);
+                });
+                
+            $( ".amount-prise1" ).change(function() {
+            $(".slider-range-prise").slider('values',1,this.value);
+                });
           });
 /*---- диапазон для скорости печати----*/ 
           $(function() {
@@ -20,25 +30,71 @@
               max: 300,
               values: [ 50, 150 ],
               slide: function( event, ui ) {
-                $( ".amount-speed-print" ).val( ui.values[ 0 ] +  " м.кв./ч." + " - " + ui.values[ 1 ] + " м.кв./ч." );
+                $( ".amount-speed-print0" ).val( ui.values[ 0 ]);
+                $( ".amount-speed-print1" ).val( ui.values[ 1 ]);
               }
             });
-            $( ".amount-speed-print" ).val($( ".slider-range-speed-print" ).slider( "values", 0 ) +  " м.кв./ч." +
-              " - " + $( ".slider-range-speed-print" ).slider( "values", 1 ) + " м.кв./ч." );
+              
+            $( ".amount-speed-print0" ).val($( ".slider-range-speed-print" ).slider( "values", 0 ));
+            $( ".amount-speed-print1" ).val($( ".slider-range-speed-print" ).slider( "values", 1 ));
+              
+              
+            $( ".amount-speed-print0" ).change(function() {
+            $(".slider-range-speed-print").slider('values',0,this.value);
+                });
+                
+            $( ".amount-speed-print1" ).change(function() {
+            $(".slider-range-speed-print").slider('values',1,this.value);
+                });  
           });
 /*---- диапазон для максимальной толщины носителя ----*/
+        /*для диапазона от 1 до 60*/
           $(function() {
-            $( ".slider-range-maximum_media_thickness" ).slider({
+            $( ".slider-range-maximum_media_thickness60" ).slider({
               range: true,
               min: 1,
-              max: 500,
-              values: [ 150, 400 ],
+              max: 60,
+              values: [ 1, 60 ],
               slide: function( event, ui ) {
-                $( ".amount-maximum_media_thickness" ).val( ui.values[ 0 ] +  " мм" + " - " + ui.values[ 1 ] + " мм" );
+                $( ".amount-maximum_media_thickness60_0" ).val( ui.values[ 0 ] );
+                $( ".amount-maximum_media_thickness60_1" ).val( ui.values[ 1 ] );
               }
             });
-            $( ".amount-maximum_media_thickness" ).val($( ".slider-range-maximum_media_thickness" ).slider( "values", 0 ) +  " мм" +
-              " - " + $( ".slider-range-maximum_media_thickness" ).slider( "values", 1 ) + " мм" );
+              
+            $( ".amount-maximum_media_thickness60_0" ).val( $( ".slider-range-maximum_media_thickness60" ).slider( "values", 0 ));    
+            $( ".amount-maximum_media_thickness60_1" ).val( $( ".slider-range-maximum_media_thickness60" ).slider( "values", 1 ) );
+            
+            $( ".amount-maximum_media_thickness60_0" ).change(function() {
+            $(".slider-range-maximum_media_thickness60").slider('values',0,this.value);
+                });
+                
+            $( ".amount-maximum_media_thickness60_1" ).change(function() {
+            $(".slider-range-maximum_media_thickness60").slider('values',1,this.value);
+                });  
+          });
+        /*для диапазона от 60 до 500*/
+          $(function() {
+            $( ".slider-range-maximum_media_thickness500" ).slider({
+              range: true,
+              min: 60,
+              max: 500,
+              values: [ 60, 500 ],
+              slide: function( event, ui ) {
+                $( ".amount-maximum_media_thickness500_0" ).val( ui.values[ 0 ] );
+                $( ".amount-maximum_media_thickness500_1" ).val( ui.values[ 1 ] );
+              }
+            });
+              
+            $( ".amount-maximum_media_thickness500_0" ).val( $( ".slider-range-maximum_media_thickness500" ).slider( "values", 0 ));    
+            $( ".amount-maximum_media_thickness500_1" ).val( $( ".slider-range-maximum_media_thickness500" ).slider( "values", 1 ) );
+            
+            $( ".amount-maximum_media_thickness500_0" ).change(function() {
+            $(".slider-range-maximum_media_thickness500").slider('values',0,this.value);
+                });
+                
+            $( ".amount-maximum_media_thickness500_1" ).change(function() {
+            $(".slider-range-maximum_media_thickness500").slider('values',1,this.value);
+                });  
           });
 /*--- для максимального веса носителя ---*/
           $(function() {
@@ -48,11 +104,22 @@
               max: 500,
               values: [ 150, 300 ],
               slide: function( event, ui ) {
-                $( ".amount-maximum_weight_of_vehicle" ).val( ui.values[ 0 ] +  " кг" + " - " + ui.values[ 1 ] + " кг" );
+                $( ".amount-maximum_weight_of_vehicle0" ).val( ui.values[ 0 ] );
+                $( ".amount-maximum_weight_of_vehicle1" ).val( ui.values[ 1 ] );
               }
             });
-            $( ".amount-maximum_weight_of_vehicle" ).val($( ".slider-range-maximum_weight_of_vehicle" ).slider( "values", 0 ) +  " кг" +
-              " - " + $( ".slider-range-maximum_weight_of_vehicle" ).slider( "values", 1 ) + " кг" );
+              
+            $( ".amount-maximum_weight_of_vehicle0" ).val($( ".slider-range-maximum_weight_of_vehicle" ).slider( "values", 0 )); 
+            $( ".amount-maximum_weight_of_vehicle1" ).val($( ".slider-range-maximum_weight_of_vehicle" ).slider( "values", 1 ));
+              
+            $( ".amount-maximum_weight_of_vehicle0" ).change(function() {
+            $(".slider-range-maximum_weight_of_vehicle").slider('values',0,this.value);
+                });
+                
+            $( ".amount-maximum_weight_of_vehicle1" ).change(function() {
+            $(".slider-range-maximum_weight_of_vehicle").slider('values',1,this.value);
+                });  
+              
           });
 /*--- для максимальной потребляемой мощности ----*/
           $(function() {
@@ -62,11 +129,22 @@
               max: 100.1,
               values: [ 20, 50 ],
               slide: function( event, ui ) {
-                $( ".amount-max_power_consumption" ).val( ui.values[ 0 ] +  " кВт" + " - " + ui.values[ 1 ] + " кВт" );
+                $( ".amount-max_power_consumption0" ).val( ui.values[ 0 ] );
+                $( ".amount-max_power_consumption1" ).val( ui.values[ 1 ] );
               }
             });
-            $( ".amount-max_power_consumption" ).val($( ".slider-range-max_power_consumption" ).slider( "values", 0 ) +  " кВт" +
-              " - " + $( ".slider-range-max_power_consumption" ).slider( "values", 1 ) + " кВт" );
+              
+            $( ".amount-max_power_consumption0" ).val($( ".slider-range-max_power_consumption" ).slider( "values", 0 ));
+            $( ".amount-max_power_consumption1" ).val($( ".slider-range-max_power_consumption" ).slider( "values", 1 ));
+              
+            $( ".amount-max_power_consumption0" ).change(function() {
+            $(".slider-range-max_power_consumption").slider('values',0,this.value);
+                });
+                
+            $( ".amount-max_power_consumption1" ).change(function() {
+            $(".slider-range-max_power_consumption").slider('values',1,this.value);
+                });   
+            
           });
 /*--- для веса ----*/
           $(function() {
@@ -76,11 +154,22 @@
               max: 5000,
               values: [ 1000, 4000 ],
               slide: function( event, ui ) {
-                $( ".amount-weight" ).val( ui.values[ 0 ] +  " кг" + " - " + ui.values[ 1 ] + " кг" );
+                $( ".amount-weight0" ).val( ui.values[ 0 ] );
+                $( ".amount-weight1" ).val( ui.values[ 1 ] );
               }
             });
-            $( ".amount-weight" ).val($( ".slider-range-weight" ).slider( "values", 0 ) +  " кг" +
-              " - " + $( ".slider-range-weight" ).slider( "values", 1 ) + " кг" );
+              
+            $( ".amount-weight0" ).val($( ".slider-range-weight" ).slider( "values", 0 ));
+            $( ".amount-weight1" ).val($( ".slider-range-weight" ).slider( "values", 1 ));
+              
+            $( ".amount-weight0" ).change(function() {
+            $(".slider-range-weight").slider('values',0,this.value);
+                });
+                
+            $( ".amount-weight1" ).change(function() {
+            $(".slider-range-weight").slider('values',1,this.value);
+                });  
+              
           });
 /*--- для ширины ---*/
           $(function() {
@@ -90,11 +179,22 @@
               max: 10.1,
               values: [ 3, 7 ],
               slide: function( event, ui ) {
-                $( ".amount-width" ).val( ui.values[ 0 ] +  " м" + " - " + ui.values[ 1 ] + " м" );
+                $( ".amount-width0" ).val( ui.values[ 0 ] );
+                $( ".amount-width1" ).val( ui.values[ 1 ] );
               }
             });
-            $( ".amount-width" ).val($( ".slider-range-width" ).slider( "values", 0 ) +  " м" +
-              " - " + $( ".slider-range-width" ).slider( "values", 1 ) + " м" );
+              
+            $( ".amount-width0" ).val($( ".slider-range-width" ).slider( "values", 0 ));
+            $( ".amount-width1" ).val($( ".slider-range-width" ).slider( "values", 1 ));
+              
+            $( ".amount-width0" ).change(function() {
+            $(".slider-range-width").slider('values',0,this.value);
+                });
+                
+            $( ".amount-width1" ).change(function() {
+            $(".slider-range-width").slider('values',1,this.value);
+                }); 
+              
           });
 /*--- для высоты ---*/
           $(function() {
@@ -104,11 +204,22 @@
               max: 10.1,
               values: [ 3, 7 ],
               slide: function( event, ui ) {
-                $( ".amount-heigth" ).val( ui.values[ 0 ] +  " м" + " - " + ui.values[ 1 ] + " м" );
+                $( ".amount-heigth0" ).val( ui.values[ 0 ] );
+                $( ".amount-heigth1" ).val( ui.values[ 1 ] );
               }
             });
-            $( ".amount-heigth" ).val($( ".slider-range-heigth" ).slider( "values", 0 ) +  " м" +
-              " - " + $( ".slider-range-heigth" ).slider( "values", 1 ) + " м" );
+              
+            $( ".amount-heigth0" ).val($( ".slider-range-heigth" ).slider( "values", 0 ));
+            $( ".amount-heigth1" ).val($( ".slider-range-heigth" ).slider( "values", 1 ));
+              
+            $( ".amount-heigth0" ).change(function() {
+            $(".slider-range-heigth").slider('values',0,this.value);
+                });
+                
+            $( ".amount-heigth1" ).change(function() {
+            $(".slider-range-heigth").slider('values',1,this.value);
+                }); 
+              
           });
 /*--- для глубины ---*/
           $(function() {
@@ -118,11 +229,22 @@
               max: 10.1,
               values: [ 3, 7 ],
               slide: function( event, ui ) {
-                $( ".amount-depth" ).val( ui.values[ 0 ] +  " м" + " - " + ui.values[ 1 ] + " м" );
+                $( ".amount-depth0" ).val( ui.values[ 0 ] );
+                $( ".amount-depth1" ).val( ui.values[ 1 ] );
               }
             });
-            $( ".amount-depth" ).val($( ".slider-range-depth" ).slider( "values", 0 ) +  " м" +
-              " - " + $( ".slider-range-depth" ).slider( "values", 1 ) + " м" );
+              
+            $( ".amount-depth0" ).val($( ".slider-range-depth" ).slider( "values", 0 ));
+            $( ".amount-depth1" ).val($( ".slider-range-depth" ).slider( "values", 1 ));
+              
+            $( ".amount-depth0" ).change(function() {
+            $(".slider-range-depth").slider('values',0,this.value);
+                });
+                
+            $( ".amount-depth1" ).change(function() {
+            $(".slider-range-depth").slider('values',1,this.value);
+                }); 
+              
           });
 
 /*-- реализация подпунктов ширины в виде вкладок --*/
@@ -162,11 +284,12 @@
                 var check = $(this).parent('.search_criteria').find(".check_boxes");
                 var check_point = $(this).find("i");
                 if (check.css('display') == 'none') {
-                    check.css('display', 'block');
+                    check.slideDown();
+                  /*  check.css('display', 'block');*/
                     check_point.addClass('opened');
                 }else{
-                    check.css('display', 'none');
-                    check_point.css('color', 'green');
+                    check.slideUp();
+                 /*   check.css('display', 'none');*/
                     check_point.removeClass('opened');
                 }
             });
